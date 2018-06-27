@@ -63,7 +63,11 @@ like it is supposed to...thanks to the style below: */
 #logosGroup {
   padding: 50px 0;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #logosGroup img {
@@ -117,7 +121,7 @@ like it is supposed to...thanks to the style below: */
 	content: '';
 	width: 50%;
 	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), to(rgba(255,255,255,.3)));
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
 	-webkit-transform: skewX(-25deg);
 	transform: skewX(-25deg);
@@ -173,12 +177,12 @@ like it is supposed to...thanks to the style below: */
 /* ------------------4. PRODUCT CATEGORIES-------- */
 /* ----------------------------------------------- */
 
-#homeProdCategories, #homeTunersImageSectionImg {
-  width: auto;
-}
-
 #homeProdCategories {
-  background-image: url("http://hd.wallpaperswide.com/thumbs/black_background_fabric-t2.jpg");
+  width: 100%;
+  height: 700px;
+  background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Black-HD-Background-.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid {
@@ -198,7 +202,7 @@ like it is supposed to...thanks to the style below: */
 	float: left;
 	overflow: hidden;
 	width: 350px;
-  height: 200px;
+  	height: 200px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -272,7 +276,6 @@ like it is supposed to...thanks to the style below: */
 }
 
 figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
 	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
 }
 
@@ -301,7 +304,9 @@ figure.effect-oscar figcaption::before {
 figure.effect-oscar h2 {
 	margin: 15% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
@@ -310,7 +315,9 @@ figure.effect-oscar figcaption::before,
 figure.effect-oscar p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
@@ -524,7 +531,6 @@ body #cda-remove {
 	color: #fff;
 }
 
-
 @media screen and (max-width: 25em) {
 	.codrops-header {
 		font-size: 75%;
@@ -546,8 +552,8 @@ body #cda-remove {
 /* ----------------------------------------------- */
 #closestDealerHeader {
   background-color: #f05423;
-  width: 50%;
   opacity: 0.8;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow: 3px 3px 5px 6px #ccc;
 }
 
