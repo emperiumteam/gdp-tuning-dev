@@ -57,7 +57,7 @@ like it is supposed to...thanks to the style below: */
   width: 100%;
   height: 450px;
 }
-#selectTruckHeadingAndLogos {
+#selectTruckLeftArea {
 	text-align: center;
 }
 #selectYourTruckHeader div {
@@ -107,7 +107,7 @@ like it is supposed to...thanks to the style below: */
   left: 8%;
 }
 #efiliveLogoTuners {
-  left: 30%;
+  left: 33%;
 }
 /* ----------------------------------------------- */
 /* ---------------------TUNERS END--------------- */
@@ -124,7 +124,7 @@ like it is supposed to...thanks to the style below: */
 #homeProdCategories {
   width: 100%;
   height: 700px;
-  background-image: url("https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg");
+  background-image: url("https://images.pexels.com/photos/908283/pexels-photo-908283.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
