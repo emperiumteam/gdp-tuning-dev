@@ -249,24 +249,6 @@ like it is supposed to...thanks to the style below: */
 	opacity: 0;
 }
 
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
 
 /*---------------*/
 /***** Oscar *****/
@@ -367,11 +349,6 @@ figure.effect-oscar:hover img {
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
-}
-
-.content {
-	margin: 0 auto;
-	max-width: 1000px;
 }
 
 .content > h2 {
