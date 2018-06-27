@@ -57,8 +57,11 @@ like it is supposed to...thanks to the style below: */
   width: 100%;
   height: 450px;
 }
+#selectTruckHeadingAndLogos {
+	text-align: center;
+}
 #selectYourTruckHeader div {
-  display: inline-block;
+	display: inline-block;
 }
 #logosGroup {
   padding: 50px 0;
@@ -81,65 +84,6 @@ like it is supposed to...thanks to the style below: */
     height: 60vw;
 }
 
-/* ------SHINE HOVER------- */
-.column::after {
-	content: '';
-	clear: both;
-	display: block;
-}
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 300px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	opacity: 0;
-}
-.logosGroupFigure {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-/* Shine */
-.shineHover .logosGroupFigure {
-	position: relative;
-}
-.shineHover .logosGroupFigure::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), to(rgba(255,255,255,.3)));
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.shineHover figure:hover::before {
-	-webkit-animation: shine 1.5s;
-	animation: shine 1.5s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
 /* ----------------------------------------------- */
 /* ------------------SELECT YOUR TRUCK END-------- */
 /* ----------------------------------------------- */
@@ -203,11 +147,12 @@ like it is supposed to...thanks to the style below: */
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 350px;
+	width: 400px;
   	height: 200px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+  	margin:15px;
 }
 
 .grid figure img {
@@ -260,7 +205,11 @@ like it is supposed to...thanks to the style below: */
 }
 
 figure.effect-oscar {
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+  /*background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);*/
+  /*background: #fff;*/
+  background-image: url("http://gdptuning.com/image/catalog/Backgrounds/MetalMesh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 figure.effect-oscar img {
@@ -269,11 +218,11 @@ figure.effect-oscar img {
 	transition: opacity 0.35s;
 }
 
-figure.effect-oscar figcaption {
+/*figure.effect-oscar figcaption {
 	background-color: rgba(58,52,42,0.7);
 	-webkit-transition: background-color 0.35s;
 	transition: background-color 0.35s;
-}
+}*/
 
 figure.effect-oscar figcaption::before {
 	position: absolute;
