@@ -180,22 +180,24 @@ like it is supposed to...thanks to the style below: */
 #homeProdCategories {
   width: 100%;
   height: 700px;
-  background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Black-HD-Background-.jpg");
+  background-image: url("https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .grid {
-	position: absolute;
-  top: 20%;
-  left: 20%;
-	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 1000px;
-	list-style: none;
-	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+  	width: 100%;
 }
-
 /* Common style */
 .grid figure {
 	position: relative;
