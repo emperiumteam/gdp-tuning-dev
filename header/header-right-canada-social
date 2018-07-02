@@ -1,0 +1,19 @@
+<div id="canadaAndSocialLink">
+  
+  <a class="canadaAndSocialLinkItem" href="https://gdptuning.ca/">
+    <span class="canadianLink">Canadian Customers</span>
+  </a>
+  
+  <a class="canadaAndSocialLinkItem" href="https://www.facebook.com/">
+    <span><i class="fab fa fa-facebook-f"></i></span>
+  </a>
+  
+  <a class="canadaAndSocialLinkItem" href="https://www.instagram.com/">
+    <span><i class="fab fa fa-instagram"></i></span>
+  </a>
+  
+  <a class="canadaAndSocialLinkItem" href="https://www.linkedin.com/">
+    <span><i class="fab fa fa-linkedin"></i></span>
+  </a>
+  
+</div>

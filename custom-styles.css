@@ -53,19 +53,34 @@ like it is supposed to...thanks to the style below: */
 /* ------------------3. SELECT YOUR TRUCK--------- */
 /* ----------------------------------------------- */
 #selectYourTruckContainer {
-  padding: 1vw 5vw;
-  width: 100%;
-  height: 450px;
+    padding: 1vw 5vw;
+    width: 100%;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
 }
 #selectTruckLeftArea {
-	text-align: center;
+    text-align: center;
+    height: 100%;
+    width: 60%;
+}
+#trucksGroup {
+	height:100%;
+  	width: 40%;
+}
+#selectYourTruckHeader {
+	margin-top:10%;
 }
 #selectYourTruckHeader div {
 	display: inline-block;
 }
 #logosGroup {
   padding: 50px 0;
-  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,14 +89,14 @@ like it is supposed to...thanks to the style below: */
   justify-content: center;
 }
 #logosGroup img {
-  height: 80px;
-  margin: 2em;
+  height: 100px;
+  margin: 3em;
 }
 #powerstrokeTruck, #duramaxTruck, #cumminsTruck {
     position: absolute;
-  	top: -12vw;
-    right: -90vw;
-    height: 60vw;
+    top: -55%;
+    right: -110vw;
+    height: 115vh;
 }
 
 /* ----------------------------------------------- */
@@ -103,6 +118,10 @@ like it is supposed to...thanks to the style below: */
   top: 54%;
   height: 20%;
 }
+#ezLogoTuners:hover, #efiliveLogoTuners:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 #ezLogoTuners {
   left: 8%;
 }
@@ -120,11 +139,12 @@ like it is supposed to...thanks to the style below: */
 /* ----------------------------------------------- */
 /* ------------------4. PRODUCT CATEGORIES-------- */
 /* ----------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 #homeProdCategories {
   width: 100%;
-  height: 700px;
-  background-image: url("https://images.pexels.com/photos/908283/pexels-photo-908283.jpeg");
+  padding: 5% 0;
+  background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/black-pattern-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,18 +161,20 @@ like it is supposed to...thanks to the style below: */
     align-items: center;
     height: 100%;
   	width: 100%;
+  	-ms-flex-wrap: wrap;
+  	flex-wrap: wrap;
 }
 /* Common style */
 .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 400px;
+	width: calc(100%/3);
+  	min-width: 40%;
   	height: 200px;
-	background: #3085a3;
+	background: #323232;
 	text-align: center;
 	cursor: pointer;
-  	margin:15px;
 }
 
 .grid figure img {
@@ -161,6 +183,15 @@ like it is supposed to...thanks to the style below: */
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+#homeProdCategories > div > figure > figcaption > h2 > span {
+	font-weight: 800;
 }
 
 .grid figure figcaption {
@@ -200,18 +231,6 @@ like it is supposed to...thanks to the style below: */
 /*---------------*/
 /***** Oscar *****/
 /*---------------*/
-#homeProdCategories > div > figure > figcaption > h2 {
- 	color: white !important; 
-}
-
-figure.effect-oscar {
-  /*background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);*/
-  /*background: #fff;*/
-  background-image: url("http://gdptuning.com/image/catalog/Backgrounds/MetalMesh.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 figure.effect-oscar img {
 	opacity: 0.9;
 	-webkit-transition: opacity 0.35s;
@@ -235,13 +254,14 @@ figure.effect-oscar figcaption::before {
 }
 
 figure.effect-oscar h2 {
-	margin: 15% 0 10px 0;
+	margin: 7% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	transition: transform 0.35s, -webkit-transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
+   	color: white !important;
 }
 
 figure.effect-oscar figcaption::before,
@@ -272,7 +292,7 @@ figure.effect-oscar:hover figcaption {
 }
 
 figure.effect-oscar:hover img {
-	opacity: 0.4;
+	opacity: 0.1;
 }
 
 @media screen and (max-width: 50em) {
@@ -481,14 +501,22 @@ body #cda-remove {
 #closestDealerHeader {
   background-color: #f05423;
   opacity: 0.8;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 9px 9px 0px 1px #999999;
+  box-shadow: 9px 9px 0px 1px #999999;
+}
+
+#closestDealerHeader:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  	-webkit-transform: scale(1.1);
+  	transform: scale(1.1);
 }
 
 #closestDealerHeader a h1 {
-  font-size:2.5em;
-  text-align: center;     
-  width:100%;
+  font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+  color: white;
 }
 
 #closestDealerHeader a {
