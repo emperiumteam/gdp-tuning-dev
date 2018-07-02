@@ -7,6 +7,7 @@ TABLE OF CONTENTS:
 4. Home Page "Tuners" section
 5. Home Page "Products" section
 6. Home Page "FIND YOUR CLOSEST DEALER OR DISTRIBUTOR" section
+7. Header right section for canadian link and social icons
 ----------------------------------------------- */
 
 
@@ -525,4 +526,30 @@ body #cda-remove {
 }
 /* ----------------------------------------------- */
 /* --------------CLOSEST DEALER END--------------- */
+/* ----------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------- */
+/* ---------------7. header social and CAN LINK--- */
+/* ----------------------------------------------- */
+#canadaAndSocialLink {
+  padding-right: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.canadianLink {
+  color: #f05323;
+}
+
+.canadaAndSocialLinkItem {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 10px;
+  line-height: 50px;
+}
+/* ----------------------------------------------- */
+/* ---------------7. header sociaL/CAN END-------- */
 /* ----------------------------------------------- */
