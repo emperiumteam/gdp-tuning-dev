@@ -54,52 +54,78 @@ like it is supposed to...thanks to the style below: */
 /* ------------------3. SELECT YOUR TRUCK--------- */
 /* ----------------------------------------------- */
 #selectYourTruckContainer {
-    padding: 1vw 5vw;
-    width: 100%;
-    height: 60vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-}
-#selectTruckLeftArea {
-    text-align: center;
-    height: 100%;
-    width: 60%;
-}
-#trucksGroup {
-	height:100%;
-  	width: 40%;
-}
-#selectYourTruckHeader {
-	margin-top:10%;
+  padding: 1vw 5vw;
+  width: 100%;
+  height: 450px;
 }
 #selectYourTruckHeader div {
-	display: inline-block;
+  display: inline-block;
 }
 #logosGroup {
-  padding: 50px 0;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-}
-#logosGroup img {
-  height: 100px;
-  margin: 3em;
-}
-#powerstrokeTruck, #duramaxTruck, #cumminsTruck {
-    position: absolute;
-    top: -55%;
-    right: -110vw;
-    height: 115vh;
+  justify-content: space-evenly;
 }
 
+#logosGroup img {
+  height: 80px;
+  margin: 1em;
+}
+#logosGroup a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+#trucksGroup {
+  width: 50%;
+}
+
+#powerstrokeTruck {
+    position: absolute;
+  	top: -5%;
+    right: -60vw;
+    height: 60vw;
+}
+
+#duramaxTruck, #cumminsTruck {
+    position: absolute;
+  	top: -5%;
+    right: -90vw;
+    height: 60vw;
+}
+
+.buyKitButton {
+  margin-top: 10px;
+  width: 30%;
+  background: #f05323;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05323), to(#c5370a));
+  background-image: linear-gradient(to bottom, #f05323, #c5370a);
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 13px 8px 13px;
+  text-decoration: none;
+}
+
+.buyKitButton:hover {
+  background: #9c2600;
+  text-decoration: none;
+}
 /* ----------------------------------------------- */
 /* ------------------SELECT YOUR TRUCK END-------- */
 /* ----------------------------------------------- */
@@ -502,13 +528,13 @@ body #cda-remove {
 #closestDealerHeader {
   background-color: #f05423;
   opacity: 0.8;
-  -webkit-box-shadow: 9px 9px 0px 1px #999999;
-  box-shadow: 9px 9px 0px 1px #999999;
 }
 
 #closestDealerHeader:hover {
-	-webkit-box-shadow: none;
-	box-shadow: none;
+	/*-webkit-box-shadow: none;
+	box-shadow: none;*/
+    -webkit-box-shadow: 7px 7px 5px -2px #999999;
+  	box-shadow: 7px 7px 5px -2px #999999;
   	-webkit-transform: scale(1.1);
   	transform: scale(1.1);
 }
@@ -538,6 +564,7 @@ body #cda-remove {
   padding-right: 20px;
   text-align: right;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .canadianLink {

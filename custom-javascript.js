@@ -9,78 +9,36 @@ TABLE OF CONTENTS:
 
 
 
-
-
 /* ----------------------------------------------- */
 /* ------------------1. SELECT YOUR TRUCK--------- */
 /* ----------------------------------------------- */
+var vwTarget = -0.55;
+var vwOrigin = -1.0;
+var duration = 400;
 
-var scaleVal = 1.2;
-var scaleValOrigin = 1;
-var vwTarget = -0.5;
-var vwOrigin = -0.9;
-var duration = 500;
+$("#logosGroup").hover(function () {
+  $("#powerstrokeTruck").animate({right: $(window).width() * vwOrigin}, duration);
 
-$("#powerstrokeImg").hover(function(){
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleVal + ')',
-    '-moz-transform': 'scale(' + scaleVal + ')',
-    '-ms-transform': 'scale(' + scaleVal + ')',
-    '-o-transform': 'scale(' + scaleVal + ')',
-    'transform': 'scale(' + scaleVal + ')'
+  $("#powerstrokeImg").hover(function () {
+    $("#powerstrokeTruck").animate({right: $(window).width() * vwTarget}, duration);
+  }, function () {
+    $("#powerstrokeTruck").animate({right: $(window).width() * vwOrigin}, duration);
   });
-  $("#powerstrokeTruck").animate({right: $(window).width()*vwTarget}, duration);
-}, function() {
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleValOrigin + ')',
-    '-moz-transform': 'scale(' + scaleValOrigin + ')',
-    '-ms-transform': 'scale(' + scaleValOrigin + ')',
-    '-o-transform': 'scale(' + scaleValOrigin + ')',
-    'transform': 'scale(' + scaleValOrigin + ')'
-  });
-  $("#powerstrokeTruck").animate({right: $(window).width()*vwOrigin}, duration);
-});
 
+  $("#duramaxImg").hover(function () {
+      $("#duramaxTruck").animate({right: $(window).width() * vwTarget}, duration);
+  }, function () {
+      $("#duramaxTruck").animate({right: $(window).width() * vwOrigin}, duration);
+  });
 
-$("#duramaxImg").hover(function(){
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleVal + ')',
-    '-moz-transform': 'scale(' + scaleVal + ')',
-    '-ms-transform': 'scale(' + scaleVal + ')',
-    '-o-transform': 'scale(' + scaleVal + ')',
-    'transform': 'scale(' + scaleVal + ')'
+  $("#cumminsImg").hover(function () {
+      $("#cumminsTruck").animate({right: $(window).width() * vwTarget}, duration);
+  }, function () {
+      $("#cumminsTruck").animate({right: $(window).width() * vwOrigin}, duration);
   });
-  $("#duramaxTruck").animate({right: $(window).width()*vwTarget}, duration);
-  }, function() {
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleValOrigin + ')',
-    '-moz-transform': 'scale(' + scaleValOrigin + ')',
-    '-ms-transform': 'scale(' + scaleValOrigin + ')',
-    '-o-transform': 'scale(' + scaleValOrigin + ')',
-    'transform': 'scale(' + scaleValOrigin + ')'
-  });
-  $("#duramaxTruck").animate({right: $(window).width()*vwOrigin}, duration);
-});
-
-
-$("#cumminsImg").hover(function(){
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleVal + ')',
-    '-moz-transform': 'scale(' + scaleVal + ')',
-    '-ms-transform': 'scale(' + scaleVal + ')',
-    '-o-transform': 'scale(' + scaleVal + ')',
-    'transform': 'scale(' + scaleVal + ')'
-  });
-  $("#cumminsTruck").animate({right: $(window).width()*vwTarget}, duration);
-  }, function() {
-  $(this).css({
-    '-webkit-transform': 'scale(' + scaleValOrigin + ')',
-    '-moz-transform': 'scale(' + scaleValOrigin + ')',
-    '-ms-transform': 'scale(' + scaleValOrigin + ')',
-    '-o-transform': 'scale(' + scaleValOrigin + ')',
-    'transform': 'scale(' + scaleValOrigin + ')'
-  });
-  $("#cumminsTruck").animate({right: $(window).width()*vwOrigin}, duration);
+  
+}, function () {
+    $("#powerstrokeTruck").animate({right: $(window).width() * vwTarget}, duration);
 });
 /* ----------------------------------------------- */
 /* ------------------SELECT YOUR TRUCK END-------- */
