@@ -16,6 +16,12 @@ TABLE OF CONTENTS:
 /* ----------------------------------------------- */
 /* ------------------1. GENERAL------------------- */
 /* ----------------------------------------------- */
+#content {
+	margin-bottom: 0;
+}
+#bottom {
+	display: none;
+}
 /* had to do this so to make home page content full width: */
 /* in the drop down for the row, if you select full, it will actually go full width
 like it is supposed to...thanks to the style below: */
@@ -24,7 +30,6 @@ like it is supposed to...thanks to the style below: */
   	margin: 0;
 }
 /* had to do this so to make the header lose margin, gain padding, color, and background-color*/
-
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
 	padding: 25px 0;
   	background-color: #5e5356;
@@ -139,7 +144,6 @@ like it is supposed to...thanks to the style below: */
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f05323), to(#c5370a));
   background-image: linear-gradient(to bottom, #f05323, #c5370a);
   border-radius: 5px;
-  font-family: Arial;
   color: #ffffff;
   font-size: 15px;
   padding: 8px 13px 8px 13px;
@@ -191,7 +195,9 @@ like it is supposed to...thanks to the style below: */
 /* ------------------4. PRODUCT CATEGORIES-------- */
 /* ----------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
+#homeTunersImageSectionImg {
+	margin-bottom: 0; 
+}
 #homeProdCategories {
   width: 100%;
   padding: 5% 0;
@@ -568,6 +574,7 @@ body #cda-remove {
   text-align: center;
   width: 100%;
   color: white;
+  margin: 50px 0;
 }
 
 #closestDealerHeader a {
@@ -593,6 +600,10 @@ body #cda-remove {
 .canadianLink {
   color: #f05323;
   font-size: 13px;
+}
+
+.canadianLink:hover {
+  color: white;
 }
 
 .canadaAndSocialLinkItem {
