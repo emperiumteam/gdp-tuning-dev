@@ -8,6 +8,7 @@ TABLE OF CONTENTS:
 5. Home Page "Products" section
 6. Home Page "FIND YOUR CLOSEST DEALER OR DISTRIBUTOR" section
 7. Header right section for canadian link and social icons
+8. Manual Page - banner image/notch
 ----------------------------------------------- */
 
 
@@ -16,23 +17,32 @@ TABLE OF CONTENTS:
 /* ----------------------------------------------- */
 /* ------------------1. GENERAL------------------- */
 /* ----------------------------------------------- */
-#content {
-	margin-bottom: 0;
-}
+/* take out footer that gives credit to pavilion */
 #bottom {
 	display: none;
 }
 /* had to do this so to make home page content full width: */
 /* in the drop down for the row, if you select full, it will actually go full width
 like it is supposed to...thanks to the style below: */
-#content > div > div {
-	padding:0;
+#wrapper:not(.container) > .tb_width_fixed,
+#wrapper:not(.container) > .container,
+#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed
+{
+  margin-left: 0;
+  margin-right: 0;
+}
+#content, #content > div > div {
+	padding: 0;
   	margin: 0;
 }
-/* had to do this so to make the header lose margin, gain padding, color, and background-color*/
+.container,
+.tb_width_fixed,
+#wrapper:not(.container) > .tb_content_fixed > .row-wrap {
+  max-width: 2000px;
+}
+/* had to do this so to make the header lose margin, gain padding, color*/
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
 	padding: 25px 0;
-  	background-color: #5e5356;
   	color: white;
 }
 #Menu_X9U19E5w a:not(:hover) {
@@ -50,8 +60,6 @@ like it is supposed to...thanks to the style below: */
 /* ----------------------------------------------- */
 #gdpHeroBannerImg {
   width: 46%;
-  /* margin-top: -64px; */
-  /* margin-top: -2em; */
   margin-top: -4.8%;
   margin-left: -5px;
   z-index: 99;
@@ -140,9 +148,9 @@ like it is supposed to...thanks to the style below: */
 .buyKitButton {
   margin-top: 20px;
   width: 50%;
-  background: #f05323;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05323), to(#c5370a));
-  background-image: linear-gradient(to bottom, #f05323, #c5370a);
+  background: #f05423;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
+  background-image: linear-gradient(to bottom, #f05423, #c5370a);
   border-radius: 5px;
   color: #ffffff;
   font-size: 15px;
@@ -616,3 +624,29 @@ body #cda-remove {
 /* ----------------------------------------------- */
 /* ---------------7. header sociaL/CAN END-------- */
 /* ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- */
+/* -------------8. Manual Banner Img/notch-------- */
+/* ----------------------------------------------- */
+#manualBannerImgContainer {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+}
+#manualBannerImg {
+  width: 100%;
+}
+
+#manualBannerImgNotch {
+  width: 30%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  position: absolute;
+}
+/* ----------------------------------------------- */
+/* -----------Manual Banner END------------------- */
+/* ----------------------------------------------- */
+
