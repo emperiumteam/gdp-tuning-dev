@@ -557,7 +557,8 @@ body #cda-remove {
 /* ----------------------------------------------- */
 #closestDealerHeader {
   background-color: #f05423;
-  opacity: 0.8;
+  width: 60%;
+  margin: auto;
 }
 
 #closestDealerHeader:hover {
