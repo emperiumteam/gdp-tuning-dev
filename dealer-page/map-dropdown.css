@@ -12,7 +12,6 @@ dealerTeleAndAddress
 
 
 
-
 /* DEALER PAGE */
 * {
   -webkit-box-sizing: border-box;
@@ -77,9 +76,6 @@ dealerTeleAndAddress
 
 
 
-
-
-
 /* Dropdown */
 .ui-selectmenu-button.ui-button {
   width: 100%;
@@ -115,29 +111,22 @@ dealerTeleAndAddress
 /*   width: 50px;  */
 }
 .state {
-	border: 2px solid red;
-  fill: #666;
+  fill: #868585;
 }
 
 .active-dealer {
   fill: #c5370a;
 }
 
-.state:hover {
+/* .state:hover {
 	fill: #9c2600;
-	-webkit-transition: fill .15s ease;
 	transition: fill .15s ease;
-/*   transform: scale(1.1); */
-/*   transform-origin: 80% 80%; */
 }
 
 #alaskaSVG:hover {
 	fill: #9c2600;
-	-webkit-transition: fill .15s ease;
 	transition: fill .15s ease;
-/*   transform: scale(1.1); */
-/*   transform-origin: 80% 80%; */
-}
+} */
 
 
 
