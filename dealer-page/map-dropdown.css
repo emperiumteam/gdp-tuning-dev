@@ -1,21 +1,10 @@
-/* dealerContentContainer
-dealerCompanyTitle
-dealerCompanyUrlImageContainer
-dealerTeleAndAddress
- */
-
-
-
-
-
-
-
-
-
-/* DEALER PAGE */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+#dealerPageHeader {
+  padding: 20px;
+  width: 50%;
 }
 #dealerPageContainer {
   width: 100%;
@@ -25,91 +14,144 @@ dealerTeleAndAddress
   display: -ms-flexbox;
   display: flex;
 }
-#dealerPageHeader {
-  padding: 20px;
-  width: 50%;
-}
 #locationContentContainer {
-  width: 40%;
+  width: 25%;
   height: 100%;
 }
-
 #mapContainer {
-  width: 60%
+  width: 75%;
+  padding: 0 50px;
 }
 
 
-.dealerInfoPopup {
-  margin-top: 20px;
-  width: 100%;
-  max-height: 400px;
-  overflow: scroll;
-  -webkit-box-shadow: 2px 2px 2px 2px #666;
-  box-shadow: 2px 2px 2px 2px #666;
-  border-radius: 5px;
-  background: #666;
-  padding: 10px;
-  text-align: center;
-}
+/* 
+Class Structure for Info Popup
+.ui-selectmenu-button.ui-button
+.dealerInfoPopup
+    .dealerInfoPopupStateTitle
+    .dealerInfoPopupTitleSeperator
 
-#usaSVG {
-  position: relative;
-  top: -10%;
-  left: 0;
-}
-
-#alaskaSVG { 
-  position: relative;
-  top: -15%;
-  left: 55%;
-}
-
-#canadaSVG {
-  position: relative;
-  top: -28%;
-  left: -50%;
-}
-
-
-
-
-
-
+    .dealerContentContainer
+        .authorizedDealerIcon
+        .authorizedDistributorIcon
+        .dealerCompanyTitle
+        .dealerLogoLink
+            .dealerLogo   
+        .dealerTelephone                    
+        .dealerFax                    
+        .dealerEmailLink
+            .dealerEmail
+        .dealerAddress
+        .dealerUrlLink
+            .dealerUrl         
+        .dealerSeperator 
+*/
 
 /* Dropdown */
 .ui-selectmenu-button.ui-button {
   width: 100%;
 }
 
-
-#locationContentContainer {
-  width: 30%;
-  max-height: 100px;
-/*   width:  */
-/*   overflow: scroll; */
-}
+/* Dropdown Popup */
 .dealerInfoPopup {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 400px;
+  overflow: scroll;
+/*   box-shadow: 1px 1px 1px 1px #666; */
+  border-radius: 5px;
+  background: #868585;
+  padding: 10px;
+/*   text-align: center; */
   display: none;
 }
 
-
-
-
-
-.map-title {
-	color: #fff;
-	font-family: sans-serif;
-	margin-bottom: 0;
-	font-size: 1.25em;
+.dealerInfoPopupStateTitle {
+  
 }
-#mapContainer {
-  width: 100%;
-/*   height: 1000px; */
-	padding: 2em;
+
+.dealerInfoPopupTitleSeperator {
+  
 }
-#alaskaSvg path {
-/*   width: 50px;  */
+
+.dealerContentContainer {
+  
 }
+
+.authorizedDealerIcon {
+  text-align: left;
+  width: 50px;
+}
+
+.authorizedDistributorIcon {
+  text-align: left;
+  width: 50px;
+}
+
+.dealerCompanyTitle {
+  margin-top: none;
+}
+
+.dealerLogoLink {
+  
+}
+
+.dealerLogo {
+  width: 80%;
+  margin: 0 auto;
+}
+   
+.dealerTelephone {
+  
+}
+                    
+.dealerFax {
+  
+}
+                    
+.dealerEmailLink {
+  
+}
+
+.dealerEmail {
+  
+}
+
+.dealerAddress {
+  
+}
+
+.dealerUrlLink {
+  
+}
+
+.dealerUrl {
+  
+}
+         
+.dealerSeperator {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Map styles */
 .state {
   fill: #868585;
 }
@@ -118,40 +160,26 @@ dealerTeleAndAddress
   fill: #c5370a;
 }
 
-/* .state:hover {
-	fill: #9c2600;
-	transition: fill .15s ease;
+#usaSVG {
+  position: relative;
+  top: -;
+  left: 0;
 }
 
-#alaskaSVG:hover {
-	fill: #9c2600;
-	transition: fill .15s ease;
-} */
+#alaskaSVG { 
+  position: relative;
+  top: -5%;
+  left: 55%;
+}
+
+#canadaSVG {
+  position: relative;
+  top: -18%;
+  left: -50%;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Sparkle Animation */
 #alabama {
 	-webkit-animation-name: sparkle;
 	animation-name: sparkle;

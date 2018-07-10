@@ -1,4 +1,12 @@
 $( function() {
+  $("#canada").css({
+    "fill": "#f05423",
+    "stroke": "#f05423",
+    "stroke-width": "2px",
+  });
+  $("#canada-content").css({
+    "display": "block"
+  });
   $("#stateSelector").selectmenu({
     change: function( event, data ) {
       $(".dealerInfoPopup").css({
@@ -11,7 +19,7 @@ $( function() {
       $("#" + data.item.value + "").css({
         "fill": "#f05423",
         "stroke": "#f05423",
-        "stroke-width": "5px",
+        "stroke-width": "2px",
       });
       $("#" + data.item.value + "-content").css({
         "display": "block"
