@@ -62,12 +62,11 @@ Class Structure for Info Popup
   border-radius: 5px;
   background: #868585;
   padding: 10px;
-/*   text-align: center; */
   display: none;
 }
 
 .dealerInfoPopupStateTitle {
-  
+    text-align: center;
 }
 
 .dealerInfoPopupTitleSeperator {
@@ -84,20 +83,21 @@ Class Structure for Info Popup
 }
 
 .authorizedDistributorIcon {
-  text-align: left;
   width: 50px;
 }
 
 .dealerCompanyTitle {
-  margin-top: none;
+  text-align: center;
+  margin-top: 0;
 }
 
 .dealerLogoLink {
-  
+  text-decoration: none;
 }
 
 .dealerLogo {
-  width: 80%;
+  width: 100%;
+  padding: 0 10px;
   margin: 0 auto;
 }
    

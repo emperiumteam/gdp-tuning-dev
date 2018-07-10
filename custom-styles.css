@@ -1,14 +1,17 @@
 /* CUSTOM STYLES */
 /* -----------------------------------------------
 TABLE OF CONTENTS:
-1. General Styles
-2. Home Page Hero Orange "GDP TUNING NOTCH"
-3. Home Page "Select Your Truck Section"
-4. Home Page "Tuners" section
-5. Home Page "Products" section
-6. Home Page "FIND YOUR CLOSEST DEALER OR DISTRIBUTOR" section
-7. Header right section for canadian link and social icons
-8. Manual Page - banner image/notch
+1.  General Styles
+2.  Home Page Hero Orange "GDP TUNING NOTCH"
+3.  Home Page "Select Your Truck Section"
+4.  Home Page "Tuners" section
+5.  Home Page "Products" section
+6.  Home Page "FIND YOUR CLOSEST DEALER OR DISTRIBUTOR" section
+7.  Header right section for canadian link and social icons
+8.  Manual Page - banner image/notch
+9.  manual page coming soon...
+10. Dealer Page - banner image/notch coming soon...
+11. Dealer Page - map, dropdown, etc
 ----------------------------------------------- */
 
 
@@ -650,3 +653,567 @@ body #cda-remove {
 /* -----------Manual Banner END------------------- */
 /* ----------------------------------------------- */
 
+
+
+
+
+
+/* ----------------------------------------------- */
+/* -------------9. Manual content----------------- */
+/* ----------------------------------------------- */
+
+
+/* ----------------------------------------------- */
+/* -----------Manual content END------------------ */
+/* ----------------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* ------------10. Dealer Banner Img/notch-------- */
+/* ----------------------------------------------- */
+
+
+/* ----------------------------------------------- */
+/* -----------Dealer Banner END------------------- */
+/* ----------------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* -----11. Dealer Page - Map/Dropdown------------ */
+/* ----------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#dealerPageHeader {
+  padding: 20px;
+  width: 50%;
+}
+#dealerPageContainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#locationContentContainer {
+  width: 25%;
+  height: 100%;
+}
+#mapContainer {
+  width: 75%;
+  padding: 0 50px;
+}
+
+
+/* 
+Class Structure for Info Popup
+.ui-selectmenu-button.ui-button
+.dealerInfoPopup
+    .dealerInfoPopupStateTitle
+    .dealerInfoPopupTitleSeperator
+
+    .dealerContentContainer
+        .authorizedDealerIcon
+        .authorizedDistributorIcon
+        .dealerCompanyTitle
+        .dealerLogoLink
+            .dealerLogo   
+        .dealerTelephone                    
+        .dealerFax                    
+        .dealerEmailLink
+            .dealerEmail
+        .dealerAddress
+        .dealerUrlLink
+            .dealerUrl         
+        .dealerSeperator 
+*/
+
+/* Dropdown */
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+}
+
+/* Dropdown Popup */
+.dealerInfoPopup {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 400px;
+  overflow: scroll;
+/*   box-shadow: 1px 1px 1px 1px #666; */
+  border-radius: 5px;
+  background: #868585;
+  padding: 10px;
+  display: none;
+}
+
+.dealerInfoPopupStateTitle {
+    text-align: center;
+}
+
+.dealerInfoPopupTitleSeperator {
+  
+}
+
+.dealerContentContainer {
+  
+}
+
+.authorizedDealerIcon {
+  text-align: left;
+  width: 50px;
+}
+
+.authorizedDistributorIcon {
+  width: 50px;
+}
+
+.dealerCompanyTitle {
+  text-align: center;
+  margin-top: 0;
+}
+
+.dealerLogoLink {
+  text-decoration: none;
+}
+
+.dealerLogo {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+   
+.dealerTelephone {
+  
+}
+                    
+.dealerFax {
+  
+}
+                    
+.dealerEmailLink {
+  
+}
+
+.dealerEmail {
+  
+}
+
+.dealerAddress {
+  
+}
+
+.dealerUrlLink {
+  
+}
+
+.dealerUrl {
+  
+}
+         
+.dealerSeperator {
+  
+}
+
+
+
+/* Map styles */
+.state {
+  fill: #868585;
+}
+
+.active-dealer {
+  fill: #c5370a;
+}
+
+#usaSVG {
+  position: relative;
+  top: -;
+  left: 0;
+}
+
+#alaskaSVG { 
+  position: relative;
+  top: -5%;
+  left: 55%;
+}
+
+#canadaSVG {
+  position: relative;
+  top: -18%;
+  left: -50%;
+}
+
+
+/* Sparkle Animation */
+#alabama {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#arizona {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+#arkansas {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#california {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+}
+
+#colorado {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+#connecticut {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.7s;
+	animation-duration: 2.7s;
+}
+
+#delaware {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.7s;
+	animation-duration: 2.7s;
+}
+
+#florida {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#georgia {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#idaho {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+#illinois{
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#indiana {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#iowa {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#kansas {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#kentucky {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#louisiana {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#maine {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 3.3s;
+	animation-duration: 3.3s;
+}
+
+#maryland {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#massachusetts {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+
+#michigan {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#minnesota {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#mississippi {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#missouri {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#montana{
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+#nebraska {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#nevada {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+#new-hampshire {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+}
+
+#new-jersey {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+}
+
+#new-mexico {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+#new-york {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#north-carolina {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#north-dakota {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#ohio {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#oklahoma {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#oregon {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+}
+
+#pennsylvania{
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#rhode-island {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+
+}
+
+#south-carolina {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+
+}
+
+#south-dakota {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#tennessee {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#texas {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.3s;
+	animation-duration: 1.3s;
+}
+
+#utah {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .7s;
+	animation-duration: .7s;
+}
+
+#vermont {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.7s;
+	animation-duration: 2.7s;
+}
+
+#virginia {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#washington {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+}
+
+#west-virginia {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.4s;
+	animation-duration: 2.4s;
+}
+
+#wisconsin {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1.7s;
+	animation-duration: 1.7s;
+}
+
+#wyoming{
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+
+@-webkit-keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------- */
+/* -----------------DEALER PAGE END--------------- */
+/* ----------------------------------------------- */
