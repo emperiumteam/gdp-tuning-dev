@@ -696,13 +696,14 @@ body #cda-remove {
   box-sizing: border-box;
 }
 #dealerPageHeader {
-  padding: 20px;
-  width: 50%;
+  padding: 5% 10% 2% 10%;
+  width: 100%;
+  margin: 0;
 }
 #dealerPageContainer {
   width: 100%;
   height: 100%;
-  padding: 10%;
+  padding: 2% 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,6 +761,8 @@ Class Structure for Info Popup
 
 .dealerInfoPopupStateTitle {
     text-align: center;
+  	font-size: 3em;
+  	margin: 0;
 }
 
 .dealerInfoPopupTitleSeperator {
@@ -846,17 +849,33 @@ Class Structure for Info Popup
 #alaskaSVG { 
   position: relative;
   top: -5%;
-  left: 64%;
+  left: 40%;
 }
 
 #canadaSVG {
   position: relative;
-  top: -30%;
-  left: -45%;
+  top: -29%;
+  left: -47%;
 }
-
+    
 
 /* Sparkle Animation */
+#alaska {
+  	-webkit-transform: translate(50%,0);
+  	transform: translate(50%,0);
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
+#canada {
+	-webkit-animation-name: sparkle;
+	animation-name: sparkle;
+	-webkit-animation-duration: 2.1s;
+	animation-duration: 2.1s;
+}
+
 #alabama {
 	-webkit-animation-name: sparkle;
 	animation-name: sparkle;
