@@ -6,24 +6,6 @@ TABLE OF CONTENTS:
 
 ----------------------------------------------- */
 $(document).ready(function () {
-
-    var jqueryScript = document.createElement('script');
-    jqueryScript.type = 'text/javascript';
-    jqueryScript.src = 'https://code.jquery.com/jquery-3.3.1.min.js';
-    document.getElementsByTagName('body')[0].appendChild(jqueryScript);
-
-    var jqueryUiScript = document.createElement('script');
-    jqueryUiScript.type = 'text/javascript';
-    jqueryUiScript.src = 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js';
-    document.getElementsByTagName('body')[0].appendChild(jqueryUiScript);
-
-    var jqueryUiCss = document.createElement('link');
-    jqueryUiCss.rel = 'stylesheet';
-    jqueryUiCss.type = 'text/css';
-    jqueryUiCss.href = 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
-    document.getElementsByTagName('head')[0].appendChild(jqueryUiCss);
-
-
     /* ----------------------------------------------- */
     /* ------------------1. SELECT YOUR TRUCK--------- */
     /* ----------------------------------------------- */
@@ -80,6 +62,13 @@ $(document).ready(function () {
     /* ----------------------------------------------- */
     /* ------------------2. Dealer Page - Map--------- */
     /* ----------------------------------------------- */
+  	var headTag = document.getElementsByTagName('head')[0];
+    var jqueryUiCss = document.createElement('link');
+    jqueryUiCss.rel = 'stylesheet';
+    jqueryUiCss.type = 'text/css';
+    jqueryUiCss.href = 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
+	headTag.insertBefore(jqueryUiCss, headTag.firstChild);
+  
     $(function () {
         $("#canada").css({
             "fill": "#f05423",
