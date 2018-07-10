@@ -5,8 +5,24 @@ TABLE OF CONTENTS:
 2. Dealer Page map selection
 
 ----------------------------------------------- */
+$(document).ready(function(){
+  $.getScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js");
+  $.getScript("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js");
+var jqueryScript = document.createElement('script');
+jqueryScript.src = 'https://code.jquery.com/jquery-3.3.1.min.js';
+jqueryScript.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(jqueryScript);
 
+var jqueryUiScript = document.createElement('script');
+jqueryUiScript.src = 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js';
+jqueryUiScript.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(jqueryUiScript);
 
+var jqueryUiCss = document.createElement('link');
+jqueryUiCss.rel = 'stylesheet';
+jqueryUiCss.type = 'css/text';
+jqueryUiCss.href = 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
+document.getElementsByTagName('head')[0].appendChild(jqueryUiCss);
 
 
 /* ----------------------------------------------- */
@@ -81,3 +97,4 @@ $( function() {
 /* ----------------------------------------------- */
 /* ------------------Dealer Page - Map END-------- */
 /* ----------------------------------------------- */
+});
