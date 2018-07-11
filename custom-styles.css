@@ -646,11 +646,11 @@ body #cda-remove {
 }
 
 #manualBannerImgNotch {
-  width: 30%;
-  bottom: -43px;
-  left: 0;
-  z-index: 99;
-  position: absolute;
+  	width: 30%;
+    margin-top: -3.1%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
 }
 /* ----------------------------------------------- */
 /* -----------Manual Banner END------------------- */
@@ -734,6 +734,10 @@ body #cda-remove {
   width: 100%;
 }
 
+#cumminsBanner {
+  margin-top: 60px;
+}
+
 #cumminsBanner, 
 #powerstrokeBanner,
 #duramaxBanner {
@@ -801,11 +805,11 @@ body #cda-remove {
 }
 
 #dealerBannerImgNotch {
-  width: 46%;
-  margin-top: -4.8%;
-  margin-left: -5px;
-  z-index: 99;
-  position: relative;
+	width: 30%;
+    margin-top: -3.1%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
 }
 /* ----------------------------------------------- */
 /* -----------Dealer Banner END------------------- */
@@ -875,17 +879,20 @@ Class Structure for Info Popup
 .ui-selectmenu-button.ui-button {
   width: 100%;
 }
+.ui-selectmenu-menu .ui-menu {
+	height: 400px;
+}
 
 /* Dropdown Popup */
 .dealerInfoPopup {
   margin-top: 20px;
   width: 100%;
-  max-height: 400px;
+  height: 674px;
   overflow: scroll;
 /*   box-shadow: 1px 1px 1px 1px #666; */
   border-radius: 5px;
   background: #868585;
-  padding: 10px;
+  padding: 25px;
   display: none;
 }
 
