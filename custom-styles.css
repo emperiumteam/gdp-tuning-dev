@@ -41,7 +41,7 @@ like it is supposed to...thanks to the style below: */
 .container,
 .tb_width_fixed,
 #wrapper:not(.container) > .tb_content_fixed > .row-wrap {
-  max-width: 2000px;
+  max-width: 2500px;
 }
 /* had to do this so to make the header lose margin, gain padding, color*/
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
@@ -741,13 +741,13 @@ body #cda-remove {
 #cumminsBanner, 
 #powerstrokeBanner,
 #duramaxBanner {
-  height: 50px;
+  display: block;
+  height: 150px;
   line-height: 50px;
-  background-color: #f05423;
   width: 100%;
 }
 
-#truckManualsSection div h1 {
+.manualPageHeadingImageContainer {
   width: 100%;
 }
 #truckManualsSection div {
@@ -781,6 +781,83 @@ body #cda-remove {
   border: 2px solid black;
   padding: 0 10px;
 }
+
+
+
+#powerstrokeBanner {
+    
+}
+
+.manualPageBannerContainer {
+    
+}
+
+#powerstrokeBannerImg {
+    
+}
+
+.manualPageBannerImg {
+    
+}
+
+
+#powerstrokeManuals {
+    
+}
+
+.manualPageHeadingImageContainer {
+    
+}
+
+.manualPageHeadingImage {
+    
+}
+
+
+.manualPageProduct {
+    position: relative;
+}
+
+.manualLink {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: orangered;
+}
+
+.troubleLink {
+    color: orangered;
+}
+
+      
+.fullWidth {
+    width: 80%;
+}
+
+.halfWidth {
+    width: 40%;
+}
+
+.thirdWidth {
+    width: 20%;
+}
+
+      
+.ezlynk {
+    
+}
+
+.ezlynkTrouble {
+    
+}
+
+.autocal {
+    
+}
+   
+
+
+
 /* ----------------------------------------------- */
 /* -----------Manual content END------------------ */
 /* ----------------------------------------------- */
