@@ -1795,24 +1795,19 @@ Class Structure for Info Popup
     #efiliveLogoTunersMOBILE {
         position: absolute;
         top: 50%;
-        left: 27%;
+        left: 5%;
         height: 20%;
     }
 
     #ezLogoTunersMOBILE {
         position: absolute;
         top: 50%;
-        left: 64%;
+        left: 50%;
         height: 20%;
     }
 
     #tunerLogosMobileText {
-        text-align: left;
-        position: absolute;
-        top: 70%;
-        height: 20%;
-        width: 100%;
-        padding: 5px 30px;
+        font-size: 2em;
     }
   	#sticky_header { visibility: hidden; }
 }
@@ -1821,6 +1816,15 @@ Class Structure for Info Popup
     /* Selectors and styles affecting screens UP TO 480px (Phone) */
     #closestDealerHeader a h1 {
         font-size: 0.9em;
+    }
+    #tunerLogosMobileText {
+        text-align: left;
+        position: absolute;
+        top: 75%;
+        padding: 6px 10%;
+        color: white;
+        font-size: 1.3em;
+        line-height: 1em;
     }
 }
 
