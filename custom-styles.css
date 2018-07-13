@@ -197,12 +197,12 @@ like it is supposed to...thanks to the style below: */
 }
 
 #powerstrokeTruck {
-    right: -15vw;
+    right: -15%;
 }
 
 #duramaxTruck,
 #cumminsTruck {
-    right: -90vw;
+    right: -100vw;
 }
 
 .buyKitButton {
@@ -1695,7 +1695,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 2133px) {
     #powerstrokeTruck {
-        right: -17vw;
+        right: -17%;
     }
 
     #mapContainer {
@@ -1705,7 +1705,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 1877px) {
     #powerstrokeTruck {
-        right: -27vw;
+        right: -27%;
     }
     #selectYourTruckContainer {
         margin-left: -53px;
@@ -1718,7 +1718,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 1674px) {
     #powerstrokeTruck {
-        right: -40vw;
+        right: -40%;
     }
 
     #selectYourTruckContainer {
@@ -1736,13 +1736,13 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 1532px) {
     #powerstrokeTruck {
-        right: -49vw;
+        right: -49%;
     }
 }
 
 @media screen and (max-width: 1400px) {
     #powerstrokeTruck {
-        right: -53vw;
+        right: -53%;
     }
 
     #selectYourTruckContainer {
