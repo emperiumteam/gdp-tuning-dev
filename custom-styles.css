@@ -1695,7 +1695,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 2133px) {
     #powerstrokeTruck {
-        right: -26vw;
+        right: -17vw;
     }
 
     #mapContainer {
@@ -1705,7 +1705,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 1877px) {
     #powerstrokeTruck {
-        right: -30vw;
+        right: -27vw;
     }
     #selectYourTruckContainer {
         margin-left: -53px;
@@ -1718,7 +1718,7 @@ Class Structure for Info Popup
 
 @media screen and (max-width: 1674px) {
     #powerstrokeTruck {
-        right: -32vw;
+        right: -40vw;
     }
 
     #selectYourTruckContainer {
@@ -1734,9 +1734,15 @@ Class Structure for Info Popup
     }
 }
 
+@media screen and (max-width: 1532px) {
+    #powerstrokeTruck {
+        right: -49vw;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #powerstrokeTruck {
-        right: -34vw;
+        right: -53vw;
     }
 
     #selectYourTruckContainer {
@@ -1762,7 +1768,7 @@ Class Structure for Info Popup
         margin-left: 0;
     }
     #selectYourTruckContainer {
-        height: 30vh;
+        height: 400px;
         margin-bottom: 60px;
     }
     #closestDealerHeader a h1 {
@@ -1818,7 +1824,7 @@ Class Structure for Info Popup
     }
 
     #selectYourTruckContainer {
-        height: 25vh;
+        height: 350px;
     }
 
     #mapContainer {
@@ -1875,6 +1881,9 @@ Class Structure for Info Popup
 
 @media (max-width: 480px) {
     /* Selectors and styles affecting screens UP TO 480px (Phone) */
+    #selectYourTruckContainer {
+        height: 150px;
+    }
     #selectYourTruckHeader {
         font-size: 2em;
     }
