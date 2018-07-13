@@ -70,12 +70,12 @@ $(document).ready(function () {
 	headTag.insertBefore(jqueryUiCss, headTag.firstChild);
   
     $(function () {
-        $("#canada").css({
+        $("#texas").css({
             "fill": "#f05423",
             "stroke": "#f05423",
             "stroke-width": "2px",
         });
-        $("#canada-content").css({
+        $("#texas-content").css({
             "display": "block"
         });
         $("#stateSelector").selectmenu({

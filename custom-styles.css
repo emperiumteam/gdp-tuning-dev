@@ -1,4 +1,5 @@
 /* CUSTOM STYLES */
+
 /* -----------------------------------------------
 TABLE OF CONTENTS:
 1.  General Styles
@@ -14,130 +15,177 @@ TABLE OF CONTENTS:
 11. Dealer Page - map, dropdown, etc
 ----------------------------------------------- */
 
-
-
-
 /* ----------------------------------------------- */
+
 /* ------------------1. GENERAL------------------- */
+
 /* ----------------------------------------------- */
+
 /* take out footer that gives credit to pavilion */
+
 #bottom {
-	display: none;
+    display: none;
 }
+
 /* had to do this so to make home page content full width: */
+
 /* in the drop down for the row, if you select full, it will actually go full width
 like it is supposed to...thanks to the style below: */
+
 #wrapper:not(.container) > .tb_width_fixed,
 #wrapper:not(.container) > .container,
-#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed
-{
-  margin-left: 0;
-  margin-right: 0;
+#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+    margin-left: 0;
+    margin-right: 0;
 }
-#content, #content > div > div {
-	padding: 0;
-  	margin: 0;
+
+@media screen and (min-width: 2000px) {
+    #wrapper:not(.container) > .tb_width_fixed,
+    #wrapper:not(.container) > .container,
+    #wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
+#content,
+#content > div > div {
+    padding: 0;
+    margin: 0;
+}
+
 .container,
 .tb_width_fixed,
 #wrapper:not(.container) > .tb_content_fixed > .row-wrap {
-  max-width: 2500px;
+    max-width: 2500px;
 }
+
 /* had to do this so to make the header lose margin, gain padding, color*/
+
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
-	padding: 25px 0;
-  	color: white;
+    background: linear-gradient(#000000 65%, #fff 35%);
+    padding: 12px 0 0;
+    color: white;
 }
+
 #Menu_X9U19E5w a:not(:hover) {
-	color: white;
+    color: white;
 }
+
 .row_Sv9uv {
-	background: #000000;
+    background: #000000;
 }
+
+/* welcome visitor link in header */
+
+@media screen and (max-width: 1260px) {
+    #HeaderWelcomeSystem_RxxdDvxf {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Foooter Html Block list items */
+
+#Html_Q5K89hjV > div > nav > ul > li {
+    margin-bottom: 5px;
+}
+/* sticky header fix */
+#sticky_header { 
+  visibility: visible;
+  padding: 20px 20px !important;
+}
+
 /* ----------------------------------------------- */
+
 /* ---------------------GENERAL END--------------- */
-/* ----------------------------------------------- */
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ------------------2. HERO NOTCH---------------- */
+
 /* ----------------------------------------------- */
+
 #gdpHeroBannerImg {
-  width: 46%;
-  margin-top: -4.4%;
-  margin-left: -5px;
-  z-index: 99;
-  position: relative;
+    width: 46%;
+    margin-top: -4.4%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
 }
+
 /* ----------------------------------------------- */
+
 /* ------------------HERO NOTCH END--------------- */
-/* ----------------------------------------------- */
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ------------------3. SELECT YOUR TRUCK--------- */
+
 /* ----------------------------------------------- */
+
 #selectYourTruckContainer {
-  margin-left: -72px;
-  width: 100%;
-  height: 40vh;
+    margin-left: -72px;
+    width: 100%;
+    height: 40vh;
 }
 
 #selectYourTruckHeader {
-	width: 60%;
-	text-align: center;
-  	margin: 20px 0 45px;
+    width: 60%;
+    text-align: center;
+    margin: 20px 0 45px;
 }
 
 #selectYourTruckHeader div {
-  display: inline-block;
+    display: inline-block;
 }
 
 #logosGroup {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .logosGroupFigure {
-	margin: 0 2vw;
+    margin: 0 2vw;
 }
 
 #logosGroup img {
-  height: 95px;
-  margin: 1em;
+    height: 95px;
+    margin: 1em;
 }
 
 #logosGroup a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 
 #trucksGroup {
-  width: 50%;
+    width: 50%;
 }
 
-#powerstrokeTruck, #duramaxTruck, #cumminsTruck {
+#powerstrokeTruck,
+#duramaxTruck,
+#cumminsTruck {
     position: absolute;
     top: -23px;
     height: 100%;
@@ -147,83 +195,99 @@ like it is supposed to...thanks to the style below: */
     right: -15vw;
 }
 
-#duramaxTruck, #cumminsTruck {
+#duramaxTruck,
+#cumminsTruck {
     right: -90vw;
 }
 
 .buyKitButton {
-  margin-top: 20px;
-  width: 50%;
-  background: #f05423;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
-  background-image: linear-gradient(to bottom, #f05423, #c5370a);
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 8px 13px 8px 13px;
-  text-decoration: none;
+    margin-top: 20px;
+    width: 50%;
+    background: #f05423;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
+    background-image: linear-gradient(to bottom, #f05423, #c5370a);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 13px 8px 13px;
+    text-decoration: none;
 }
 
 .buyKitButton:hover {
-  background: #9c2600;
-  text-decoration: none;
+    background: #9c2600;
+    text-decoration: none;
 }
+
 /* ----------------------------------------------- */
+
 /* ------------------SELECT YOUR TRUCK END-------- */
-/* ----------------------------------------------- */
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ------------------4. TUNERS------------------- */
+
 /* ----------------------------------------------- */
+
 #homeTunersImageSectionImg {
-  	width: 100%;
+    width: 100%;
 }
-#ezLogoTuners, #efiliveLogoTuners {
-  position: absolute;
-  top: 51%;
-  height: 20%;
+
+#tunerLogosMobile {
+    display: none;
 }
-#ezLogoTuners:hover, #efiliveLogoTuners:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-#ezLogoTuners {
-  left: 27%;
-}
+
+#ezLogoTuners,
 #efiliveLogoTuners {
-  left: 8%;
+    position: absolute;
+    top: 51%;
+    height: 20%;
 }
+
+#ezLogoTuners:hover,
+#efiliveLogoTuners:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#ezLogoTuners {
+    left: 27%;
+}
+
+#efiliveLogoTuners {
+    left: 8%;
+}
+
 /* ----------------------------------------------- */
+
 /* ---------------------TUNERS END--------------- */
-/* ----------------------------------------------- */
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ------------------4. PRODUCT CATEGORIES-------- */
+
 /* ----------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 #homeTunersImageSectionImg {
-	margin-bottom: 0; 
+    margin-bottom: 0;
 }
+
 #homeProdCategories {
-  width: 100%;
-  padding: 5% 0;
-  background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/black-pattern-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    padding: 5% 0;
+    background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/black-pattern-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grid {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -231,81 +295,88 @@ like it is supposed to...thanks to the style below: */
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
-  	width: 100%;
-  	-ms-flex-wrap: wrap;
-  	flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 /* Common style */
+
 .grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	width: calc(100%/3);
-  	min-width: 40%;
-  	height: 200px;
-	background: #323232;
-	text-align: center;
-	cursor: pointer;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: calc(100%/3);
+    min-width: 40%;
+    height: 200px;
+    background: #323232;
+    text-align: center;
+    cursor: pointer;
 }
 
 .grid figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
 }
 
 .grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+    word-spacing: -0.15em;
+    font-weight: 300;
 }
 
 #homeProdCategories > div > figure > figcaption > h2 > span {
-	font-weight: 800;
+    font-weight: 800;
 }
 
 .grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
-	pointer-events: none;
+    pointer-events: none;
 }
 
 .grid figure figcaption,
 .grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Anchor will cover the whole item by default */
+
 /* For some effects it will show as a button */
+
 .grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
 }
 
 
 /*---------------*/
+
 /***** Oscar *****/
+
 /*---------------*/
+
 figure.effect-oscar img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
 }
 
 /*figure.effect-oscar figcaption {
@@ -315,390 +386,425 @@ figure.effect-oscar img {
 }*/
 
 figure.effect-oscar figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #fff;
-	content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
 }
 
 figure.effect-oscar h2 {
-	margin: 7% 0 10px 0;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	transition: transform 0.35s, -webkit-transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-   	color: white !important;
+    margin: 50px 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    color: white !important;
 }
 
 figure.effect-oscar figcaption::before,
 figure.effect-oscar p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-	-webkit-transform: scale(0);
-	transform: scale(0);
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
 }
 
 figure.effect-oscar:hover h2 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 figure.effect-oscar:hover figcaption::before,
 figure.effect-oscar:hover p {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 figure.effect-oscar:hover figcaption {
-	background-color: rgba(58,52,42,0);
+    background-color: rgba(58, 52, 42, 0);
 }
 
 figure.effect-oscar:hover img {
-	opacity: 0.1;
+    opacity: 0.1;
 }
 
 @media screen and (max-width: 50em) {
-	.content {
-		padding: 0 10px;
-		text-align: center;
-	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
-	}
-  figure.effect-oscar h2 {
-    margin: 10% 0 10px 0;
-  }
+    .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+    /*
+    figure.effect-oscar h2 {
+        margin: 50px 0 10px 0;
+    }
+*/
 }
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
 
 .content {
-	background: #2f3238;
-	color: #fff;
-	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Raleway', Arial, sans-serif;
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 .content > h2 {
-	clear: both;
-	margin: 0;
-	padding: 4em 1% 0;
-	color: #484B54;
-	font-weight: 800;
-	font-size: 1.5em;
+    clear: both;
+    margin: 0;
+    padding: 4em 1% 0;
+    color: #484B54;
+    font-weight: 800;
+    font-size: 1.5em;
 }
 
 .content > h2:first-child {
-	padding-top: 0em;
+    padding-top: 0em;
 }
 
 /* Header */
+
 .codrops-header {
-	margin: 0 auto;
-	padding: 4em 1em;
-	text-align: center;
+    margin: 0 auto;
+    padding: 4em 1em;
+    text-align: center;
 }
 
 .codrops-header h1 {
-	margin: 0;
-	font-weight: 800;
-	font-size: 4em;
-	line-height: 1.3;
+    margin: 0;
+    font-weight: 800;
+    font-size: 4em;
+    line-height: 1.3;
 }
 
 .codrops-header h1 span {
-	display: block;
-	padding: 0 0 0.6em 0.1em;
-	color: #74777b;
-	font-weight: 300;
-	font-size: 45%;
+    display: block;
+    padding: 0 0 0.6em 0.1em;
+    color: #74777b;
+    font-weight: 300;
+    font-size: 45%;
 }
 
 /* Demo links */
+
 .codrops-demos {
-	clear: both;
-	padding: 1em 0 0;
-	text-align: center;
+    clear: both;
+    padding: 1em 0 0;
+    text-align: center;
 }
 
 .content + .codrops-demos {
-	padding-top: 5em;
+    padding-top: 5em;
 }
 
 .codrops-demos a {
-	display: inline-block;
-	margin: 0 5px;
-	padding: 1em 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .codrops-demos a:hover,
 .codrops-demos a:focus,
 .codrops-demos a.current-demo {
-	background: #3c414a;
-	color: #fff;
+    background: #3c414a;
+    color: #fff;
 }
 
 /* To Navigation Style */
+
 .codrops-top {
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 800;
-	font-size: 0.69em;
-	line-height: 2.2;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.69em;
+    line-height: 2.2;
 }
 
 .codrops-top a {
-	display: inline-block;
-	padding: 1em 2em;
-	text-decoration: none;
-	letter-spacing: 1px;
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .codrops-top span.right {
-	float: right;
+    float: right;
 }
 
 .codrops-top span.right a {
-	display: block;
-	float: left;
+    display: block;
+    float: left;
 }
 
 .codrops-icon:before {
-	margin: 0 4px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	line-height: 1;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
+    margin: 0 4px;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'codropsicons';
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
 }
 
 .codrops-icon-drop:before {
-	content: "\e001";
+    content: "\e001";
 }
 
 .codrops-icon-prev:before {
-	content: "\e004";
+    content: "\e004";
 }
 
 /* Related demos */
+
 .related {
-	clear: both;
-	padding: 6em 1em;
-	font-size: 120%;
+    clear: both;
+    padding: 6em 1em;
+    font-size: 120%;
 }
 
 .related > a {
-	display: inline-block;
-	margin: 20px 10px;
-	padding: 25px;
-	border: 1px solid #4f7f90;
-	text-align: center;
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 25px;
+    border: 1px solid #4f7f90;
+    text-align: center;
 }
 
 .related a:hover {
-	border-color: #39545e;
+    border-color: #39545e;
 }
 
 .related a img {
-	max-width: 100%;
-	opacity: 0.8;
+    max-width: 100%;
+    opacity: 0.8;
 }
 
 .related a:hover img,
 .related a:active img {
-	opacity: 1;
+    opacity: 1;
 }
 
 .related a h3 {
-	margin: 0;
-	padding: 0.5em 0 0.3em;
-	max-width: 300px;
-	text-align: left;
+    margin: 0;
+    padding: 0.5em 0 0.3em;
+    max-width: 300px;
+    text-align: left;
 }
 
 /* Demo ad design */
+
 body #cdawrap {
-	background: none;
-	top: 50px;
-	border: none;
+    background: none;
+    top: 50px;
+    border: none;
 }
 
 body #cdawrap a {
-	color: #fff !important;
+    color: #fff !important;
 }
 
 body #cda-remove {
-	color: #fff;
+    color: #fff;
 }
 
 @media screen and (max-width: 25em) {
-	.codrops-header {
-		font-size: 75%;
-	}
-	.codrops-icon span {
-		display: none;
-	}
+    .codrops-header {
+        font-size: 75%;
+    }
+    .codrops-icon span {
+        display: none;
+    }
 }
+
 /* ----------------------------------------------- */
+
 /* ---------------------PRODUCT CATEGORIES END---- */
-/* ----------------------------------------------- */
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ----6. FIND YOUR CLOSEST DEALER OR DISTRIBUTOR- */
+
 /* ----------------------------------------------- */
+
 #closestDealerHeader {
-  background-color: #f05423;
-  width: 60%;
-  margin: auto;
+    background-color: #f05423;
+    width: 60%;
+    margin: auto;
 }
 
 #closestDealerHeader:hover {
-	/*-webkit-box-shadow: none;
+    /*-webkit-box-shadow: none;
 	box-shadow: none;*/
     -webkit-box-shadow: 7px 7px 5px -2px #999999;
-  	box-shadow: 7px 7px 5px -2px #999999;
-  	-webkit-transform: scale(1.1);
-  	transform: scale(1.1);
+    box-shadow: 7px 7px 5px -2px #999999;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #closestDealerHeader a h1 {
-  font-size: 2.5em;
-  text-align: center;
-  width: 100%;
-  color: white;
-  margin: 50px 0;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 50px 0;
 }
 
 #closestDealerHeader a {
-  text-decoration:none;
-  color:white;
+    text-decoration: none;
+    color: white;
 }
+
 /* ----------------------------------------------- */
+
 /* --------------CLOSEST DEALER END--------------- */
-/* ----------------------------------------------- */
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ---------------7. header social and CAN LINK--- */
+
 /* ----------------------------------------------- */
+
 #canadaAndSocialLink {
-  text-align: right;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .canadianLink {
-  color: #f05323;
-  font-size: 13px;
+    color: #f05323;
+    font-size: 13px;
 }
 
 .canadianLink:hover {
-  color: white;
+    color: white;
 }
 
 .canadaAndSocialLinkItem {
-  text-decoration: none;
-  font-size: 1.2em;
-  margin: 0 10px;
-  line-height: 35px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    line-height: 35px;
 }
+
 /* ----------------------------------------------- */
+
 /* ---------------7. header sociaL/CAN END-------- */
-/* ----------------------------------------------- */
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* -------------8. Manual Banner Img/notch-------- */
+
 /* ----------------------------------------------- */
+
 #manualBannerImgContainer {
-  height: 35vh;
-  width: 100%;
-  overflow: hidden;
+    height: 35vh;
+    width: 100%;
+    overflow: hidden;
 }
+
 #manualBannerImg {
-  width: 100%;
+    width: 100%;
 }
 
 #manualBannerImgNotch {
-  	width: 30%;
+    width: 30%;
     margin-top: -3.1%;
     margin-left: -5px;
     z-index: 99;
     position: relative;
 }
+
 /* ----------------------------------------------- */
+
 /* -----------Manual Banner END------------------- */
-/* ----------------------------------------------- */
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* -------------9. Manual content----------------- */
+
 /* ----------------------------------------------- */
+
 #mainManualContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 #selectYourTruckManualsHeader {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 #manualTruckLogosContainer {
-  margin: 20px 10%;
-  width: 100%;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+    margin: 20px 10%;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .manualTruckLogosFigure {
-  margin: 0;
-  width: 30%;
-  text-align: center;
+    margin: 0;
+    width: 30%;
+    text-align: center;
 }
 
 #powerstrokeFigure {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 
 /* .manualTruckLogosFigure a {
@@ -718,46 +824,47 @@ body #cda-remove {
   
 } */
 
-
 #truckManualsSection {
-  width: 100%;
-  height: 1000px;
-  text-align:center;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
 }
+
 #truckManualsSection div {
-/*  padding: 0 5%;*/
+    /*  padding: 0 5%;*/
 }
 
 #cumminsManuals,
 #powerstrokeManuals,
 #duramaxManuals {
-  width: 100%;
+    width: 100%;
 }
 
 #cumminsBanner {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
-#cumminsBanner, 
+#cumminsBanner,
 #powerstrokeBanner,
 #duramaxBanner {
-  display: block;
-  height: 100px;
-  line-height: 100px;
-  width: 100%;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
 }
 
 
 #truckManualsSection div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
+
 /*
 .prodChild {
   text-align: center;
@@ -776,31 +883,19 @@ body #cda-remove {
 }
 */
 
+#powerstrokeBanner {}
+
+.manualPageBannerContainer {}
+
+#powerstrokeBannerImg {}
+
+.manualPageBannerImg {}
 
 
-#powerstrokeBanner {
-    
-}
-
-.manualPageBannerContainer {
-    
-}
-
-#powerstrokeBannerImg {
-    
-}
-
-.manualPageBannerImg {
-    
-}
-
-
-#powerstrokeManuals {
-    
-}
+#powerstrokeManuals {}
 
 .manualPageHeadingImageContainer {
-  width: 100%;
+    width: 100%;
 }
 
 .manualPageHeadingImage {
@@ -816,7 +911,7 @@ body #cda-remove {
 }
 
 .manualPageProductImage {
-    height: 300px;
+    height: 321px;
 }
 
 .manualLink {
@@ -825,142 +920,197 @@ body #cda-remove {
 }
 
 .troubleLink {
-  margin: 20px;
-  width: 50%;
-  background: #f05423;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
-  background-image: linear-gradient(to bottom, #f05423, #c5370a);
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 8px 13px 8px 13px;
-  text-decoration: none;
+    margin: 20px;
+    width: 50%;
+    background: #f05423;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
+    background-image: linear-gradient(to bottom, #f05423, #c5370a);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 13px 8px 13px;
+    text-decoration: none;
 }
 
 .troubleLink:hover {
-  background: #9c2600;
-  text-decoration: none;
+    background: #9c2600;
+    text-decoration: none;
 }
+
 .troubleLinkSpan {
     margin: 30px;
 }
 
 .fullWidth {
-    width: 800px;
+    width: 782px;
+    margin: 0 300px;
 }
 
 .halfWidth {
-    width: 400px;
+    width: 381px;
 }
 
 .thirdWidth {
-/*    width: 20%;*/
+    /*    width: 20%;*/
 }
 
-      
+
 .ezlynk {
     top: 59px;
     left: 23%;
 }
 
-.ezlynkTrouble {
-    
-}
+.ezlynkTrouble {}
 
 .autocal {
     top: 59px;
     left: 23%;
 }
-   
-#powerstrokeUpgradeOne { top: 85px; left: 90px; }
-#powerstrokeUpgradeTwo { top: 263px; left: 350px; }
-#powerstrokeUpgradeThree { top: 85px; left: 604px; }
-#powerstrokeUpgradeFour { top: 255px; left: 223px; }
-#powerstrokeUpgradeFive { top: 255px; left: 223px; }
 
-#powerstrokePosFiveOne { top: 211px; left: 364px; }
-#powerstrokePosFiveTwo { top: 211px; left: 592px; }
+#powerstrokeUpgradeOne {
+    top: 85px;
+    left: 90px;
+}
 
-#powerstrokePosSixOne { top: 174px; left: 108px; }
-#powerstrokePosSixTwo { top: 174px; left: 318px; }
-#powerstrokePosSixThree { top: 159px; left: 159px; }
-#powerstrokePosSixFour { top: 159px; left: 159px; }
+#powerstrokeUpgradeTwo {
+    top: 263px;
+    left: 350px;
+}
 
-#powerstrokeDigitalOne { top: 130px; left: 150px; }
-#powerstrokeDigitalTwo { top: 256px; left: 361px; }
-#powerstrokeDigitalThree { top: 130px; left: 568px; }
+#powerstrokeUpgradeThree {
+    top: 85px;
+    left: 604px;
+}
+
+#powerstrokeUpgradeFour {
+    top: 255px;
+    left: 223px;
+}
+
+#powerstrokeUpgradeFive {
+    top: 255px;
+    left: 223px;
+}
+
+#powerstrokePosFiveOne {
+    top: 211px;
+    left: 364px;
+}
+
+#powerstrokePosFiveTwo {
+    top: 211px;
+    left: 592px;
+}
+
+#powerstrokePosSixOne {
+    top: 174px;
+    left: 108px;
+}
+
+#powerstrokePosSixTwo {
+    top: 174px;
+    left: 318px;
+}
+
+#powerstrokePosSixThree {
+    top: 159px;
+    left: 159px;
+}
+
+#powerstrokePosSixFour {
+    top: 159px;
+    left: 159px;
+}
+
+#powerstrokeDigitalOne {
+    top: 130px;
+    left: 150px;
+}
+
+#powerstrokeDigitalTwo {
+    top: 270px;
+    left: 361px;
+}
+
+#powerstrokeDigitalThree {
+    top: 130px;
+    left: 568px;
+}
 
 .manualPageTroubleContainer {}
 
 
 /* ----------------------------------------------- */
+
 /* -----------Manual content END------------------ */
-/* ----------------------------------------------- */
-
-
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* ------------10. Dealer Banner Img/notch-------- */
+
 /* ----------------------------------------------- */
+
 #dealerBannerImgContainer {
-  height: 35vh;
-  width: 100%;
-  overflow: hidden;
+    height: 35vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 #dealerBannerImg {
-  width: 100%;
+    width: 100%;
 }
 
 #dealerBannerImgNotch {
-	width: 30%;
+    width: 30%;
     margin-top: -3.1%;
     margin-left: -5px;
     z-index: 99;
     position: relative;
 }
+
 /* ----------------------------------------------- */
+
 /* -----------Dealer Banner END------------------- */
-/* ----------------------------------------------- */
-
-
-
-
-
-
 
 /* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
 /* -----11. Dealer Page - Map/Dropdown------------ */
+
 /* ----------------------------------------------- */
+
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 #dealerPageHeader {
-  padding: 5% 10% 2% 10%;
-  width: 100%;
-  margin: 0;
+    padding: 5% 10% 2% 10%;
+    width: 100%;
+    margin: 0;
 }
+
 #dealerPageContainer {
-  width: 100%;
-  height: 100%;
-  padding: 2% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2% 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
+
 #locationContentContainer {
-  width: 25%;
-  height: 100%;
+    width: 25%;
+    height: 37vw;
 }
+
 #mapContainer {
-  width: 75%;
-  max-height: 800px;
-  padding: 0 0 0 130px;
+    width: 75%;
+    min-height: 650px;
+    padding: 0 0 0 130px;
 }
 
 
@@ -988,570 +1138,677 @@ Class Structure for Info Popup
 */
 
 /* Dropdown */
+
 .ui-selectmenu-button.ui-button {
-  width: 100%;
+    width: 100%;
+    cursor: pointer;
+    animation: pulse 2s 3;
+    animation-delay: 2s;
 }
+
+.ui-selectmenu-button.ui-button:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+        box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+        box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+        box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+    }
+}
+
 .ui-selectmenu-menu .ui-menu {
-	height: 400px;
+    height: 39vw;
+}
+
+.ui-selectmenu-text {
+    font-size: 1.2em;
 }
 
 /* Dropdown Popup */
+
 .dealerInfoPopup {
-  margin-top: 20px;
-  width: 100%;
-  height: 674px;
-  overflow: scroll;
-/*   box-shadow: 1px 1px 1px 1px #666; */
-  border-radius: 5px;
-  background: #868585;
-  padding: 25px;
-  display: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    /*   box-shadow: 1px 1px 1px 1px #666; */
+    border-radius: 5px;
+    background: #efefef;
+    padding: 25px;
+    display: none;
 }
 
 .dealerInfoPopupStateTitle {
     text-align: center;
-  	font-size: 3em;
-  	margin: 0;
+    font-size: 3em;
+    margin: 0;
 }
 
-.dealerInfoPopupTitleSeperator {
-  
-}
+.dealerInfoPopupTitleSeperator {}
 
-.dealerContentContainer {
-  
+.dealerContentContainer {}
+
+#locationContentContainer div hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 30px 0;
 }
 
 .authorizedDealerIcon {
-  text-align: left;
-  width: 50px;
+    text-align: left;
+    width: 50px;
 }
 
 .authorizedDistributorIcon {
-  width: 50px;
+    width: 50px;
 }
 
 .dealerCompanyTitle {
-  text-align: center;
-  margin-top: 0;
+    text-align: center;
+    margin-top: 0;
 }
 
 .dealerLogoLink {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .dealerLogo {
-  width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-   
-.dealerTelephone {
-  
-}
-                    
-.dealerFax {
-  
-}
-                    
-.dealerEmailLink {
-  
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
-.dealerEmail {
-  
-}
+.dealerTelephone {}
 
-.dealerAddress {
-  
-}
+.dealerFax {}
 
-.dealerUrlLink {
-  
-}
+.dealerEmailLink {}
 
-.dealerUrl {
-  
-}
-         
-.dealerSeperator {
-  
-}
+.dealerEmail {}
+
+.dealerAddress {}
+
+.dealerUrlLink {}
+
+.dealerUrl {}
+
+
 
 
 
 /* Map styles */
+
 .state {
-  fill: #868585;
+    fill: #ababab;
 }
 
 .active-dealer {
-  fill: #c5370a;
+    fill: #c5370a;
 }
 
 #usaSVG {
-  position: relative;
-  left: 0;
+    position: relative;
+    left: 0;
 }
 
-#alaskaSVG { 
-	position: relative;
+#alaskaSVG {
+    position: relative;
     top: -2%;
     left: 50%;
     width: 30%;
-    height: 16%;
+    height: 23%;
     overflow: hidden;
 }
 
 #canadaSVG {
-	position: relative;
-    top: -6%;
-    left: -20%;
-    width: 20%;
+    position: relative;
+    top: -8%;
+    left: -23%;
+    width: 26%;
 }
-    
+
 
 /* Sparkle Animation */
+
 #alaska {
-  	-webkit-transform: translate(45%,-24%);
-  	transform: translate(45%,-24%);
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-transform: translate(45%, -24%);
+    transform: translate(45%, -24%);
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #canada {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #alabama {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #arizona {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
 #arkansas {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
 #california {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .3s;
-	animation-duration: .3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
 }
 
 #colorado {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 #connecticut {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.7s;
-	animation-duration: 2.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
 }
 
 #delaware {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.7s;
-	animation-duration: 2.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
 }
 
 #florida {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #georgia {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #idaho {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
-#illinois{
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+#illinois {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
 #indiana {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #iowa {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
 #kansas {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #kentucky {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #louisiana {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
 #maine {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 3.3s;
-	animation-duration: 3.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3.3s;
+    animation-duration: 3.3s;
 }
 
 #maryland {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #massachusetts {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 #michigan {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #minnesota {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #mississippi {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
 #missouri {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
-#montana{
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
+#montana {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
 #nebraska {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #nevada {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
 #new-hampshire {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 #new-jersey {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.5s;
-	animation-duration: 2.5s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
 }
 
 #new-mexico {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 #new-york {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #north-carolina {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #north-dakota {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #ohio {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #oklahoma {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #oregon {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .3s;
-	animation-duration: .3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
 }
 
-#pennsylvania{
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+#pennsylvania {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #rhode-island {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 
 }
 
 #south-carolina {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 
 }
 
 #south-dakota {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #tennessee {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.1s;
-	animation-duration: 2.1s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
 }
 
 #texas {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.3s;
-	animation-duration: 1.3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
 }
 
 #utah {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
 }
 
 #vermont {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.7s;
-	animation-duration: 2.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
 }
 
 #virginia {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #washington {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: .3s;
-	animation-duration: .3s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
 }
 
 #west-virginia {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 2.4s;
-	animation-duration: 2.4s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
 }
 
 #wisconsin {
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1.7s;
-	animation-duration: 1.7s;
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
 }
 
-#wyoming{
-	-webkit-animation-name: sparkle;
-	animation-name: sparkle;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+#wyoming {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 
 @-webkit-keyframes sparkle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
 @keyframes sparkle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 /* ----------------------------------------------- */
+
 /* -----------------DEALER PAGE END--------------- */
+
 /* ----------------------------------------------- */
 
-
-
-
 /* ------------------------------------------------------------ */
+
 /* -----------------MOBILE/TABLET RESPONSIVENESS--------------- */
+
 /* ------------------------------------------------------------ */
-@media screen and (min-width: 2000px) {
-  #wrapper:not(.container) > .tb_width_fixed,
-  #wrapper:not(.container) > .container,
-  #wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed
-  {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 @media screen and (max-width: 2133px) {
-  #powerstrokeTruck {
-    right: -26vw;
-  }
-}
-@media screen and (max-width: 1877px) {
-  #powerstrokeTruck {
-    right: -36vw;
-  }
-}
-@media screen and (max-width: 1674px) {
-  #powerstrokeTruck {
-    right: -46vw;
-  }
-  #logosGroup, #selectYourTruckHeader {
-    margin-left: 40px;
-  }
-}
-@media screen and (max-width: 1373px) {
-  #trucksGroup {
-    display: none;
-  }
-  #logosGroup, #selectYourTruckHeader {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 1400px) {
-  #mapContainer {
-      max-height: 540px;
-  }
-}
-@media (max-width: 979px) {
-  /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+    #powerstrokeTruck {
+        right: -26vw;
+    }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 1877px) {
+    #powerstrokeTruck {
+        right: -36vw;
+    }
+}
+
+@media screen and (max-width: 1674px) {
+    #powerstrokeTruck {
+        right: -46vw;
+    }
+    #logosGroup,
+    #selectYourTruckHeader {
+        margin-left: 40px;
+    }
+    #mapContainer {
+        max-height: 654px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #mapContainer {
+        max-height: 540px;
+    }
+    #closestDealerHeader a h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 1373px) {
+    #trucksGroup {
+        display: none;
+    }
+    #logosGroup,
+    #selectYourTruckHeader,
+    #selectYourTruckContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+    #closestDealerHeader a h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 979px) {
+    /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+    #mapContainer {
+        width: 75%;
+        max-height: 460px;
+        padding: 0 0 0 55px;
+    }
+    #dealerPageContainer {
+        padding: 0 3% 0 8%;
+    }
+    #closestDealerHeader a h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
     /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+    #mapContainer {
+        display: none;
+    }
+    #locationContentContainer {
+        width: 80%;
+        height: 55vw;
+        margin: 2% auto 9%;
+    }
+    #closestDealerHeader {
+        width: 100%;
+    }
+    #closestDealerHeader a h1 {
+        font-size: 1.5em;
+        margin: 0 0;
+    }
+    /*    DESKTOP VERSION*/
+    #tunerLogos {
+        display: none;
+    }
+    /*    MOBILE/TABLET VERSION*/
+    #tunerLogosMobile {
+        display: block;
+    }
+    
+    #homeTunersImageSectionImgMOBILE {
+        width: 100%;
+    }
+
+    #efiliveLogoTunersMOBILE {
+        position: absolute;
+        top: 50%;
+        left: 27%;
+        height: 20%;
+    }
+
+    #ezLogoTunersMOBILE {
+        position: absolute;
+        top: 50%;
+        left: 64%;
+        height: 20%;
+    }
+
+    #tunerLogosMobileText {
+        text-align: left;
+        position: absolute;
+        top: 70%;
+        height: 20%;
+        width: 100%;
+        padding: 5px 30px;
+    }
+  	#sticky_header { visibility: hidden; }
 }
 
 @media (max-width: 480px) {
     /* Selectors and styles affecting screens UP TO 480px (Phone) */
+    #closestDealerHeader a h1 {
+        font-size: 0.9em;
+    }
+  	#dealerBannerImgContainer {
+      height: 15vh;
+	}
 }
 
 /* ------------------------------------------------------------ */
+
 /* -----------------MOBILE/TABLET RESPONSIVENESS END----------- */
+
 /* ------------------------------------------------------------ */
-
-
-
-
