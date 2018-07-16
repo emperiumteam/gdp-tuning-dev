@@ -137,7 +137,7 @@ $(document).ready(function () {
         e.preventDefault();
         var section = $(this).attr("href");
         $("html, body").animate({
-            scrollTop: $(section).offset().top - 160
+            scrollTop: $(section).offset().top - 380
         });
     });
 });
