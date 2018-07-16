@@ -797,6 +797,7 @@ body #cda-remove {
 #selectYourTruckManualsHeader {
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #manualTruckLogosContainer {
@@ -813,31 +814,19 @@ body #cda-remove {
 
 .manualTruckLogosFigure {
     margin: 0;
-    width: 30%;
+    width: 23%;
     text-align: center;
+    height: 100%;
+}
+
+.manualTruckLogosFigure a img {
+    height: 100%;
 }
 
 #powerstrokeFigure {
     border-left: 3px solid black;
     border-right: 3px solid black;
 }
-
-/* .manualTruckLogosFigure a {
-  
-}
-.manualTruckLogosFigure a img {
-
-} 
-
-#powerstrokeManualsLogoLink {
-
-}
-#duramaxManualsLogoLink {
-
-}
-#cumminsManualsLogoLink {
-  
-} */
 
 #truckManualsSection {
     width: 100%;
@@ -864,7 +853,6 @@ body #cda-remove {
 #duramaxBanner {
     display: block;
     height: 100px;
-    line-height: 100px;
     width: 100%;
 }
 
@@ -900,7 +888,9 @@ body #cda-remove {
 
 #powerstrokeBanner {}
 
-.manualPageBannerContainer {}
+.manualPageBannerContainer {
+    margin-top: 70px;
+}
 
 #powerstrokeBannerImg {}
 
@@ -983,17 +973,17 @@ body #cda-remove {
 }
 
 #powerstrokeUpgradeOne {
-    top: 85px;
+    top: 90px;
     left: 90px;
 }
 
 #powerstrokeUpgradeTwo {
-    top: 263px;
+    top: 275px;
     left: 350px;
 }
 
 #powerstrokeUpgradeThree {
-    top: 85px;
+    top: 90px;
     left: 604px;
 }
 
@@ -1689,7 +1679,7 @@ Class Structure for Info Popup
 
 /* ------------------------------------------------------------ */
 
-/* -----------------MOBILE/TABLET RESPONSIVENESS--------------- */
+/* -----------------MOBILE/TABLET/LAPTOP/EXLG-TV RESPONSIVENESS--------------- */
 
 /* ------------------------------------------------------------ */
 
@@ -1713,6 +1703,10 @@ Class Structure for Info Popup
     
     #mapContainer {
         height: 710px;
+    }
+    
+    .manualTruckLogosFigure {
+        width: 30%;
     }
 }
 
@@ -1778,14 +1772,30 @@ Class Structure for Info Popup
     #mapContainer {
         height: 523px;
     }
+    .manualPageBannerContainer {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #mapContainer {
         height: 503px;
     }
-    #dealerBannerImgContainer {
-        height: 15vh;
+    #dealerBannerImgContainer,
+    #manualBannerImgContainer {
+        height: 165px;
+    }
+        
+    .manualTruckLogosFigure {
+        margin: 0 12px;
+        height: 87%;
+    }
+    
+    .manualTruckLogosFigure a img {
+        height: 100%;
+    }
+    .manualPageBannerContainer {
+        margin-top: 50px;
     }
 }
 
@@ -1801,6 +1811,18 @@ Class Structure for Info Popup
     }
     #closestDealerHeader a h1 {
         font-size: 1.2em;
+    }
+    
+    #selectYourTruckManualsHeader {
+        font-size: 52px;
+    }
+    .manualTruckLogosFigure {
+        margin: 0;
+        height: 57%;
+    }
+    
+    .manualPageBannerContainer {
+        margin-top: 4px;
     }
 }
 
@@ -1877,6 +1899,20 @@ Class Structure for Info Popup
     #sticky_header {
         visibility: hidden;
     }
+    
+    #selectYourTruckManualsHeader {
+        font-size: 45px;
+    }
+    #manualTruckLogosContainer {
+        margin: 20px 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    #selectYourTruckManualsHeader {
+        font-size: 39px;
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1911,6 +1947,21 @@ Class Structure for Info Popup
 
     #tunerLogosMobileText {
         font-size: 1.2em;
+    }
+    
+    #selectYourTruckManualsHeader {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+    
+    #powerstrokeFigure {
+        border-left: none;
+        border-right: none;
+    }
+    
+    #manualTruckLogosContainer {
+        margin: 0;
+        height: 55px;
     }
 }
 
