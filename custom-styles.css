@@ -294,7 +294,7 @@ like it is supposed to...thanks to the style below: */
 #homeProdCategories {
     width: 100%;
     padding: 5% 0;
-    background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/black-pattern-background.jpg");
+    background-image: url("/image/catalog/homepage/GDP Background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -918,12 +918,12 @@ body #cda-remove {
 
 .headingEven {
     position: relative;
-    right: 10%;
+    right: 20.1%;
 }
 
 .headingOdd {
     position: relative;
-    left: 10%;
+    left: 20.1%;
 }
 
 .manualPageHeadingImage {
@@ -946,6 +946,7 @@ body #cda-remove {
     font-size: 2em;
     color: #f05323 !important;
     text-transform: uppercase;
+    font-family: montserrat;
 }
 
 .manualLink:hover {
@@ -954,26 +955,43 @@ body #cda-remove {
 #howToTroubleContainer {
     justify-content: flex-start !important;
 }
+.troubleTable {
+    width: 100%;
+}
+.troubleTableRow {
+    width:100%;
+}
+.troubleTableLeftCell {
+    width:80%;
+}
+.troubleTableRightCell {
+    width:20%;
+    padding: 0 !important;
+}
+.troubleLinkText {
+    font-size: 2em;
+}
+.manualLink {
+    position: absolute;
+    font-size: 2em;
+    color: #f05323 !important;
+    text-transform: uppercase;
+}
+
+.manualLink:hover {
+    color: black !important;
+}
 .troubleLink {
-    margin: 20px;
-    width: 50%;
-    background: #f05423;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
-    background-image: linear-gradient(to bottom, #f05423, #c5370a);
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 8px 13px 8px 13px;
-    text-decoration: none;
+    position: absolute;
+    font-size: 2em;
+    color: #f05323 !important;
+    text-transform: uppercase;
+    font-family: montserrat;
+    line-height: 0;
 }
 
 .troubleLink:hover {
-    background: #9c2600;
-    text-decoration: none;
-}
-
-.troubleLinkSpan {
-    margin: 30px;
+    color: black !important;
 }
 
 .fullWidth {
@@ -1003,77 +1021,77 @@ body #cda-remove {
 
 #powerstrokeUpgradeOne {
     top: 116px;
-    left: 101px;
+    left: 96px;
 }
 
 #powerstrokeUpgradeTwo {
     top: 357px;
-    left: 465px;
+    left: 460px;
 }
 
 #powerstrokeUpgradeThree {
     top: 116px;
-    left: 812px;
+    left: 808px;
 }
 
 #powerstrokeUpgradeFour {
     top: 361px;
-    left: 268px;
+    left: 262px;
 }
 
 #powerstrokeUpgradeFive {
     top: 361px;
-    left: 83px;
+    left: 78px;
 }
 
 #powerstrokePosFiveOne {
     top: 285px;
-    left: 467px;
+    left: 460px;
 }
 
 #powerstrokePosFiveTwo {
     top: 285px;
-    left: 806px;
+    left: 800px;
 }
 
 #powerstrokePosSixOne {
     top: 286px;
-    left: 99px;
+    left: 92px;
 }
 
 #powerstrokePosSixTwo {
     top: 286px;
-    left: 425px;
+    left: 420px;
 }
 
 #powerstrokePosSixThree {
     top: 354px;
-    left: 241px;
+    left: 238px;
 }
 
 #powerstrokePosSixFour {
     top: 354px;
-    left: 692px;
+    left: 687px;
 }
 
 #powerstrokeDigitalOne {
     top: 184px;
-    left: 138px;
+    left: 132px;
 }
 
 #powerstrokeDigitalTwo {
     top: 368px;
-    left: 465px;
+    left: 460px;
 }
 
 #powerstrokeDigitalThree {
     top: 184px;
-    left: 788px;
+    left: 782px;
 }
 
 .manualPageTroubleContainer {
     background-color:white;
-    padding: 15px;
+    padding: 22px 45px;
 }
 
 
