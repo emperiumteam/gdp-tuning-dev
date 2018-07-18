@@ -629,13 +629,9 @@ figure.effect-oscar:hover img {
     border-right: 3px solid black;
 }
 
-#truckManualsSection {
+.truckManualsSection {
     width: 100%;
     text-align: center;
-}
-
-#truckManualsSection div {
-    /*  padding: 0 5%;*/
 }
 
 #cumminsManuals,
@@ -656,8 +652,7 @@ figure.effect-oscar:hover img {
     width: 100%;
 }
 
-
-#truckManualsSection div {
+.manualSubContainers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,6 +661,8 @@ figure.effect-oscar:hover img {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20%;
 }
 
 /*
@@ -702,41 +699,35 @@ figure.effect-oscar:hover img {
     margin: auto;
 }
 
-.manualSubContainers {
-    width: 80%;
-}
-
 .manualPageHeadingImageContainer {
     width: 100%;
 }
 
 .headingEven {
     position: relative;
-    right: 20.1%;
+    transform: translateX(-50%) translateX(543px);
+    transform-origin: center left;
 }
 
 .headingOdd {
     position: relative;
-    left: 20.1%;
+    transform: translateX(50%) translateX(-543px);
+    transform-origin: center left;
 }
 
 .manualPageHeadingImage {
-    height: 66px;
+    width: 100vw;
     margin: 80px 0 20px;
 }
 
 .manualPageProduct {
     border 1px solid grey;
     position: relative;
-    margin: 14px;
+    margin: 13px;
 }
 
 .manualPageProductImage {
     height: 440px;
-}
-
-#howToTroubleContainer {
-    justify-content: flex-start !important;
 }
 
 .troubleTable {
@@ -772,6 +763,12 @@ figure.effect-oscar:hover img {
     color: black !important;
 }
 
+.manualPageTroubleContainer {
+    background-color: white;
+    padding: 22px 45px;
+    justify-content: flex-start !important;
+}
+
 .troubleLink {
     position: absolute;
     color: #f05323 !important;
@@ -797,94 +794,194 @@ figure.effect-oscar:hover img {
     /*    width: 20%;*/
 }
 
-
+/*Link Positioning*/
 .ezlynk {
-    top: 89px;
+    top: 19%;
     left: 34%;
 }
-
-.ezlynkTrouble {}
 
 .autocal {
-    top: 89px;
+    top: 19%;
     left: 34%;
 }
 
+.ecmUnlock {
+    top: 46%;
+    left: 62%;
+}
+
+/* POWERSTROKE */
 #powerstrokeUpgradeOne {
-    top: 116px;
-    left: 96px;
+    top: 26%;
+    left: 9%;
 }
 
 #powerstrokeUpgradeTwo {
-    top: 357px;
-    left: 460px;
+    top: 80%;
+    left: 43%;
 }
 
 #powerstrokeUpgradeThree {
-    top: 116px;
-    left: 808px;
+    top: 26%;
+    left: 75%;
 }
 
 #powerstrokeUpgradeFour {
-    top: 361px;
-    left: 262px;
+    top: 80%;
+    left: 50%;
 }
 
 #powerstrokeUpgradeFive {
-    top: 361px;
-    left: 78px;
+    top: 80%;
+    left: 18%;
 }
 
 #powerstrokePosFiveOne {
-    top: 285px;
-    left: 460px;
+    top: 65%;
+    left: 43%;
 }
 
 #powerstrokePosFiveTwo {
-    top: 285px;
-    left: 800px;
+    top: 65%;
+    left: 74%;
 }
 
 #powerstrokePosSixOne {
-    top: 286px;
-    left: 92px;
+    top: 64%;
+    left: 9%;
 }
 
 #powerstrokePosSixTwo {
-    top: 286px;
-    left: 420px;
+    top: 64%;
+    left: 39%;
 }
 
 #powerstrokePosSixThree {
-    top: 354px;
-    left: 238px;
+    top: 79%;
+    left: 23%;
 }
 
 #powerstrokePosSixFour {
-    top: 354px;
-    left: 687px;
+    top: 79%;
+    left: 64%;
 }
 
 #powerstrokeDigitalOne {
-    top: 184px;
-    left: 132px;
+    top: 41%;
+    left: 12%;
 }
 
 #powerstrokeDigitalTwo {
-    top: 368px;
-    left: 460px;
+    top: 82%;
+    left: 42%;
 }
 
 #powerstrokeDigitalThree {
-    top: 184px;
-    left: 782px;
+    top: 41%;
+    left: 72%;
 }
 
-.manualPageTroubleContainer {
-    background-color: white;
-    padding: 22px 45px;
+/* CUMMINS */
+#cumminsUpgradeOne {
+    top: 87%;
+    left: 52%;
 }
 
+#cumminsUpgradeTwo {
+    top: 87%;
+    left: 15%;
+}
+
+#cumminsUpgradeThree {
+    top: 30%;
+    left: 51%;
+}
+
+#cumminsUpgradeFour {
+    top: 41%;
+    left: 11%;
+}
+
+#cumminsPosFiveOne {
+    top: 59%;
+    left: 18%;
+}
+
+#cumminsDigitalOne {
+    top: 60%;
+    left: 63%;
+}
+
+/* DURAMAX */
+#duramaxUpgradeOne {
+    top: 86%;
+    left: 53%;
+}
+
+#duramaxUpgradeTwo {
+    top: 86%;
+    left: 14%;
+}
+
+#duramaxUpgradeThree {
+    top: 31%;
+    left: 52%;
+}
+
+#duramaxUpgradeFour {
+    top: 31%;
+    left: 13%;
+}
+
+#duramaxPosFiveOne {
+    top: 38%;
+    left: 64%;
+}
+
+#duramaxPosFiveTwo {
+    top: 69%;
+    left: 64%;
+}
+
+#duramaxPosFiveThree {
+    top: 55%;
+    left: 15%;
+}
+
+#duramaxPosSixOne {
+    top: 38%;
+    left: 68%;
+}
+
+#duramaxPosSixTwo {
+    top: 68%;
+    left: 68%;
+}
+
+#duramaxDigitalOne {
+    top: 28%;
+    left: 11%;
+}
+
+#duramaxDigitalTwo {
+    top: 59%;
+    left: 18%;
+}
+
+#duramaxDigitalThree {
+    top: 87%;
+    left: 43%;
+}
+
+#duramaxDigitalFour {
+    top: 59%;
+    left: 68%;
+}
+
+#duramaxDigitalFive {
+    top: 28%;
+    left: 75%;
+}
 
 /* ----------------------------------------------- */
 
