@@ -63,6 +63,7 @@ like it is supposed to...thanks to the style below: */
 /* had to do this so to make the header lose margin, gain padding, color*/
 
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #000000), color-stop(35%, #fff));
     background: linear-gradient(#000000 65%, #fff 35%);
     padding: 12px 0 0;
     color: white;
@@ -140,8 +141,15 @@ like it is supposed to...thanks to the style below: */
     margin-left: -72px;
     width: 100%;
     height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -652,18 +660,6 @@ figure.effect-oscar:hover img {
     width: 100%;
 }
 
-.manualSubContainers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0 20%;
-}
 
 /*
 .prodChild {
@@ -699,20 +695,34 @@ figure.effect-oscar:hover img {
     margin: auto;
 }
 
+
+
+:root {
+    --manpagesize: 1080px;
+    --fullmargin: 20px;
+    --shiftpercentodd: 50%;
+    
+    --oddheadshift: calc(var(--manpagesize) / 2);
+    --evenheadshift: calc(var(--oddheadshift) * -1);
+    --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+    --halfmarginmiddle: calc(var(--fullmargin) / 2); 
+}
+
+.manualSubContainers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: var(--manpagesize);
+    margin: auto;
+}
+
 .manualPageHeadingImageContainer {
     width: 100%;
-}
-
-.headingEven {
-    position: relative;
-    transform: translateX(-50%) translateX(543px);
-    transform-origin: center left;
-}
-
-.headingOdd {
-    position: relative;
-    transform: translateX(50%) translateX(-543px);
-    transform-origin: center left;
 }
 
 .manualPageHeadingImage {
@@ -720,15 +730,63 @@ figure.effect-oscar:hover img {
     margin: 80px 0 20px;
 }
 
-.manualPageProduct {
-    border 1px solid grey;
-    position: relative;
-    margin: 13px;
+.manualPageTroubleContainer {
+    background-color: white;
+    padding: 22px 45px;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    width: var(--manpagesize);
 }
 
-.manualPageProductImage {
-    height: 440px;
+.manualPageProduct {
+    position: relative;
 }
+
+.headingEven {
+    position: relative;
+    -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.headingOdd {
+    position: relative;
+    -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.fullWidth {
+    margin-top: var(--fullmargin);
+    margin-bottom: var(--fullmargin);
+}
+.halfWidth {
+    
+}
+.manualPageProductImage {
+    
+}
+
+.fullWidth .manualPageProductImage {
+    width: var(--manpagesize);
+    display: block;
+}
+
+.halfWidth .manualPageProductImage {
+    width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 .troubleTable {
     width: 100%;
@@ -763,12 +821,6 @@ figure.effect-oscar:hover img {
     color: black !important;
 }
 
-.manualPageTroubleContainer {
-    background-color: white;
-    padding: 22px 45px;
-    justify-content: flex-start !important;
-}
-
 .troubleLink {
     position: absolute;
     color: #f05323 !important;
@@ -782,19 +834,8 @@ figure.effect-oscar:hover img {
     color: black !important;
 }
 
-.fullWidth {
-    width: 1083px;
-}
-
-.halfWidth {
-    width: 530px;
-}
-
-.thirdWidth {
-    /*    width: 20%;*/
-}
-
 /*Link Positioning*/
+
 .ezlynk {
     top: 19%;
     left: 34%;
@@ -811,6 +852,7 @@ figure.effect-oscar:hover img {
 }
 
 /* POWERSTROKE */
+
 #powerstrokeUpgradeOne {
     top: 26%;
     left: 9%;
@@ -882,6 +924,7 @@ figure.effect-oscar:hover img {
 }
 
 /* CUMMINS */
+
 #cumminsUpgradeOne {
     top: 87%;
     left: 52%;
@@ -913,6 +956,7 @@ figure.effect-oscar:hover img {
 }
 
 /* DURAMAX */
+
 #duramaxUpgradeOne {
     top: 86%;
     left: 53%;
@@ -1025,11 +1069,6 @@ figure.effect-oscar:hover img {
 
 /* ----------------------------------------------- */
 
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 #dealerPageHeader {
     padding: 0 0 15px 0;
     width: 100%;
@@ -1092,11 +1131,14 @@ Class Structure for Info Popup
 .ui-selectmenu-button.ui-button {
     width: 100%;
     cursor: pointer;
+    -webkit-animation: pulse 2s 3;
     animation: pulse 2s 3;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
 
 .ui-selectmenu-button.ui-button:hover {
+    -webkit-animation: none;
     animation: none;
 }
 
@@ -1114,15 +1156,15 @@ Class Structure for Info Popup
 
 @keyframes pulse {
     0% {
-        -moz-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
         box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
     }
     70% {
-        -moz-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+        -webkit-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
         box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
     }
     100% {
-        -moz-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
         box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
     }
 }
@@ -1158,6 +1200,7 @@ Class Structure for Info Popup
 #locationContentContainer div hr {
     border: 0;
     height: 2px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     margin: 30px 0;
 }
@@ -1649,6 +1692,26 @@ Class Structure for Info Popup
     .manualTruckLogosFigure {
         width: 30%;
     }
+
+    /* MANUAL PAGE FLEX CHILDREN & HEADERS */
+/*
+    .manualPageProductImage {
+        height: 400px;
+    }
+    
+    .headingEven {
+        position: relative;
+        transform: translateX(-50%) translateX(486px);
+        transform-origin: center left;
+    }
+
+    .headingOdd {
+        position: relative;
+        transform: translateX(50%) translateX(-486px);
+        transform-origin: center left;
+    }
+*/
+    /*    MANUAL PAGE FLEX CHILDREN & HEADERS*/
 }
 
 @media screen and (max-width: 1674px) {
