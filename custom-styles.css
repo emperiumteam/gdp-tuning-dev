@@ -98,9 +98,10 @@ like it is supposed to...thanks to the style below: */
     padding: 20px 20px !important;
 }
 
-/*foooter child margin class*/
-.footerChildMargin {
-    margin-left: 32px;
+/*foooter bg*/
+
+#footer {
+    background-color: black;
 }
 
 /* ----------------------------------------------- */
@@ -171,6 +172,11 @@ like it is supposed to...thanks to the style below: */
 #logosGroup img {
     height: 95px;
     margin: 1em;
+}
+
+#logosGroup img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #logosGroup a {
@@ -417,11 +423,21 @@ figure.effect-oscar:hover img {
     opacity: 0.1;
 }
 
-@media screen and (max-width: 50em) {
-    .content {
-        padding: 0 10px;
-        text-align: center;
+@media screen and (max-width: 1200px) {
+    .grid figure {
+        height: 165px;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid figure {
+        min-width: 89%;
+        height: 200px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .grid figure {
         display: inline-block;
         float: none;
@@ -431,6 +447,11 @@ figure.effect-oscar:hover img {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .grid figure {
+        height: 115px;
+    }
+}
 
 /* ----------------------------------------------- */
 
@@ -558,6 +579,7 @@ figure.effect-oscar:hover img {
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 #content {
@@ -591,6 +613,11 @@ figure.effect-oscar:hover img {
     width: 23%;
     text-align: center;
     height: 100%;
+}
+
+.manualTruckLogosFigure img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .manualTruckLogosFigure a img {
@@ -708,18 +735,6 @@ figure.effect-oscar:hover img {
     height: 440px;
 }
 
-.manualLink {
-    position: absolute;
-    font-size: 2em;
-    color: #f05323 !important;
-    text-transform: uppercase;
-    font-family: montserrat;
-}
-
-.manualLink:hover {
-    color: black !important;
-}
-
 #howToTroubleContainer {
     justify-content: flex-start !important;
 }
@@ -747,9 +762,10 @@ figure.effect-oscar:hover img {
 
 .manualLink {
     position: absolute;
-    font-size: 2em;
     color: #f05323 !important;
     text-transform: uppercase;
+    font-family: montserrat;
+    font-size: 1.6em;
 }
 
 .manualLink:hover {
@@ -758,11 +774,11 @@ figure.effect-oscar:hover img {
 
 .troubleLink {
     position: absolute;
-    font-size: 2em;
     color: #f05323 !important;
     text-transform: uppercase;
-    font-family: montserrat;
     line-height: 0;
+    font-family: montserrat;
+    font-size: 1.6em;
 }
 
 .troubleLink:hover {
@@ -883,7 +899,7 @@ figure.effect-oscar:hover img {
 /* ----------------------------------------------- */
 
 #dealerBannerImgContainer {
-    height: 35vh;
+    height: 475px;
     width: 100%;
     overflow: hidden;
 }
@@ -918,9 +934,12 @@ figure.effect-oscar:hover img {
 }
 
 #dealerPageHeader {
-    padding: 5% 10% 2% 10%;
+    padding: 0 0 15px 0;
     width: 100%;
     margin: 0;
+    font-size: 1.8em;
+    line-height: 1.5;
+    text-align: center;
 }
 
 #dealerPageContainer {
@@ -1020,7 +1039,7 @@ Class Structure for Info Popup
 .dealerInfoPopup {
     margin-top: 20px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     overflow: scroll;
     /*   box-shadow: 1px 1px 1px 1px #666; */
     border-radius: 5px;
@@ -1067,7 +1086,7 @@ Class Structure for Info Popup
 .dealerLogo {
     width: 100%;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .dealerTelephone {}
@@ -1574,6 +1593,12 @@ Class Structure for Info Popup
     #closestDealerHeader a h1 {
         font-size: 2.2em;
     }
+    .dealerCompanyTitle {
+        font-size: 1.7em;
+    }
+    .dealerUrlLink {
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 1373px) {
@@ -1608,7 +1633,7 @@ Class Structure for Info Popup
     }
     #dealerBannerImgContainer,
     #manualBannerImgContainer {
-        height: 165px;
+        height: 300px;
     }
 
     .manualTruckLogosFigure {
@@ -1739,12 +1764,26 @@ Class Structure for Info Popup
     #manualTruckLogosContainer {
         margin: 20px 3%;
     }
+
+    #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
+        background: white;
+        padding: 12px 0 10px;
+        color: white;
+    }
+
+    #dealerBannerImgContainer,
+    #manualBannerImgContainer {
+        height: 250px;
+    }
 }
 
 @media (max-width: 600px) {
     #selectYourTruckManualsHeader {
         font-size: 39px;
         margin: 0;
+    }
+    #dealerPageHeader {
+        font-size: 1.3em;
     }
 }
 
@@ -1765,7 +1804,6 @@ Class Structure for Info Popup
     .buyKitButton {
         margin-top: 8px;
         width: 70%;
-        border-radius: 0px;
         font-size: 11px;
         padding: 3px 3px;
     }
@@ -1795,6 +1833,16 @@ Class Structure for Info Popup
     #manualTruckLogosContainer {
         margin: 0;
         height: 55px;
+    }
+
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        top: 15%;
+    }
+
+    #dealerBannerImgContainer,
+    #manualBannerImgContainer {
+        height: 140px;
     }
 }
 
