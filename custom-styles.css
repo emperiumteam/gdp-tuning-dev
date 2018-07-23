@@ -701,11 +701,11 @@ figure.effect-oscar:hover img {
     --manpagesize: 1080px;
     --fullmargin: 20px;
     --shiftpercentodd: 50%;
-    
+
     --oddheadshift: calc(var(--manpagesize) / 2);
     --evenheadshift: calc(var(--oddheadshift) * -1);
     --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
-    --halfmarginmiddle: calc(var(--fullmargin) / 2); 
+    --halfmarginmiddle: calc(var(--fullmargin) / 2);
 }
 
 .manualSubContainers {
@@ -760,14 +760,11 @@ figure.effect-oscar:hover img {
 }
 
 .fullWidth {
-    margin-top: var(--fullmargin);
     margin-bottom: var(--fullmargin);
 }
+
 .halfWidth {
-    
-}
-.manualPageProductImage {
-    
+    margin-bottom: var(--fullmargin);
 }
 
 .fullWidth .manualPageProductImage {
@@ -1098,7 +1095,7 @@ figure.effect-oscar:hover img {
 
 #mapContainer {
     width: 75%;
-    height: 1000px;
+    height: 1200px;
     padding: 0 0 0 130px;
 }
 
@@ -1264,17 +1261,17 @@ Class Structure for Info Popup
 
 #alaskaSVG {
     position: relative;
-    top: -2%;
-    left: 50%;
-    width: 30%;
-    height: 23%;
+    top: -8%;
+    left: -4%;
+    width: 42%;
+    height: 37%;
     overflow: hidden;
 }
 
 #canadaSVG {
     position: relative;
-    top: -8%;
-    left: -23%;
+    top: -17%;
+    left: 12%;
     width: 26%;
 }
 
@@ -1673,7 +1670,7 @@ Class Structure for Info Popup
     }
 
     #mapContainer {
-        height: 810px;
+        height: 910px;
     }
 }
 
@@ -1686,7 +1683,7 @@ Class Structure for Info Popup
     }
 
     #mapContainer {
-        height: 710px;
+        height: 800px;
     }
 
     .manualTruckLogosFigure {
@@ -1694,7 +1691,7 @@ Class Structure for Info Popup
     }
 
     /* MANUAL PAGE FLEX CHILDREN & HEADERS */
-/*
+    /*
     .manualPageProductImage {
         height: 400px;
     }
@@ -1728,7 +1725,7 @@ Class Structure for Info Popup
     }
 
     #mapContainer {
-        height: 654px;
+        height: 745px;
     }
 }
 
@@ -1748,7 +1745,7 @@ Class Structure for Info Popup
     }
 
     #mapContainer {
-        height: 550px;
+        height: 615px;
     }
     #closestDealerHeader a h1 {
         font-size: 2.2em;
@@ -1780,7 +1777,7 @@ Class Structure for Info Popup
     }
 
     #mapContainer {
-        height: 523px;
+        height: 590px;
     }
     .manualPageBannerContainer {
         margin-top: 80px;
@@ -1791,6 +1788,8 @@ Class Structure for Info Popup
     #mapContainer {
         height: 503px;
     }
+
+    /*    manual page ------------------------------ */
     #dealerBannerImgContainer,
     #manualBannerImgContainer {
         height: 300px;
@@ -1807,6 +1806,64 @@ Class Structure for Info Popup
     .manualPageBannerContainer {
         margin-top: 50px;
     }
+
+    :root {
+        --manpagesize: 880px;
+        --fullmargin: 18px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 80px 0 20px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 1.8em;
+    }
+    .troubleLinkText {
+        font-size: 1.8em;
+    }
+    /*    manual page ------------------------------ */
 }
 
 @media (max-width: 979px) {
@@ -1835,6 +1892,63 @@ Class Structure for Info Popup
 
     .manualPageBannerContainer {
         margin-top: 4px;
+    }
+
+    :root {
+        --manpagesize: 680px;
+        --fullmargin: 16px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 80px 0 20px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 1.4em;
+    }
+    .troubleLinkText {
+        font-size: 1.4em;
     }
 }
 
@@ -1935,6 +2049,66 @@ Class Structure for Info Popup
     #manualBannerImgContainer {
         height: 250px;
     }
+
+    :root {
+        --manpagesize: 480px;
+        --fullmargin: 14px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 80px 0 20px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 1em;
+    }
+    .troubleLinkText {
+        font-size: 1em;
+    }
+    .manualLink {
+        margin-top: -5px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1944,6 +2118,12 @@ Class Structure for Info Popup
     }
     #dealerPageHeader {
         font-size: 1.3em;
+    }
+
+    #cumminsBanner,
+    #powerstrokeBanner,
+    #duramaxBanner {
+        height: auto;
     }
 }
 
@@ -2002,7 +2182,100 @@ Class Structure for Info Popup
 
     #dealerBannerImgContainer,
     #manualBannerImgContainer {
-        height: 140px;
+        height: 110px;
+    }
+
+    :root {
+        --manpagesize: 90vw;
+        --fullmargin: 5px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 20px 0 10px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+
+    .manualLink {
+        font-size: 0.6em;
+    }
+
+    .troubleLink {
+        font-size: 0.6em;
+    }
+
+    .troubleLinkText {
+        font-size: 0.6em;
+        line-height: 2;
+    }
+
+    .manualLink {
+        margin-top: -4px;
+        margin-left: -9px;
+    }
+
+    .manualPageTroubleContainer {
+        padding: 0;
+    }
+
+    #cumminsBanner,
+    #duramaxBanner {
+        margin-top: 5px;
+    }
+
+    .troubleTableLeftCell {
+        width: 70%;
+    }
+
+    .troubleTableRightCell {
+        width: 30%;
+    }
+    
+    .manualPageHeadingImageContainer {
+        display: none;    
+    }
+    
+    #mainManualContainer {
+        margin-bottom: 0;
     }
 }
 
