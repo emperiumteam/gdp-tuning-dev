@@ -63,8 +63,8 @@ like it is supposed to...thanks to the style below: */
 /* had to do this so to make the header lose margin, gain padding, color*/
 
 #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #000000), color-stop(35%, #fff));
-    background: linear-gradient(#000000 65%, #fff 35%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #000000), color-stop(35%, #fff));
+    background: linear-gradient(#000000 70%, #fff 35%);
     padding: 12px 0 0;
     color: white;
 }
@@ -548,7 +548,7 @@ figure.effect-oscar:hover img {
 /* ----------------------------------------------- */
 
 #manualBannerImgContainer {
-    height: 475px;
+    height: 430px;
     width: 100%;
     overflow: hidden;
 }
@@ -1037,7 +1037,7 @@ figure.effect-oscar:hover img {
 /* ----------------------------------------------- */
 
 #dealerBannerImgContainer {
-    height: 475px;
+    height: 430px;
     width: 100%;
     overflow: hidden;
 }
@@ -1204,11 +1204,13 @@ Class Structure for Info Popup
 
 .authorizedDealerIcon {
     text-align: left;
-    width: 50px;
+    width: 100px;
+    margin-left: 10px;
 }
 
 .authorizedDistributorIcon {
-    width: 50px;
+    width: 100px;
+    margin-left: 10px;
 }
 
 .dealerCompanyTitle {
@@ -1792,7 +1794,7 @@ Class Structure for Info Popup
     /*    manual page ------------------------------ */
     #dealerBannerImgContainer,
     #manualBannerImgContainer {
-        height: 300px;
+        height: 270px;
     }
 
     .manualTruckLogosFigure {
@@ -2054,7 +2056,7 @@ Class Structure for Info Popup
 
     #dealerBannerImgContainer,
     #manualBannerImgContainer {
-        height: 250px;
+        height: 215px;
     }
 
     :root {
@@ -2139,8 +2141,8 @@ Class Structure for Info Popup
         transform: translateX(-15%);
     }
     #cumminsBanner {
-        -webkit-transform: translateX(-24%);
-        transform: translateX(-24%);
+        -webkit-transform: translateX(-25%);
+        transform: translateX(-25%);
     }
     #duramaxBanner {
         -webkit-transform: translateX(-35%);
@@ -2152,6 +2154,18 @@ Class Structure for Info Popup
     }
     .troubleLinkText {
         font-size: 0.8em;
+    }
+
+    #dealerBannerImgContainer,
+    #manualBannerImgContainer {
+        height: 180px;
+    }
+    
+    .manualTruckLogosFigure {
+        height: 46%;
+    }
+    #manualTruckLogosContainer {
+        margin: 20px 0;
     }
 }
 
