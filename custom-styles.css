@@ -1807,6 +1807,12 @@ Class Structure for Info Popup
         margin-top: 50px;
     }
 
+    #cumminsBanner,
+    #powerstrokeBanner,
+    #duramaxBanner {
+        height: 54px;
+    }
+
     :root {
         --manpagesize: 880px;
         --fullmargin: 18px;
@@ -1822,7 +1828,7 @@ Class Structure for Info Popup
 
     .manualPageHeadingImage {
         width: 100vw;
-        margin: 80px 0 20px;
+        margin: 40px 0 20px;
     }
 
     .manualPageTroubleContainer {
@@ -1858,7 +1864,8 @@ Class Structure for Info Popup
     }
     .troubleLink,
     .manualLink {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        margin-left: -10px;
     }
     .troubleLinkText {
         font-size: 1.8em;
@@ -1909,7 +1916,7 @@ Class Structure for Info Popup
 
     .manualPageHeadingImage {
         width: 100vw;
-        margin: 80px 0 20px;
+        margin: 25px 0 20px;
     }
 
     .manualPageTroubleContainer {
@@ -1945,10 +1952,10 @@ Class Structure for Info Popup
     }
     .troubleLink,
     .manualLink {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .troubleLinkText {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
 
@@ -2051,7 +2058,8 @@ Class Structure for Info Popup
     }
 
     :root {
-        --manpagesize: 480px;
+        /*        --manpagesize: 580px;*/
+        --manpagesize: 80vw;
         --fullmargin: 14px;
 
         --oddheadshift: calc(var(--manpagesize) / 2);
@@ -2065,7 +2073,7 @@ Class Structure for Info Popup
 
     .manualPageHeadingImage {
         width: 100vw;
-        margin: 80px 0 20px;
+        margin: 25px 0 10px;
     }
 
     .manualPageTroubleContainer {
@@ -2124,6 +2132,26 @@ Class Structure for Info Popup
     #powerstrokeBanner,
     #duramaxBanner {
         height: auto;
+        width: 200vw;
+    }
+    #powerstrokeBanner {
+        -webkit-transform: translateX(-15%);
+        transform: translateX(-15%);
+    }
+    #cumminsBanner {
+        -webkit-transform: translateX(-24%);
+        transform: translateX(-24%);
+    }
+    #duramaxBanner {
+        -webkit-transform: translateX(-35%);
+        transform: translateX(-35%);
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 0.8em;
+    }
+    .troubleLinkText {
+        font-size: 0.8em;
     }
 }
 
@@ -2259,7 +2287,7 @@ Class Structure for Info Popup
 
     #cumminsBanner,
     #duramaxBanner {
-        margin-top: 5px;
+        margin: 20px 0 8px 0;
     }
 
     .troubleTableLeftCell {
@@ -2269,13 +2297,17 @@ Class Structure for Info Popup
     .troubleTableRightCell {
         width: 30%;
     }
-    
+
     .manualPageHeadingImageContainer {
-        display: none;    
+        display: none;
     }
-    
+
     #mainManualContainer {
         margin-bottom: 0;
+    }
+
+    .manualPageBannerImg {
+        margin: 25px 0 15px 0;
     }
 }
 
