@@ -139,7 +139,7 @@ $(document).ready(function () {
       	var currentWindowWidth = $(window).width();
       	var scrollPixels = -220;
       	if (currentWindowWidth < 768) {
-        	scrollPixels = -100;
+        	scrollPixels = -75;
         } else {
         	scrollPixels = -220;
         }
