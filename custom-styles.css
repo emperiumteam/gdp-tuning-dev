@@ -293,6 +293,9 @@ like it is supposed to...thanks to the style below: */
     left: 8%;
 }
 
+
+#tunerLogosMobileText {
+ display: none; 
 /* ----------------------------------------------- */
 
 /* ---------------------TUNERS END--------------- */
