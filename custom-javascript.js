@@ -135,9 +135,16 @@ $(document).ready(function () {
 
     $(".manualTruckLogosFigure").find("a").click(function (e) {
         e.preventDefault();
-        var section = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(section).offset().top - 220
+      	var section = $(this).attr("href");
+      	var currentWindowWidth = $(window).width();
+      	var scrollPixels = -220;
+      	if (currentWindowWidth < 768) {
+        	scrollPixels = -100;
+        } else {
+        	scrollPixels = -220;
+        }
+      	$("html, body").animate({
+        	scrollTop: $(section).offset().top + scrollPixels
         });
     });
 });
