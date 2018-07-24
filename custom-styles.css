@@ -156,7 +156,7 @@ like it is supposed to...thanks to the style below: */
 #selectYourTruckHeader {
     width: 60%;
     text-align: center;
-    margin: 20px 0 45px;
+    margin: -25px 0 45px;
 }
 
 #selectYourTruckHeader div {
@@ -2034,8 +2034,8 @@ Class Structure for Info Popup
     #ezLogoTunersMOBILE {
         position: absolute;
         top: 67%;
-    left: 54%;
-    height: 23%;
+        left: 54%;
+        height: 23%;
     }
 
     #tunerLogosMobileText {
