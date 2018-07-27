@@ -667,7 +667,7 @@ figure.effect-oscar:hover img {
 #powerstrokeBanner,
 #duramaxBanner {
     display: block;
-    height: 100px;
+    height: 130px;
     width: 100%;
 }
 
@@ -698,7 +698,9 @@ figure.effect-oscar:hover img {
 
 #powerstrokeBannerImg {}
 
-.manualPageBannerImg {}
+.manualPageBannerImg {
+    width:100%;
+}
 
 
 #powerstrokeManuals {
@@ -2296,6 +2298,7 @@ Class Structure for Info Popup
 
     .troubleLink {
         font-size: 0.6em;
+        margin: 0;
     }
 
     .troubleLinkText {
