@@ -1140,10 +1140,12 @@ Class Structure for Info Popup
     animation-delay: 2s;
 }
 
+/*
 .ui-selectmenu-button.ui-button:hover {
     -webkit-animation: none;
     animation: none;
 }
+*/
 
 @-webkit-keyframes pulse {
     0% {
