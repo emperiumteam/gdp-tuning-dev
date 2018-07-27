@@ -258,8 +258,13 @@ like it is supposed to...thanks to the style below: */
     width: 100%;
 }
 
+#tunerLogos {
+    position: relative;
+}
+
 #tunerLogosMobile {
     display: none;
+    position: relative;
 }
 
 #tunerLogosMobileText {
@@ -478,13 +483,13 @@ figure.effect-oscar:hover img {
 
 /* ----------------------------------------------- */
 
-#closestDealerHeader {
+.closestDealerHeader {
     background-color: #f05423;
     width: 60%;
     margin: auto;
 }
 
-#closestDealerHeader:hover {
+.closestDealerHeader:hover {
     /*-webkit-box-shadow: none;
 	box-shadow: none;*/
     -webkit-box-shadow: 7px 7px 5px -2px #999999;
@@ -493,7 +498,7 @@ figure.effect-oscar:hover img {
     transform: scale(1.1);
 }
 
-#closestDealerHeader a h1 {
+.closestDealerHeader a h1 {
     font-size: 2.5em;
     text-align: center;
     width: 100%;
@@ -501,7 +506,7 @@ figure.effect-oscar:hover img {
     margin: 50px 0;
 }
 
-#closestDealerHeader a {
+.closestDealerHeader a {
     text-decoration: none;
     color: white;
 }
@@ -1757,7 +1762,7 @@ Class Structure for Info Popup
     #mapContainer {
         height: 615px;
     }
-    #closestDealerHeader a h1 {
+    .closestDealerHeader a h1 {
         font-size: 2.2em;
     }
     .dealerCompanyTitle {
@@ -1782,7 +1787,7 @@ Class Structure for Info Popup
         height: 400px;
         margin-bottom: 60px;
     }
-    #closestDealerHeader a h1 {
+    .closestDealerHeader a h1 {
         font-size: 1.6em;
     }
 
@@ -1893,7 +1898,7 @@ Class Structure for Info Popup
     #dealerPageContainer {
         padding: 0 3% 45px 8%;
     }
-    #closestDealerHeader a h1 {
+    .closestDealerHeader a h1 {
         font-size: 1.2em;
     }
 
@@ -2000,14 +2005,14 @@ Class Structure for Info Popup
         height: 90vw;
         margin: 2% auto 9%;
     }
-    #closestDealerHeader {
+    .closestDealerHeader {
         width: 100%;
     }
-    #closestDealerHeader a h1 {
+    .closestDealerHeader a h1 {
         font-size: 1.5em;
-        margin: 0 0;
+        margin: 4px 0;
     }
-    #closestDealerHeader:hover {
+    .closestDealerHeader:hover {
         -webkit-box-shadow: none;
         box-shadow: 7px none;
         -webkit-transform: none;
@@ -2202,7 +2207,7 @@ Class Structure for Info Popup
         margin: 0;
     }
 
-    #closestDealerHeader a h1 {
+    .closestDealerHeader a h1 {
         font-size: 0.9em;
     }
 
