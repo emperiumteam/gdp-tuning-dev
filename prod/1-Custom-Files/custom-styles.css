@@ -342,11 +342,16 @@ like it is supposed to...thanks to the style below: */
     width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    
+    /*    new css for truck trio*/
+    margin-bottom: 30px;
 }
 
 /* Common style */
 
 .grid figure {
+/*    original for home page*/
+/*
     position: relative;
     float: left;
     overflow: hidden;
@@ -356,6 +361,18 @@ like it is supposed to...thanks to the style below: */
     background: #323232;
     text-align: center;
     cursor: pointer;
+*/
+    
+/*    new css for truck trio*/
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    height: 145px;
+    background: #323232;
+    text-align: center;
+    cursor: pointer;
+    margin: 1%;
 }
 
 .grid figure img {
@@ -371,7 +388,7 @@ like it is supposed to...thanks to the style below: */
     font-weight: 300;
 }
 
-#homeProdCategories > div > figure > figcaption > h2 > span {
+.grid figure figcaption > h2 > span {
     font-weight: 800;
 }
 
@@ -557,17 +574,17 @@ figure.effect-oscar:hover img {
 
 /* ----------------------------------------------- */
 
-#manualBannerImgContainer {
+.manualBannerImgContainer {
     height: 430px;
     width: 100%;
     overflow: hidden;
 }
 
-#manualBannerImg {
+.manualBannerImg {
     width: 100%;
 }
 
-#manualBannerImgNotch {
+.manualBannerImgNotch {
     width: 46%;
     margin-top: -4.8%;
     margin-left: -5px;
@@ -699,7 +716,7 @@ figure.effect-oscar:hover img {
 #powerstrokeBannerImg {}
 
 .manualPageBannerImg {
-    width:100%;
+    width: 100%;
 }
 
 
@@ -1675,9 +1692,73 @@ Class Structure for Info Popup
 
 /* ----------------------------------------------- */
 
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
+/*Powerstroke, Cummins, Duramax MAIN NAV pages*/
+
+.truck-nav-trio-container {
+    width: 100%;
+
+}
+.product-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.product-item {
+    width: 400px;
+    height: 157px;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin: 10px;
+}
+
+.product-item .button-group {
+    display: none;
+}
+
+.product-item .tb_label_stock_status {
+    display: none;
+}
+
+.tuner-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.tuner-info table {
+    width: 20%;
+    margin: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
 /* ------------------------------------------------------------ */
 
-/* -----------------MOBILE/TABLET/LAPTOP/EXLG-TV RESPONSIVENESS--------------- */
+/*---MOBILE/TABLET/LAPTOP/EXLG-TV RESPONSIVENESS--------------- */
 
 /* ------------------------------------------------------------ */
 
@@ -1808,7 +1889,7 @@ Class Structure for Info Popup
 
     /*    manual page ------------------------------ */
     #dealerBannerImgContainer,
-    #manualBannerImgContainer {
+    .manualBannerImgContainer {
         height: 270px;
     }
 
@@ -2070,7 +2151,7 @@ Class Structure for Info Popup
     }
 
     #dealerBannerImgContainer,
-    #manualBannerImgContainer {
+    .manualBannerImgContainer {
         height: 215px;
     }
 
@@ -2172,7 +2253,7 @@ Class Structure for Info Popup
     }
 
     #dealerBannerImgContainer,
-    #manualBannerImgContainer {
+    .manualBannerImgContainer {
         height: 180px;
     }
 
@@ -2238,7 +2319,7 @@ Class Structure for Info Popup
     }
 
     #dealerBannerImgContainer,
-    #manualBannerImgContainer {
+    .manualBannerImgContainer {
         height: 110px;
     }
 
