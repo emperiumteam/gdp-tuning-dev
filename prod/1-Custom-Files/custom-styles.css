@@ -1742,7 +1742,7 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0 12.7%;
+/*    padding: 0 12.7%;*/
 }
 
 .tuner-info table {
@@ -1786,7 +1786,7 @@ Class Structure for Info Popup
     display: flex;
     /*   height: 400px; */
     /*   background-color: #acacac; */
-    width: 100%;
+    width: var(--manpagesize);
     overflow: hidden;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1855,7 +1855,9 @@ Class Structure for Info Popup
     height: 55px;
 }
 
-
+.tuner-video {
+    width: 100%;   
+}
 
 
 
@@ -1906,13 +1908,14 @@ Class Structure for Info Popup
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+/*    width: 100%;*/
+    width: var(--manpagesize);
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 25px 12.7% 0;
+/*    padding: 25px 12.7% 0;*/
 }
 
 .table-container {
