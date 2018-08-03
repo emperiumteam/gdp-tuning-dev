@@ -1713,7 +1713,7 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0 12.7%;
 }
 
 .product-item {
@@ -1742,7 +1742,7 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0 12.7%;
 }
 
 .tuner-info table {
@@ -1750,6 +1750,199 @@ Class Structure for Info Popup
     margin: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gdp-that-thing {
+  color: #f05323 !important;
+}
+
+
+/* TUNER CONTAINER */
+.tuner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+/*   height: 400px; */
+/*   background-color: #acacac; */
+  width: 100%;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+.tuner-image-container,
+.tuner-info-container {
+  /*margin: 10px;*/
+  /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+  overflow-x: scroll;
+  background-color: white;
+  min-height: 400px;
+  /*min-width: 500px;*/
+  max-height: 400px;
+  /*max-width: 500px;*/
+}
+
+/* IMAGE CHILD CONTAINER */
+.tuner-image-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.tuner-image {
+  width: 90%;
+}
+
+
+/* INFO CHILD CONTAINER */
+.tuner-info-container {
+  width: 50%;
+  padding: 1em 2em;
+}
+.tuner-info-title {
+  margin-bottom: 0.1em;
+  margin-top: 0.4em;
+}
+.tuner-info-title-secondary {
+  margin-bottom: 0.6em;
+  text-align: right;
+}
+.tuner-info-msrp {
+  
+}
+.tuner-info-part-number {
+
+}
+.tuner-info-desc {
+
+}
+.tuner-info-logo {
+  height: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.classy-divider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5em 0;
+}
+
+.classy-divider-left,
+.classy-divider-right {
+  width: 40%;
+  text-align: center;
+}
+
+.classy-divider-left {
+  
+}
+.classy-divider-middle {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.classy-divider-right {
+
+}
+
+.classy-item {
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+
+
+
+
+.table-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 25px 12.7% 0;
+}
+.table-container {
+    width: 30%;
+    height: 300px;
+}
+.table-container-heading {
+  text-align: center;
+  font-size: 1.8em;
+}
+.truck-trio-table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+.truck-trio-row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.truck-trio-row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.truck-trio-row.truck-trio-header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #f05323de;
+}
+.truck-trio-cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
 /* ------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------ */
@@ -1830,6 +2023,9 @@ Class Structure for Info Popup
 @media screen and (max-width: 1532px) {
     #powerstrokeTruck {
         right: -49%;
+    }
+    .table-container {
+        width: 45%;
     }
 }
 
@@ -2054,6 +2250,16 @@ Class Structure for Info Popup
     }
     .troubleLinkText {
         font-size: 1.2em;
+    }
+  
+  	.table-container {
+        width: 80%;
+    }
+  	
+  	.table-info-container {
+    	-webkit-box-pack: center;
+    	-ms-flex-pack: center;
+    	justify-content: center;
     }
 }
 
