@@ -1804,6 +1804,7 @@ Class Structure for Info Popup
     /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
     overflow-x: scroll;
     background-color: white;
+    position: relative;
     /*  min-height: 400px;*/
     /*min-width: 500px;*/
     /*  max-height: 400px;*/
@@ -1925,7 +1926,7 @@ Class Structure for Info Popup
 }
 
 .table-container {
-    width: 30%;
+    width: 31%;
     /*    height: 300px;*/
     margin: 0 0 20px 0;
 }
@@ -1963,11 +1964,25 @@ Class Structure for Info Popup
     display: table-cell;
 }
 
+.truck-trio-tuner-bullets {
+    list-style: none !important;
+}
 
+.tuner-bullet-icons {
+    width: 50px;
+}
 
+.apple-store-link {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
 
-
-
+.android-store-link {
+    position: absolute;
+    bottom: 2%;
+    left: 25%; 
+}
 
 
 
