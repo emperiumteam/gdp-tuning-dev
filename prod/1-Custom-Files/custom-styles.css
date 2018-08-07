@@ -1708,12 +1708,13 @@ Class Structure for Info Popup
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: var(--manpagesize);
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 0 12.7%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    margin: auto;
 }
 
 .product-item {
@@ -1974,6 +1975,7 @@ Class Structure for Info Popup
 /* --------------------------------- */
 
 .product-master-container {
+    /*
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1982,14 +1984,15 @@ Class Structure for Info Popup
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+*/
 }
 
 .product-item-container-two {
-/* 	  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31); */
+    /* 	  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31); */
     background: rgba(255, 255, 255, 0.9);
-/*     border-radius: 5px; */
-/*     overflow: hidden; */
-    margin: 3em 2em;
+    /*     border-radius: 5px; */
+    /*     overflow: hidden; */
+    margin: 0 0 7em 2em;
     height: 400px;
     width: 275px;
     display: -webkit-box;
@@ -2002,31 +2005,33 @@ Class Structure for Info Popup
 }
 
 /* 	Product details  */
+
 .product-details {
-	position: relative;
-	padding: 25px;
-	height: 20%;
-	float: left;
-	width: 100%;
-	background-color: #F26A22;
-/* 	z-index: 2; */
+    position: relative;
+    padding: 25px;
+    height: 20%;
+    float: left;
+    width: 100%;
+    background-color: #F26A22;
+    /* 	z-index: 2; */
 }
 
 /* 	Product Name */
+
 .product-item-container-two .product-details h1 {
-	display: inline-block;
-	position: relative;
-	font-size: 34px;
-	color: #344055;
-	margin: 0;
+    display: inline-block;
+    position: relative;
+    font-size: 34px;
+    color: #344055;
+    margin: 0;
 }
 
 .quickManLink {
-	width: 75%;
-	font-size: 0.9em;
-	text-align: right;
-	cursor: pointer;
-	display: block;
+    width: 75%;
+    font-size: 0.9em;
+    text-align: right;
+    cursor: pointer;
+    display: block;
 }
 
 .prod-name {
@@ -2036,146 +2041,155 @@ Class Structure for Info Popup
 }
 
 .prod-code {
-	margin: 0 0 0.3em 0;
+    margin: 0 0 0.3em 0;
 }
+
 .prod-code-title {
-	margin: 0 0 0 2em;
+    margin: 0 0 0 2em;
 }
+
 /* button container */
 
 .btn-container {
-	position: absolute;
-	bottom: -56%;
-  left: 0;
+    position: absolute;
+    bottom: -56%;
+    right: 0;
 }
 
 .man-container {
-	position: absolute;
-	bottom: 31%;
-/*   left: 50%; */
-/* 	transform: translate(-50%); */
+    position: absolute;
+    bottom: 31%;
+    /*   left: 50%; */
+    /* 	transform: translate(-50%); */
 }
 
 
 /* the Button */
+
 .btn-container .dealer-button {
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
-	-webkit-transition: 0.3s linear;
-	transition: 0.3s linear;
-	background-color: #F26A22 !important;
-	border-radius: 5px;
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	color: #eee;
-	padding: 0;
-	margin: 0;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    background-color: #F26A22 !important;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
 }
 
 .dealer-button:hover {
-	-webkit-transform: translateY(-4px);
-	transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 .dealer-button span {
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	transition: transform 0.3s, -webkit-transform 0.3s;
-	display: inline-block;
-	padding: 0 13px;
-	font-size: 1em;
-	margin: 0;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    display: inline-block;
+    padding: 0 13px;
+    font-size: 1em;
+    margin: 0;
 }
+
 /* dealer truck icon */
+
 .dealer-button .msrp-price,
 .truck-icon {
-	background: #333;
-	border: 0;
-	margin: 0;
+    background: #333;
+    border: 0;
+    margin: 0;
 }
 
 .dealer-button .msrp-price {
-	-webkit-transform: translateX(-10%);
-	transform: translateX(-10%);
-	padding-right: 15px;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+    padding-right: 15px;
 }
 
 /* the Icon */
+
 .dealer-button .truck-icon {
-	-webkit-transform: translateX(-100%);
-	transform: translateX(-100%);
-	position: absolute;
-	background: #333;
-/* 	z-index: 1; */
-	left: 0;
-	top: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    position: absolute;
+    background: #333;
+    /* 	z-index: 1; */
+    left: 0;
+    top: 0;
 }
 
 /* buy */
+
 .dealer-button .buy {
-/* 	z-index: 3; */
-	font-weight: bolder;
+    /* 	z-index: 3; */
+    font-weight: bolder;
 }
 
 .dealer-button:hover .msrp-price {
-	-webkit-transform: translateX(-110%);
-	transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
 }
 
 .dealer-button:hover .truck-icon {
-	-webkit-transform: translateX(0%);
-	transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 /* product image  */
+
 .product-image {
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	float: right;
-	width: 100%;
-	display: inline-block;
-	padding: 2em 1em;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 100%;
+    display: inline-block;
+    padding: 2em 1em;
 }
 
 .product-item-container-two img {
-	width: 100%;
-	height: 100%;
-/* 	transform: translate(-7px, 25px) rotate(10deg) scale(1.4); */
-	-webkit-transform: translate(-13px, -1px) rotate(10deg);
-	transform: translate(-13px, -1px) rotate(10deg);
+    width: 100%;
+    height: 100%;
+    /* 	transform: translate(-7px, 25px) rotate(10deg) scale(1.4); */
+    -webkit-transform: translate(-13px, -1px) rotate(10deg);
+    transform: translate(-13px, -1px) rotate(10deg);
 }
 
 .info {
-	background: white;
-	-webkit-transition: all 0.6s ease-out;
-	transition: all 0.6s ease-out;
-	-webkit-transform: translateY(120%);
-	transform: translateY(120%);
-	position: absolute;
-	line-height: 1.9;
-	color: black;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-/* 	opacity: 0.9; */
-	padding: 2em;
-	overflow-y: scroll;
-/* 	z-index: 3; */
+    background: white;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    -webkit-transform: translateY(120%);
+    transform: translateY(120%);
+    position: absolute;
+    line-height: 1.9;
+    color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* 	opacity: 0.9; */
+    padding: 2em;
+    overflow-y: scroll;
+    /* 	z-index: 3; */
 }
 
 .info p {
-	width: 80%;
-	font-size: 0.9em;
-	margin: 0;
+    width: 80%;
+    font-size: 0.9em;
+    margin: 0;
 }
+
 /* li {
 
 }
@@ -2184,8 +2198,8 @@ Class Structure for Info Popup
 } */
 
 .product-image:hover .info {
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
 /* a {
@@ -2197,56 +2211,61 @@ Class Structure for Info Popup
   border-radius: 4px;
 } */
 
-.fa-facebook, .fa-twitter, .fa-pinterest-p, .fa-google-plus {
-/*   text-align:left; */
-  font-size:1.2em;
-/*   margin-right:.5em; */
+.fa-facebook,
+.fa-twitter,
+.fa-pinterest-p,
+.fa-google-plus {
+    /*   text-align:left; */
+    font-size: 1.2em;
+    /*   margin-right:.5em; */
 }
 
 .fb {
-/*   background-color:#3A5795;
+    /*   background-color:#3A5795;
   padding:0.6em 1.4em 0.6em 1em;
   text-align:left;
   border: 2px solid #3a5795; */
-	color: #3A5795;
-/* 	position: absolute;
+    color: #3A5795;
+    /* 	position: absolute;
   top: 0;
   left: 0; */
-	font-size: 1em;
-	padding: 6px 10px;
-	position: absolute;
-	top: -15px;
-	right: 41%;
-	background-color: white;
-/*   border: 1px solid orange; */
+    font-size: 1em;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    right: 41%;
+    background-color: white;
+    /*   border: 1px solid orange; */
 }
 
 .fb:hover {
-/*   background-color:#fff; */
-  color: black;
+    /*   background-color:#fff; */
+    color: black;
 }
 
 .tw {
-/*   background-color:#00B0ED;
+    /*   background-color:#00B0ED;
   padding:0.6em 1.4em 0.6em 1em;
   text-align:left;
   border: 2px solid #00B0ED; */
-	color: #00B0ED;
-/* 	position: absolute;
+    color: #00B0ED;
+    /* 	position: absolute;
   top: 0;
   left: 40px; */
-	font-size: 1em;
-	padding: 6px 10px;
-	position: absolute;
-	top: -15px;
-	right: 22%;
-	background-color: white;
-/*   border: 1px solid orange; */
+    font-size: 1em;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    right: 22%;
+    background-color: white;
+    /*   border: 1px solid orange; */
 }
+
 .tw:hover {
-/*   background-color:#fff; */
-  color: black;
+    /*   background-color:#fff; */
+    color: black;
 }
+
 /* .pin {
   background-color:#BE091C;
   padding: 0.6em 1.4em 0.6em 1em;
@@ -2257,65 +2276,68 @@ Class Structure for Info Popup
   background-color:#fff;
   color:#BE091C;
 } */
+
 .goog {
-/*   background-color:#DD4B39;
+    /*   background-color:#DD4B39;
   padding: 0.6em 1.4em 0.6em 1em;
   text-align:left;
   border: 2px solid #DD4B39; */
-	color: #DD4B39;
-/* 	position: absolute;
+    color: #DD4B39;
+    /* 	position: absolute;
   top: 0;
   left: 75px; */
-	font-size: 1em;
-	padding: 6px 10px;
-	position: absolute;
-	top: -15px;
-	right: 3%;
-	background-color: white;
-/*   border: 1px solid orange; */
+    font-size: 1em;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    right: 3%;
+    background-color: white;
+    /*   border: 1px solid orange; */
 }
+
 .goog:hover {
-/*   background-color:#fff; */
-  color: black;
+    /*   background-color:#fff; */
+    color: black;
 }
 
 .manual-box-link {
-	/*   background-color:#DD4B39;
+    /*   background-color:#DD4B39;
   padding: 0.6em 1.4em 0.6em 1em;
   text-align:left;
   border: 2px solid #DD4B39; */
-	color: #DD4B39;
-/* 	position: absolute;
+    color: #DD4B39;
+    /* 	position: absolute;
   top: 0;
   left: 75px; */
-	font-size: 1em;
-	padding: 6px 10px;
-	position: absolute;
-	top: -15px;
-	right: 60%;
-	background-color: white;
-/*   border: 1px solid orange; */
+    font-size: 1em;
+    padding: 6px 10px;
+    position: absolute;
+    top: -15px;
+    right: 60%;
+    background-color: white;
+    /*   border: 1px solid orange; */
 }
+
 .manual-box-link:hover {
-/*   background-color:#fff; */
-  color: black;
+    /*   background-color:#fff; */
+    color: black;
 }
 
 
 social-icons-prod-item {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	margin-top: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .social-icons-prod-item a {
-	width: 15%;
-	height: 39%;
-	-webkit-box-shadow: -3px -2px 3px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-	box-shadow: -3px -2px 3px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-	text-align: center;
-	z-index: 999;
+    width: 15%;
+    height: 39%;
+    -webkit-box-shadow: -3px -2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px -2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 999;
 }
 
 
@@ -2335,13 +2357,13 @@ social-icons-prod-item {
     padding: 5px 0;
     position: absolute;
     z-index: 999;
-/*     bottom: 125%; */
-/*     left: 50%; */
+    /*     bottom: 125%; */
+    /*     left: 50%; */
     margin-left: -60px;
     opacity: 0;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-		top: -54px;
+    top: -54px;
     right: 128px;
 }
 
@@ -2365,31 +2387,8 @@ social-icons-prod-item {
     visibility: visible;
     opacity: 1;
 }
+
 /* --------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------ */
 
