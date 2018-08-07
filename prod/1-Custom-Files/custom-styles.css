@@ -366,7 +366,7 @@ like it is supposed to...thanks to the style below: */
     position: relative;
     float: left;
     overflow: hidden;
-    width: 30%;
+    width: 25%;
     height: 145px;
     background: #323232;
     text-align: center;
@@ -1795,15 +1795,15 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative;
 }
 
 
-.tuner-image-container,
-.tuner-info-container {
+.tuner-info-container,
+.tuner-image-container {
     /*margin: 10px;*/
     /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
     overflow-x: scroll;
-    background-color: white;
     position: relative;
     /*  min-height: 400px;*/
     /*min-width: 500px;*/
@@ -1824,6 +1824,7 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    background-color: white;
 }
 
 .tuner-image {
@@ -1841,11 +1842,12 @@ Class Structure for Info Popup
 .tuner-info-title {
     margin-bottom: 0.1em;
     margin-top: 0.4em;
+    text-align: center;
 }
 
 .tuner-info-title-secondary {
     margin-bottom: 0.6em;
-    text-align: right;
+    text-align: center;
 }
 
 .tuner-info-msrp {}
