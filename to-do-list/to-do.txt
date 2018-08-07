@@ -1,0 +1,6 @@
+1. Export Settings on gdp.emperiumdesign.com and import into gdptuning.com
+
+2. Go through each folder in the "prod" folder and import the html blocks into gdptuning.com
+
+3. Go through each page and fix file paths for all links
+

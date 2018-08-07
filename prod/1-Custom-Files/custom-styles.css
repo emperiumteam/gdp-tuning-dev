@@ -510,8 +510,8 @@ figure.effect-oscar:hover img {
 	box-shadow: none;*/
     -webkit-box-shadow: 7px 7px 5px -2px #999999;
     box-shadow: 7px 7px 5px -2px #999999;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+/*    -webkit-transform: scale(1.1);*/
+/*    transform: scale(1.1);*/
 }
 
 .closestDealerHeader a h1 {
@@ -2766,8 +2766,8 @@ social-icons-prod-item {
     .closestDealerHeader:hover {
         -webkit-box-shadow: none;
         box-shadow: 7px none;
-        -webkit-transform: none;
-        transform: none;
+/*        -webkit-transform: none;*/
+/*        transform: none;*/
     }
     /*    DESKTOP VERSION*/
     #tunerLogos {
