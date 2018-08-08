@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 /* CUSTOM STYLES */
 
 /* -----------------------------------------------
@@ -443,6 +444,61 @@ figure.effect-oscar h2 {
     color: white !important;
 }
 
+
+
+
+figure.effect-oscar:after {
+  content: "";
+  position: absolute;
+    top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  opacity: 0;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(255, 255, 255, 0.13)),
+    color-stop(77%, rgba(255, 255, 255, 0.13)),
+    color-stop(92%, rgba(255, 255, 255, 0.5)),
+    to(rgba(255, 255, 255, 0.0))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+figure.effect-oscar:hover:after {
+  opacity: 1;
+  left: 130%;
+  -webkit-transition-property: left, top, opacity;
+  transition-property: left, top, opacity;
+  -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+figure.effect-oscar:active:after {
+  opacity: 0;
+}
+
+
+
+
+
+
+/*
 figure.effect-oscar:hover h2 {
     opacity: 1;
     -webkit-transform: scale(1.3);
@@ -456,6 +512,13 @@ figure.effect-oscar:hover figcaption {
 figure.effect-oscar:hover img {
     opacity: 0.1;
 }
+
+*/
+
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     .grid figure {
@@ -510,8 +573,8 @@ figure.effect-oscar:hover img {
 	box-shadow: none;*/
     -webkit-box-shadow: 7px 7px 5px -2px #999999;
     box-shadow: 7px 7px 5px -2px #999999;
-/*    -webkit-transform: scale(1.1);*/
-/*    transform: scale(1.1);*/
+    /*    -webkit-transform: scale(1.1);*/
+    /*    transform: scale(1.1);*/
 }
 
 .closestDealerHeader a h1 {
@@ -1836,7 +1899,13 @@ Class Structure for Info Popup
 
 .tuner-info-container {
     width: 50%;
+}
+
+.tuner-info-padding {
     padding: 1em 2em;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 50%;
 }
 
 .tuner-info-title {
@@ -1864,13 +1933,38 @@ Class Structure for Info Popup
     width: 100%;
 }
 
+.tuner-app-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tuner-app-container div {
+    margin: 0 9px;
+}
+
+.android-store-link,
+.apple-store-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 
 
-
-
-
-
-
+.android-store-link a img,
+.apple-store-link a img {
+    width: 230px;
+}
 
 
 .classy-divider-container {
@@ -1974,35 +2068,37 @@ Class Structure for Info Popup
     width: 50px;
 }
 
-.apple-store-link {
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
+.tuner-collapsible-container {
+    width: 100%;
 }
 
-.android-store-link {
-    position: absolute;
-    bottom: 2%;
-    left: 25%; 
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0 39px;
+    width: 100%;
+    border: none;
+    /* text-align: left; */
+    outline: none;
+    font-size: 30px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible-content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
 
 
 
 
 /* --------------------------------- */
-
-.product-master-container {
-    /*
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-*/
-}
 
 .product-item-container-two {
     /* 	  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31); */
@@ -2029,7 +2125,7 @@ Class Structure for Info Popup
     height: 20%;
     float: left;
     width: 100%;
-    background-color: #F26A22;
+    background-color: #cecccc;
     /* 	z-index: 2; */
 }
 
@@ -2768,8 +2864,8 @@ social-icons-prod-item {
     .closestDealerHeader:hover {
         -webkit-box-shadow: none;
         box-shadow: 7px none;
-/*        -webkit-transform: none;*/
-/*        transform: none;*/
+        /*        -webkit-transform: none;*/
+        /*        transform: none;*/
     }
     /*    DESKTOP VERSION*/
     #tunerLogos {
