@@ -1837,10 +1837,11 @@ Class Structure for Info Popup
     -ms-flex-pack: center;
     justify-content: center;
     background-color: white;
+    padding: 20px;
 }
 
 .tuner-image {
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -2498,6 +2499,14 @@ Class Structure for Info Popup
 }
 
 /* --------------------------------- */
+
+
+/* EFI LIVE and EZLYNK pages*/
+.heading-tuner-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
 
 /* ------------------------------------------------------------------ */
 
