@@ -165,5 +165,62 @@ $(document).ready(function () {
             }
         });
     }
+    
+    
+    
+    /* ----------------ADAPTIVE TABS----------------- */
+    	// Variables
+	var clickedTab = $(".adaptive-tabs > .active-adaptive-tab");
+	var tabWrapper = $(".tab__content");
+	var activeTab = tabWrapper.find(".active-adaptive-tab");
+	var activeTabHeight = activeTab.outerHeight();
+
+	// Show tab on page load
+	activeTab.show();
+
+	// Set height of wrapper on page load
+	tabWrapper.height(activeTabHeight);
+
+	$(".adaptive-tabs > li").on("click", function() {
+
+		// Remove class from active tab
+		$(".adaptive-tabs > li").removeClass("active-adaptive-tab");
+
+		// Add class active to clicked tab
+		$(this).addClass("active-adaptive-tab");
+
+		// Update clickedTab variable
+		clickedTab = $(".adaptive-tabs .active-adaptive-tab");
+
+		// fade out active tab
+		activeTab.fadeOut(250, function() {
+
+			// Remove active class all tabs
+			$(".tab__content > li").removeClass("active-adaptive-tab");
+
+			// Get index of clicked tab
+			var clickedTabIndex = clickedTab.index();
+
+			// Add class active to corresponding tab
+			$(".tab__content > li").eq(clickedTabIndex).addClass("active-adaptive-tab");
+
+			// update new active tab
+			activeTab = $(".tab__content > .active-adaptive-tab");
+
+			// Update variable
+			activeTabHeight = activeTab.outerHeight();
+
+			// Animate height of wrapper to new tab height
+			tabWrapper.stop().delay(50).animate({
+				height: activeTabHeight
+			}, 500, function() {
+
+			// Fade in active tab
+			activeTab.delay(50).fadeIn(250);
+				
+			});
+		});
+	});
+    /* ----------------ADAPTIVE TABS----------------- */
 
 });
