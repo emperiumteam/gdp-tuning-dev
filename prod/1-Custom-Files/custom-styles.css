@@ -2547,6 +2547,23 @@ Class Structure for Info Popup
     display: block;
 }
 
+
+.ezlynk-app-links {
+    width: 63%;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.ezlynk-app-links div {
+    width: 40%;
+}
+
 /* --------adaptive tabs------------ */
 
 .adaptive-tabs-container {
