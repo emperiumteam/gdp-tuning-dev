@@ -2498,7 +2498,7 @@ Class Structure for Info Popup
 .heading-tuner-title {
     width: 100%;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 /* --------adaptive tabs------------ */
@@ -2591,6 +2591,19 @@ Class Structure for Info Popup
     margin-right: 10px;
 }
 
+.content__wrapper p {
+    margin-bottom: 0;
+}
+
+.content__wrapper p img {
+    width: 347px;
+    margin-top: 6px;
+}
+
+
+.tuner-video-info-container {
+    padding: 35px 6% 0;
+}
 
 /* --------adaptive tabs------------ */
 
