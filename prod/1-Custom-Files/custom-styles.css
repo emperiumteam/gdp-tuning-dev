@@ -2509,8 +2509,8 @@ Class Structure for Info Popup
 }
 
 .tuner-image-carousel-container {
-/*    width: 800px;*/
-/*    width: calc((var(--manpagesize) / 2) -40px);*/
+    /*    width: 800px;*/
+    /*    width: calc((var(--manpagesize) / 2) -40px);*/
     width: 50%;
     background: #FFF;
     overflow: hidden;
@@ -2548,6 +2548,66 @@ Class Structure for Info Popup
 }
 
 
+
+
+
+.tuner-info-steps-container {
+    background-color: #d8d8d8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.tuner-steps-heading-one {
+    width: 100%;
+    text-align: center;
+    margin: 28px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tuner-steps-heading-two {
+    width: 100%;
+    text-align: center;
+    margin: 14px 0 0 0;
+}
+
+.tuner-steps-child {
+    text-align: center;
+    width: 16%;
+}
+
+.tuner-steps-child-one {}
+
+.tuner-steps-number {
+    font-size: 23em;
+    line-height: 0.8em;
+    height: 230px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.tuner-steps-desc {
+    color: white;
+}
+
+.tuner-steps-child-two {}
+
+.tuner-steps-child-three {}
+
+.tuner-steps-child-four {}
+
+
+
+
+
+
+
+
 .ezlynk-app-links {
     width: 63%;
     padding-top: 40px;
@@ -2560,6 +2620,7 @@ Class Structure for Info Popup
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 .ezlynk-app-links div {
     width: 40%;
 }
