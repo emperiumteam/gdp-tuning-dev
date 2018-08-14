@@ -2511,7 +2511,7 @@ Class Structure for Info Popup
 .tuner-image-carousel-container {
     /*    width: 800px;*/
     /*    width: calc((var(--manpagesize) / 2) -40px);*/
-    width: 50%;
+    width: 540px;
     background: #FFF;
     overflow: hidden;
 }
@@ -2552,7 +2552,7 @@ Class Structure for Info Popup
 
 
 .tuner-info-steps-container {
-    background-color: #d8d8d8;
+    background-color: #bfbebe;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2561,48 +2561,53 @@ Class Structure for Info Popup
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-bottom: 40px;
 }
 
 .tuner-steps-heading-one {
     width: 100%;
     text-align: center;
-    margin: 28px 0 0 0;
+    margin: 45px 0;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 0 25px;
 }
 
 .tuner-steps-heading-two {
     width: 100%;
     text-align: center;
-    margin: 14px 0 0 0;
+    margin: 14px 0 35px;
 }
 
 .tuner-steps-child {
     text-align: center;
-    width: 16%;
+    width: 292px;
+    margin: 0 30px 40px;
 }
-
-.tuner-steps-child-one {}
 
 .tuner-steps-number {
     font-size: 23em;
     line-height: 0.8em;
-    height: 230px;
+    height: 260px;
     font-family: 'Oswald', sans-serif;
+    color: #f0532399;
 }
 
 .tuner-steps-desc {
     color: white;
+    width: 200px;
 }
 
-.tuner-steps-child-two {}
+.step-desc-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
-.tuner-steps-child-three {}
-
-.tuner-steps-child-four {}
-
-
-
+.step-icons {
+    color: white;
+    font-size: 5em;
+    margin: 20px;
+}
 
 
 
@@ -2727,6 +2732,7 @@ Class Structure for Info Popup
 
 .tuner-video-info-container {
     padding: 35px 6% 0;
+    text-align: center;
 }
 
 .tuner-video-info-container p {
@@ -2819,6 +2825,13 @@ Class Structure for Info Popup
     }
     .table-container {
         width: 48%;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .tuner-steps-child {
+        width: 30%;
+        margin: 0 50px 40px;
     }
 }
 
@@ -3228,6 +3241,16 @@ Class Structure for Info Popup
     .manualLink {
         margin-top: -5px;
     }
+
+    .tuner-image-carousel {
+        height: 440px;
+    }
+    .tuner-image-carousel-container {
+        width: 440px;
+    }
+    .tuner-image-carousel ul li {
+        width: 440px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -3279,6 +3302,37 @@ Class Structure for Info Popup
 
     .heading-tuner-title {
         font-size: 40px;
+    }
+
+    .tuner-image-carousel {
+        height: 340px;
+    }
+    .tuner-image-carousel-container {
+        width: 340px;
+    }
+    .tuner-image-carousel ul li {
+        width: 340px;
+    }
+    .tuner-steps-heading-one {
+        width: 80%;
+        font-size: 3em;
+        word-wrap: break-word;
+        line-height: 1.5em;
+    }
+    .tuner-steps-child {
+        width: 200px;
+        margin: 0 30px 40px;
+    }
+    .tuner-steps-number {
+        font-size: 8em;
+        height: 95px;
+    }
+    .tuner-steps-desc {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .step-icons {
+        font-size: 2em;
     }
 }
 
@@ -3436,6 +3490,26 @@ Class Structure for Info Popup
 
     .manualPageBannerImg {
         margin: 25px 0 15px 0;
+    }
+
+    .tuner-image-carousel {
+        height: 280px;
+    }
+    .tuner-image-carousel-container {
+        width: 280px;
+    }
+    .tuner-image-carousel ul li {
+        width: 280px;
+    }
+    .tuner-steps-heading-one {
+        width: 70%;
+        font-size: 2em;
+        word-wrap: break-word;
+        line-height: 2em;
+    }
+    .tuner-steps-number {
+        font-size: 6em;
+        height: 50px;
     }
 }
 

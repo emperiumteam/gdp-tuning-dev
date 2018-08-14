@@ -225,15 +225,40 @@ $(document).ready(function () {
 
     /* ----------------IMAGE CAROUSEL BASIC----------------- */
     var t = setInterval(function () {
+        var moveImage = $(".tuner-image-carousel").width() * -1;
         $(".tuner-image-carousel ul").animate({
-            marginLeft: -540
+            marginLeft: moveImage
         }, 1500, function () {
             $(this).find("li:last").after($(this).find("li:first"));
             $(this).css({
                 marginLeft: 0
             });
         })
-    }, 3000);
+    }, 6000);
     /* ----------------IMAGE CAROUSEL BASIC----------------- */
+
+    /* ----------------tuner steps----------------- */
+    //    $(".tuner-steps-child-one").hover().find("h1").addClass( "gdp-that-thing" );
+    $(".tuner-steps-child-one").hover(function () {
+        $(".tuner-steps-child-one").find("h1").addClass("gdp-that-thing");
+    }, function () {
+        $(".tuner-steps-child-one").find("h1").removeClass("gdp-that-thing");
+    });
+    $(".tuner-steps-child-two").hover(function () {
+        $(".tuner-steps-child-two").find("h1").addClass("gdp-that-thing");
+    }, function () {
+        $(".tuner-steps-child-two").find("h1").removeClass("gdp-that-thing");
+    });
+    $(".tuner-steps-child-three").hover(function () {
+        $(".tuner-steps-child-three").find("h1").addClass("gdp-that-thing");
+    }, function () {
+        $(".tuner-steps-child-three").find("h1").removeClass("gdp-that-thing");
+    });
+    $(".tuner-steps-child-four").hover(function () {
+        $(".tuner-steps-child-four").find("h1").addClass("gdp-that-thing");
+    }, function () {
+        $(".tuner-steps-child-four").find("h1").removeClass("gdp-that-thing");
+    });
+    /* ----------------tuner steps----------------- */
 
 });
