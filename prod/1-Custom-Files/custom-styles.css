@@ -2587,6 +2587,10 @@ Class Structure for Info Popup
 }
 
 
+.content__wrapper span {
+    margin-right: 10px;
+}
+
 
 /* --------adaptive tabs------------ */
 
