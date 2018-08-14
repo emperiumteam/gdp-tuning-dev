@@ -1803,6 +1803,9 @@ Class Structure for Info Popup
     position: relative;
 }
 
+.tuner-full-width-exception {
+    width: var(--manpagesize);
+}
 
 .tuner-info-container,
 .tuner-image-container {
@@ -2495,6 +2498,10 @@ Class Structure for Info Popup
 
 /* EFI LIVE and EZLYNK pages*/
 
+#efiliveBannerNotch {
+    margin-top: -4.6%;
+}
+
 .heading-tuner-title {
     width: 100%;
     text-align: center;
@@ -2929,6 +2936,20 @@ Class Structure for Info Popup
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .adaptive-tabs-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .tuner-full-width-exception {
+        width: 95%;
+    }
+    .adaptive-tabs > li {
+        padding: 10px;
+        font-size: 0.8em;
     }
 }
 
