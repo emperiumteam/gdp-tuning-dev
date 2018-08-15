@@ -105,6 +105,10 @@ like it is supposed to...thanks to the style below: */
     background-color: black;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* ----------------------------------------------- */
 
 /* ---------------------GENERAL END--------------- */
@@ -2594,7 +2598,7 @@ Class Structure for Info Popup
 
 .tuner-steps-desc {
     color: white;
-    width: 200px;
+    width: 220px;
 }
 
 .step-desc-container {
@@ -2742,9 +2746,168 @@ Class Structure for Info Popup
 
 /* --------adaptive tabs------------ */
 
-/* ------------------------------------------------------------------ */
+/* ----------------SUPPORT PAGE-------------------- */
 
-/* ------------------------------------------------------------------ */
+.support-trouble-accordian-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.trouble-acc-cont {
+    width: 100%;
+}
+
+.gdp-accordion {
+    margin: auto;
+/*    width: 600px;*/
+    width: 100%;
+}
+
+.gdp-accordion input {
+    display: none;
+}
+
+.gdp-accordion-box {
+    position: relative;
+    background: white;
+    height: 64px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.gdp-accordion-box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+header.gdp-accordion-box {
+/*    background: #00BCD4;*/
+    z-index: 100;
+    cursor: initial;
+    -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+}
+
+header .gdp-accordion-box-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16pt;
+    color: white;
+    cursor: initial;
+}
+
+.gdp-accordion-box-title {
+    width: calc(100% - 40px);
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gdp-accordion-box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 11pt;
+    color: rgba(0, 0, 0, .54);
+    display: none;
+}
+
+.gdp-accordion-box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+input:checked + .gdp-accordion-box {
+    height: auto;
+    margin: 16px 0;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+input:checked + .gdp-accordion-box .gdp-accordion-box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+input:checked + .gdp-accordion-box .gdp-accordion-box-content,
+input:checked + .gdp-accordion-box .gdp-accordion-box-close {
+    display: inline-block;
+}
+
+.gdp-accordion-arrows section .gdp-accordion-box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+}
+
+.gdp-accordion-arrows section .gdp-accordion-box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    -webkit-transition: -webkit-transform .15s ease-in-out;
+    transition: -webkit-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+    color: rgba(0, 0, 0, .54);
+}
+
+input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+.tech-support-child {
+    width: 30%;
+    margin: 20px;
+}
+
+.tech-support-child-img {
+    height: 150px;
+    text-align: center;
+}
+
+.tech-support-child-img img {
+    width: 80%;
+}
+
+.tech-support-child-link {
+    width: 100%;
+}
+
+.tech-support-child-link button {
+    font-size: 100%;
+}
+
+/* ----------------SUPPORT PAGE-------------------- */
 
 /* ------------------------------------------------------------------ */
 
@@ -3334,7 +3497,7 @@ Class Structure for Info Popup
     .step-icons {
         font-size: 2em;
     }
-    
+
     .ezlynk-app-links {
         width: 100%;
     }
