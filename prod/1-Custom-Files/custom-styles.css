@@ -2767,7 +2767,7 @@ Class Structure for Info Popup
 
 .gdp-accordion {
     margin: auto;
-/*    width: 600px;*/
+    /*    width: 600px;*/
     width: 100%;
 }
 
@@ -2797,7 +2797,7 @@ Class Structure for Info Popup
 }
 
 header.gdp-accordion-box {
-/*    background: #00BCD4;*/
+    /*    background: #00BCD4;*/
     z-index: 100;
     cursor: initial;
     -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
@@ -2886,7 +2886,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 
 .tech-support-child {
-    width: 30%;
+    width: 330px;
     margin: 20px;
 }
 
@@ -2896,7 +2896,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 }
 
 .tech-support-child-img img {
-    width: 80%;
+    width: 72%;
+    margin-top: 2%;
 }
 
 .tech-support-child-link {
@@ -2909,7 +2910,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 /* ----------------SUPPORT PAGE-------------------- */
 
-/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------ */
 
@@ -3464,7 +3465,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     }
 
     .heading-tuner-title {
-        font-size: 40px;
+        /*        font-size: 40px;*/
+        padding: 20px;
+        font-size: 2em;
+        line-height: 2em;
+        margin-bottom: 0;
     }
 
     .tuner-image-carousel {
@@ -3501,6 +3506,14 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .ezlynk-app-links {
         width: 100%;
     }
+
+    /*    support page*/
+    .support-trouble-accordian-container div button label,
+    .gdp-accordion-arrows section .gdp-accordion-box-title {
+        font-size: 0.7em;
+        width: 100% !important;
+    }
+    /*    support page*/
 }
 
 @media (max-width: 480px) {
@@ -3677,6 +3690,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-steps-number {
         font-size: 6em;
         height: 50px;
+    }
+
+    .text-center {
+        font-size: 2em;
     }
 }
 
