@@ -3334,6 +3334,10 @@ Class Structure for Info Popup
     .step-icons {
         font-size: 2em;
     }
+    
+    .ezlynk-app-links {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
