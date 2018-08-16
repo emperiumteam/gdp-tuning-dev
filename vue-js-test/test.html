@@ -12,12 +12,25 @@
 
 <body>
     <div class="product-item-container">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="product-item-container-two" v-for="product in object">
             <div class="product-details">
                 <h4 class="prod-code">PRODUCT CODE:</h4>
-                <h5 class="prod-code-title"> {{ product.name }} R-EGRD-03-076.0FORD</h5>
+                <h5 class="prod-code-title">{{ product.prod_code }}</h5>
                 <p class="social-icons-prod-item">
-                    <a class="manual-box-link" href="http://gdptuning.com/image/catalog/DLs/15-16FORD_v4b.pdf"><i class="fa fa-book"></i></a>
+                    <a class="manual-box-link" :href="product.prod_manual"><i class="fa fa-book"></i></a>
                     <span class="tooltiptext">Open Manual</span>
                     <a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=59#egr-upgrade&title=[TITLE]"><i class="fa fa-facebook"></i></a>
                     <a class="tw" href="https://twitter.com/intent/tweet?status=[TITLE]+http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=59#egr-upgrade"><i class="fa fa-twitter"></i></a>
@@ -44,12 +57,32 @@
                 </div>
             </div>
         </div>
-        <div class="product-item-container-two" v-for="value in object">
-            {{ value.name }}
-        </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

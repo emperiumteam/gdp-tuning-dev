@@ -19,14 +19,13 @@ body {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: center;
 }
 
 .product-item-container-two {
     height: 440px;
     width: 31%;
-    margin: 0 0 120px 0;
+    margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
