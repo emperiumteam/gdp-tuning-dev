@@ -45,15 +45,10 @@
                 <img :src="product.image_domain + product.prod_image" v-bind:alt="product.prod_name">
                 <div class="info">
                     <h2>Description</h2>
-                    <p>{{ product.prod_desc }}</p>
+                    <p v-html=product.prod_desc></p>
                 </div>
             </div>
         </div>
-<!--        <div v-if="product == '3'"><br><br><br><br></div>-->
-
-
-
-
 
 
     </div>
