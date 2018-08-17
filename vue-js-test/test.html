@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vue JS Product Magic</title>
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Advent+Pro|Alegreya|Alice|Amaranth|Arapey|Aref+Ruqaa|Bentham|Bubbler+One|Cantata+One|Chathura|Convergence|Domine|Droid+Serif|Gentium+Basic|Lato|Libre+Baskerville|Lora|Marvel|Merriweather|Nunito|Old+Standard+TT|Open+Sans|Oranienbaum|Oswald|Prata|Quicksand|Rufina|Ruluko|Rum+Raisin|Saira|Saira+Condensed|Saira+Extra+Condensed|Sansita|Snippet|Text+Me+One|Titillium+Web|Vidaloka|Wire+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,34 +12,26 @@
 
 <body>
     <div class="product-item-container">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-<!--        <a :href="product.prod_code"> ... </a>-->
-        
-        
-        
-        <div class="product-item-container-two" v-for="product in power_egr">            
+
+
+
+
+
+        <div class="product-item-container-two" v-for="product in gdp_products">
             <div class="product-details">
                 <h4 class="prod-code">PRODUCT CODE:</h4>
                 <h5 class="prod-code-title">{{ product.prod_code }}</h5>
                 <p class="social-icons-prod-item">
-                    <a class="manual-box-link" :href="product.prod_manual"><i class="fa fa-book"></i></a>
+                    <a v-if="product.prod_manual !== ''" class="manual-box-link" :href="product.prod_manual"><i class="fa fa-book"></i></a>
                     <span class="tooltiptext">Open Manual</span>
-                    <a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=59#egr-upgrade&title=[TITLE]"><i class="fa fa-facebook"></i></a>
-                    <a class="tw" href="https://twitter.com/intent/tweet?status=[TITLE]+http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=59#egr-upgrade"><i class="fa fa-twitter"></i></a>
-                    <a class="goog" href="https://plus.google.com/share?url=http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=59#egr-upgrade"><i class="fa fa-google-plus"></i></a>
+                    <a class="fb" :href="'https://www.facebook.com/sharer/sharer.php?u=' + product.social_url + product.social_url_prod_cat_id + '#' + product.prod_category + '&title=' + product.prod_name"><i class="fa fa-facebook"></i></a>
+                    <a class="tw" :href="'https://twitter.com/intent/tweet?status=' + product.prod_name + '+' + product.social_url + product.social_url_prod_cat_id + '#' + product.prod_category"><i class="fa fa-twitter"></i></a>
+                    <a class="goog" href="'https://plus.google.com/share?url=' + product.social_url + product.social_url_prod_cat_id + '#' + product.prod_category"><i class="fa fa-google-plus"></i></a>
                 </p>
                 <div class="btn-container">
-                    <a href="http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=58">
+                    <a href="product.dealer_link">
                         <button class="dealer-button">
-                        <span class="msrp-price">$162.63</span>
+                        <span class="msrp-price">$ {{ product.prod_msrp }}</span>
                         <span class="truck-icon">
                             <i class="fa fa-truck"></i>
                         </span>
@@ -49,38 +41,21 @@
                 </div>
             </div>
             <div class="product-image">
-                <h3 class="prod-name">GDP EGR | 03-07 FORD 6.0L w/Pipe</h3>
-                <img src="http://gdptuning.com/image/cache/catalog/Products/EGR/R-EGRD-03-076.0FORD-350x400.png" alt="GDP EGR | 03-07 FORD 6.0L w/Pipe">
+                <h3 class="prod-name">{{ product.prod_name }}</h3>
+                <img :src="product.image_domain + product.prod_image" v-bind:alt="product.prod_name">
                 <div class="info">
                     <h2>Description</h2>
-                    <p></p>
+                    <p>{{ product.prod_desc }}</p>
                 </div>
             </div>
         </div>
+<!--        <div v-if="product == '3'"><br><br><br><br></div>-->
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
     <script src="script.js"></script>
