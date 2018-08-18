@@ -45,7 +45,7 @@
                 <img :src="product.image_domain + product.prod_image" v-bind:alt="product.prod_name">
                 <div class="info">
                     <h2>Description</h2>
-                    <p v-html="product.prod_desc"></p>
+                    <div v-html="product.prod_desc"></div>
                 </div>
             </div>
         </div>
