@@ -19,7 +19,7 @@
                     <a v-if="product.prod_manual !== ''" class="manual-box-link" :href="product.prod_manual"><i class="fa fa-book"></i></a>
                     <span class="tooltiptext">Open Manual</span>
                     <a class="fb" :href="'https://www.facebook.com/sharer/sharer.php?u=' + product.social_url + product.social_url_prod_cat_id + '%23' + product.prod_category + '&title=' + product.prod_name"><i class="fa fa-facebook"></i></a>
-                    <a class="tw" :href="'https://twitter.com/home?status=' + product.prod_name + '%2B' + product.social_url + product.social_url_prod_cat_id + '%23' + product.prod_category"><i class="fa fa-twitter"></i></a>
+                    <a class="tw" :href="'https://twitter.com/intent/tweet?url=' + product.social_url + product.social_url_prod_cat_id + '%23' + product.prod_category"><i class="fa fa-twitter"></i></a>
                     <a class="goog" :href="'https://plus.google.com/share?url=' + product.social_url + product.social_url_prod_cat_id + '%23' + product.prod_category"><i class="fa fa-google-plus"></i></a>
                 </p>
                 <div class="btn-container">

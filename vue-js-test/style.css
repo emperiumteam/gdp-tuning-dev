@@ -25,7 +25,7 @@ body {
 .product-item-container-two {
     height: 440px;
     width: 31%;
-    margin: 20px;
+    margin: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
