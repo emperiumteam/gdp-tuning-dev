@@ -1844,6 +1844,9 @@ Class Structure for Info Popup
     width: 80%;
 }
 
+.tuner-image-mini {
+    width: 50%;
+}
 
 /* INFO CHILD CONTAINER */
 
@@ -1975,6 +1978,10 @@ Class Structure for Info Popup
     width: 31%;
     /*    height: 300px;*/
     margin: 0 0 20px 0;
+}
+
+.table-container-full {
+    margin: 30px 20px 0;
 }
 
 .table-container-heading {
