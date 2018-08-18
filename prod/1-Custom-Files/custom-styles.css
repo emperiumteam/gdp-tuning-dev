@@ -2248,17 +2248,21 @@ Class Structure for Info Popup
     overflow: hidden;
     float: right;
     width: 100%;
+    height: 415px;
     display: inline-block;
     padding: 2em 1em;
     background-color: white;
 }
 
 .product-item-container-two img {
-    width: 100%;
-    height: 100%;
+/*    width: 100%;*/
+/*    height: 100%;*/
     /* 	transform: translate(-7px, 25px) rotate(10deg) scale(1.4); */
-    -webkit-transform: translate(-13px, -1px) rotate(10deg);
-    transform: translate(-13px, -1px) rotate(10deg);
+/*    -webkit-transform: translate(-13px, -1px) rotate(10deg);*/
+/*    transform: translate(-13px, -1px) rotate(10deg);*/
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .info {
@@ -2473,7 +2477,7 @@ Class Structure for Info Popup
     opacity: 0;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    top: -40px;
+    top: -41px;
     left: 23%;
 }
 
@@ -2496,6 +2500,41 @@ Class Structure for Info Popup
 .manual-box-link:hover + span {
     visibility: visible;
     opacity: 1;
+}
+
+.tuner-info-support-package-container {
+    margin-top: 30px;
+    position: relative;
+}
+
+.support-package-left {
+    position: absolute;
+    left: 11%;
+    width: 400px;
+    top: 32%;
+    text-align: center;
+}
+
+.support-package-right {
+    position: absolute;
+    right: 11%;
+    width: 400px;
+    top: 32%;
+    text-align: center;
+}
+
+.support-package-title {
+    font-size: 4em;
+}
+
+.support-package-title-secondary {
+    font-size: 2em;
+}
+
+.support-package-msrp {
+    margin-top: 32px;
+    font-size: 2em;
+    color: white;
 }
 
 /* --------------------------------- */
