@@ -517,15 +517,22 @@ figure.effect-oscar:hover img {
 */
 
 @media screen and (max-width: 1200px) {
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        top: 0;
+    }
     .grid figure {
-        height: 165px;
+        height: 120px;
+        width: 30%;
+    }
+    .grid figure figcaption {
+        padding: 2.5em;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .grid figure {
         min-width: 89%;
-        height: 200px;
         margin: 15px 0;
     }
 }
@@ -2022,7 +2029,7 @@ Class Structure for Info Popup
 .truck-trio-tuner-bullets {
     list-style: none !important;
     margin: 12px 0;
-    
+
 }
 
 .tuner-bullet-icons {
@@ -3199,11 +3206,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .product-item-container-two {
         width: 48%;
     }
-    
+
     .product-item-container-two img {
         margin-top: 40%;
     }
-    
+
     .ghost-prod-item {
         display: none;
     }
@@ -3308,18 +3315,18 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-image-container {
         width: 100%;
     }
-    
+
     .tuner-info-padding {
         -webkit-transform: none;
         transform: none;
         margin: 0;
     }
-    
+
     .truck-trio-tuner-bullets {
         padding: 0 0 25px;
         margin: 0;
     }
-    
+
     .product-item-container-two img {
         margin-top: 50%;
     }
@@ -3487,16 +3494,16 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .halfWidth .manualPageProductImage {
         width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
     }
-    
+
     .troubleLink,
     .manualLink {
         font-size: 1em;
     }
-    
+
     .troubleLinkText {
         font-size: 1em;
     }
-    
+
     .manualLink {
         margin-top: -5px;
     }
@@ -3507,13 +3514,17 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-image-carousel-container {
         width: 440px;
     }
-    
+
     .tuner-image-carousel ul li {
         width: 440px;
     }
-    
+
     .product-item-container-two {
         height: 342px;
+    }
+
+    .social-icons-prod-item {
+        top: 120px;
     }
 }
 
@@ -3614,6 +3625,19 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 100% !important;
     }
     /*    support page*/
+    .truck-nav-trio-container #selectYourTruckManualsHeader {
+        margin-top: 10px;
+    }
+
+    .product-item-container-two {
+        width: 100%;
+    }
+
+    .product-item-container-two img {
+        width: 55%;
+        display: block;
+        margin: 24% auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -3794,6 +3818,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
     .text-center {
         font-size: 2em;
+    }
+
+    .table-container {
+        width: 100%;
     }
 }
 
