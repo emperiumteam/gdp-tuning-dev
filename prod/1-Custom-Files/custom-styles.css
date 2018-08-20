@@ -3487,13 +3487,16 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .halfWidth .manualPageProductImage {
         width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
     }
+    
     .troubleLink,
     .manualLink {
         font-size: 1em;
     }
+    
     .troubleLinkText {
         font-size: 1em;
     }
+    
     .manualLink {
         margin-top: -5px;
     }
@@ -3504,8 +3507,13 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-image-carousel-container {
         width: 440px;
     }
+    
     .tuner-image-carousel ul li {
         width: 440px;
+    }
+    
+    .product-item-container-two {
+        height: 342px;
     }
 }
 
