@@ -3344,6 +3344,9 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         padding: 10px;
         font-size: 0.8em;
     }
+    .grid figure figcaption {
+        padding: 3.7em;
+    }
 }
 
 @media (max-width: 768px) {
