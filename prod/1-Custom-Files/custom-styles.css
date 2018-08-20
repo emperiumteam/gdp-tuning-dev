@@ -1801,8 +1801,8 @@ Class Structure for Info Popup
     /*   background-color: #acacac; */
     width: var(--manpagesize);
     overflow: hidden;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2021,7 +2021,8 @@ Class Structure for Info Popup
 
 .truck-trio-tuner-bullets {
     list-style: none !important;
-    margin-top: 2%;
+    margin: 12px 0;
+    
 }
 
 .tuner-bullet-icons {
@@ -2264,11 +2265,11 @@ Class Structure for Info Popup
 }
 
 .product-item-container-two img {
-/*    width: 100%;*/
-/*    height: 100%;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
     /* 	transform: translate(-7px, 25px) rotate(10deg) scale(1.4); */
-/*    -webkit-transform: translate(-13px, -1px) rotate(10deg);*/
-/*    transform: translate(-13px, -1px) rotate(10deg);*/
+    /*    -webkit-transform: translate(-13px, -1px) rotate(10deg);*/
+    /*    transform: translate(-13px, -1px) rotate(10deg);*/
     margin-top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -3183,6 +3184,15 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         font-size: 1.8em;
     }
     /*    manual page ------------------------------ */
+    .tuner-info-logo {
+        height: 40px;
+        margin: 10px 0;
+    }
+
+    .classy-divider-left,
+    .classy-divider-right {
+        width: 37%;
+    }
 }
 
 @media (max-width: 979px) {
@@ -3278,6 +3288,22 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .tuner-info-container,
+    .tuner-image-container {
+        width: 100%;
+    }
+    
+    .tuner-info-padding {
+        -webkit-transform: none;
+        transform: none;
+        margin: 0;
+    }
+    
+    .truck-trio-tuner-bullets {
+        padding: 0 0 25px;
+        margin: 0;
     }
 }
 
