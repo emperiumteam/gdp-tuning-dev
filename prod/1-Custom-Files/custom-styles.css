@@ -109,6 +109,10 @@ like it is supposed to...thanks to the style below: */
     text-align: center;
 }
 
+.no-margin-top-container {
+    margin-top: -31px;
+}
+
 /* ----------------------------------------------- */
 
 /* ---------------------GENERAL END--------------- */
@@ -1781,6 +1785,36 @@ Class Structure for Info Popup
     justify-content: center;
     /*    padding: 0 12.7%;*/
     margin-bottom: 3em;
+}
+
+.image-with-collapsible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.image-collapsible-child {
+    margin: 15px;
+}
+
+.image-collapsible-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 4em;
+}
+
+.image-collapsible-img {
+    display: block;
+    margin: auto;
+    padding: 68px;
 }
 
 .tuner-info table {
