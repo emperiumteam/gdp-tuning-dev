@@ -2131,6 +2131,12 @@ Class Structure for Info Popup
     position: absolute;
     top: 10px;
     left: 15px;
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+.prod-name:before {
+    display: none;
 }
 
 .prod-code {
@@ -2272,11 +2278,6 @@ Class Structure for Info Popup
 }
 
 .product-item-container-two img {
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /* 	transform: translate(-7px, 25px) rotate(10deg) scale(1.4); */
-    /*    -webkit-transform: translate(-13px, -1px) rotate(10deg);*/
-    /*    transform: translate(-13px, -1px) rotate(10deg);*/
     margin-top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -2295,156 +2296,70 @@ Class Structure for Info Popup
     width: 100%;
     left: 0;
     top: 0;
-    /* 	opacity: 0.9; */
     padding: 2em;
     overflow-y: scroll;
-    /* 	z-index: 3; */
 }
 
 .info p {
     width: 80%;
     font-size: 0.9em;
     margin: 0;
+    display: inline;
 }
-
-/* li {
-
-}
-
-.info h2 {
-} */
 
 .product-image:hover .info {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-/* a {
-  color: #fff;
-  text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-right:.3em;
-  font-size: .8em;
-  border-radius: 4px;
-} */
-
 .fa-facebook,
 .fa-twitter,
 .fa-pinterest-p,
 .fa-google-plus {
-    /*   text-align:left; */
     font-size: 1.2em;
-    /*   margin-right:.5em; */
 }
 
 .fb {
-    /*   background-color:#3A5795;
-  padding:0.6em 1.4em 0.6em 1em;
-  text-align:left;
-  border: 2px solid #3a5795; */
     color: #3A5795;
-    /* 	position: absolute;
-  top: 0;
-  left: 0; */
     font-size: 1em;
     padding: 6px 10px;
-    /*
-    position: absolute;
-    top: 135px;
-    right: 41%;
-*/
     background-color: white;
-    /*   border: 1px solid orange; */
 }
 
 .fb:hover {
-    /*   background-color:#fff; */
     color: black;
 }
 
 .tw {
-    /*   background-color:#00B0ED;
-  padding:0.6em 1.4em 0.6em 1em;
-  text-align:left;
-  border: 2px solid #00B0ED; */
     color: #00B0ED;
-    /* 	position: absolute;
-  top: 0;
-  left: 40px; */
     font-size: 1em;
     padding: 6px 10px;
-    /*
-    position: absolute;
-    top: 135px;
-    right: 22%;
-*/
     background-color: white;
-    /*   border: 1px solid orange; */
 }
 
 .tw:hover {
-    /*   background-color:#fff; */
     color: black;
 }
 
-/* .pin {
-  background-color:#BE091C;
-  padding: 0.6em 1.4em 0.6em 1em;
-  text-align:left;
-  border: 2px solid #BE091C;
-}
-.pin:hover {
-  background-color:#fff;
-  color:#BE091C;
-} */
-
 .goog {
-    /*   background-color:#DD4B39;
-  padding: 0.6em 1.4em 0.6em 1em;
-  text-align:left;
-  border: 2px solid #DD4B39; */
     color: #DD4B39;
-    /* 	position: absolute;
-  top: 0;
-  left: 75px; */
     font-size: 1em;
     padding: 6px 10px;
-    /*
-    position: absolute;
-    top: 135px;
-    right: 3%;
-*/
     background-color: white;
-    /*   border: 1px solid orange; */
 }
 
 .goog:hover {
-    /*   background-color:#fff; */
     color: black;
 }
 
 .manual-box-link {
-    /*   background-color:#DD4B39;
-  padding: 0.6em 1.4em 0.6em 1em;
-  text-align:left;
-  border: 2px solid #DD4B39; */
     color: #DD4B39;
-    /* 	position: absolute;
-  top: 0;
-  left: 75px; */
     font-size: 1em;
     padding: 6px 10px;
-    /*
-    position: absolute;
-    top: 135px;
-    right: 60%;
-*/
     background-color: white;
-    /*   border: 1px solid orange; */
 }
 
 .manual-box-link:hover {
-    /*   background-color:#fff; */
     color: black;
 }
 
@@ -2471,13 +2386,6 @@ Class Structure for Info Popup
     margin: 0 5px;
 }
 
-
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-} */
-
 .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -2488,8 +2396,6 @@ Class Structure for Info Popup
     padding: 5px 0;
     position: absolute;
     z-index: 999;
-    /*     bottom: 125%; */
-    /*     left: 50%; */
     margin-left: -60px;
     opacity: 0;
     -webkit-transition: opacity 0.3s;
@@ -2542,10 +2448,13 @@ Class Structure for Info Popup
 
 .support-package-title {
     font-size: 4em;
+    color: white;
 }
 
 .support-package-title-secondary {
     font-size: 2em;
+    color: white;
+    margin-top: 30px;
 }
 
 .support-package-msrp {
@@ -3076,6 +2985,14 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .dealerUrlLink {
         font-size: 0.8em;
     }
+
+    .support-package-left {
+        left: 5%;
+    }
+
+    .support-package-right {
+        right: 5%;
+    }
 }
 
 @media screen and (max-width: 1373px) {
@@ -3200,6 +3117,28 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .classy-divider-right {
         width: 37%;
     }
+
+    .support-package-left {
+        left: 2%;
+    }
+
+    .support-package-right {
+        right: 2%;
+    }
+
+    .support-package-title {
+        font-size: 3.5em;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+
+    .support-package-msrp {
+        margin-top: 16px;
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -3213,6 +3152,28 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
     .ghost-prod-item {
         display: none;
+    }
+
+    .support-package-left {
+        left: 0;
+    }
+
+    .support-package-right {
+        right: 0;
+    }
+
+    .support-package-title {
+        font-size: 3em;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1em;
+        margin-top: 7px;
+    }
+
+    .support-package-msrp {
+        margin-top: 8px;
+        font-size: 1em;
     }
 }
 
@@ -3330,6 +3291,21 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .product-item-container-two img {
         margin-top: 50%;
     }
+
+    .support-package-title {
+        font-size: 2em;
+        margin-bottom: 3px;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .support-package-msrp {
+        margin-top: 0;
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 800px) {
@@ -3337,20 +3313,38 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         min-width: 100%;
         max-width: 100%;
     }
+
     .tuner-full-width-exception {
         width: 95%;
     }
+
     .adaptive-tabs > li {
         padding: 10px;
         font-size: 0.8em;
     }
+
     .grid figure figcaption {
         padding: 3.7em;
     }
+
+    .support-package-left,
+    .support-package-right {
+        width: 300px;
+    }
+
 }
 
 @media (max-width: 768px) {
     /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+    .prod-name:before {
+        display: block;
+        content: "Tap Image for Description";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-size: 0.5em;
+    }
+
     #selectYourTruckHeader {
         font-size: 3em;
         margin: 0 0 20px 0;
@@ -3529,6 +3523,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .social-icons-prod-item {
         top: 120px;
     }
+
+    .support-package-left,
+    .support-package-right {
+        width: 280px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -3640,6 +3639,33 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 55%;
         display: block;
         margin: 24% auto;
+    }
+
+    .support-package-left,
+    .support-package-right {
+        width: 220px;
+        top: 20%;
+    }
+
+    .support-package-title {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .support-package-title-secondary {
+        font-size: 0.7em;
+        margin-bottom: 0;
+    }
+
+    .support-package-msrp {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 530px) {
+    .support-package-left,
+    .support-package-right {
+        width: 180px;
     }
 }
 
@@ -3825,6 +3851,16 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
     .table-container {
         width: 100%;
+    }
+
+    .support-package-title {
+        font-size: 1em;
+    }
+
+    .support-package-left,
+    .support-package-right {
+        width: 150px;
+        top: 15%;
     }
 }
 
