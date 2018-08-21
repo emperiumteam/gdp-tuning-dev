@@ -906,7 +906,7 @@ figure.effect-oscar:hover img {
     color: #f05323 !important;
     text-transform: uppercase;
     font-family: montserrat;
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
 .manualLink:hover {
@@ -930,193 +930,193 @@ figure.effect-oscar:hover img {
 
 .ezlynk {
     top: 19%;
-    left: 34%;
+    left: 37%;
 }
 
 .autocal {
     top: 19%;
-    left: 34%;
+    left: 37%;
 }
 
 .ecmUnlock {
     top: 46%;
-    left: 62%;
+    left: 63%;
 }
 
 /* POWERSTROKE */
 
 #powerstrokeUpgradeOne {
     top: 26%;
-    left: 9%;
+    left: 11%;
 }
 
 #powerstrokeUpgradeTwo {
-    top: 80%;
-    left: 43%;
+    top: 81%;
+    left: 45%;
 }
 
 #powerstrokeUpgradeThree {
     top: 26%;
-    left: 75%;
+    left: 77%;
 }
 
 #powerstrokeUpgradeFour {
-    top: 80%;
-    left: 50%;
+    top: 81%;
+    left: 52%;
 }
 
 #powerstrokeUpgradeFive {
     top: 80%;
-    left: 18%;
+    left: 20%;
 }
 
 #powerstrokePosFiveOne {
-    top: 65%;
-    left: 43%;
+    top: 67%;
+    left: 45%;
 }
 
 #powerstrokePosFiveTwo {
-    top: 65%;
-    left: 74%;
+    top: 67%;
+    left: 76%;
 }
 
 #powerstrokePosSixOne {
-    top: 64%;
-    left: 9%;
+    top: 65%;
+    left: 11%;
 }
 
 #powerstrokePosSixTwo {
-    top: 64%;
-    left: 39%;
+    top: 65%;
+    left: 41%;
 }
 
 #powerstrokePosSixThree {
     top: 79%;
-    left: 23%;
+    left: 25%;
 }
 
 #powerstrokePosSixFour {
     top: 79%;
-    left: 64%;
+    left: 66%;
 }
 
 #powerstrokeDigitalOne {
     top: 41%;
-    left: 12%;
+    left: 13%;
 }
 
 #powerstrokeDigitalTwo {
     top: 82%;
-    left: 42%;
+    left: 44%;
 }
 
 #powerstrokeDigitalThree {
     top: 41%;
-    left: 72%;
+    left: 74%;
 }
 
 /* CUMMINS */
 
 #cumminsUpgradeOne {
     top: 87%;
-    left: 52%;
+    left: 54%;
 }
 
 #cumminsUpgradeTwo {
     top: 87%;
-    left: 15%;
+    left: 17%;
 }
 
 #cumminsUpgradeThree {
     top: 30%;
-    left: 51%;
+    left: 54%;
 }
 
 #cumminsUpgradeFour {
     top: 41%;
-    left: 11%;
+    left: 13%;
 }
 
 #cumminsPosFiveOne {
-    top: 59%;
-    left: 18%;
+    top: 60%;
+    left: 19%;
 }
 
 #cumminsDigitalOne {
     top: 60%;
-    left: 63%;
+    left: 64%;
 }
 
 /* DURAMAX */
 
 #duramaxUpgradeOne {
     top: 86%;
-    left: 53%;
+    left: 56%;
 }
 
 #duramaxUpgradeTwo {
     top: 86%;
-    left: 14%;
+    left: 16%;
 }
 
 #duramaxUpgradeThree {
-    top: 31%;
-    left: 52%;
+    top: 30%;
+    left: 56%;
 }
 
 #duramaxUpgradeFour {
-    top: 31%;
-    left: 13%;
+    top: 30%;
+    left: 15%;
 }
 
 #duramaxPosFiveOne {
     top: 38%;
-    left: 64%;
+    left: 66%;
 }
 
 #duramaxPosFiveTwo {
     top: 69%;
-    left: 64%;
+    left: 66%;
 }
 
 #duramaxPosFiveThree {
     top: 55%;
-    left: 15%;
+    left: 17%;
 }
 
 #duramaxPosSixOne {
     top: 38%;
-    left: 68%;
+    left: 70%;
 }
 
 #duramaxPosSixTwo {
-    top: 68%;
-    left: 68%;
+    top: 69%;
+    left: 70%;
 }
 
 #duramaxDigitalOne {
     top: 28%;
-    left: 11%;
+    left: 13%;
 }
 
 #duramaxDigitalTwo {
     top: 59%;
-    left: 18%;
+    left: 19%;
 }
 
 #duramaxDigitalThree {
     top: 87%;
-    left: 43%;
+    left: 45%;
 }
 
 #duramaxDigitalFour {
     top: 59%;
-    left: 68%;
+    left: 71%;
 }
 
 #duramaxDigitalFive {
     top: 28%;
-    left: 75%;
+    left: 77%;
 }
 
 /* ----------------------------------------------- */
@@ -1867,7 +1867,7 @@ Class Structure for Info Popup
     padding: 1em 2em;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-top: 50%;
+    margin-top: 30%;
 }
 
 .tuner-info-title {
@@ -2474,7 +2474,8 @@ Class Structure for Info Popup
 .heading-tuner-title {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
+    font-size: 2.5em;
 }
 
 .tuner-image-carousel-container {
@@ -2575,7 +2576,7 @@ Class Structure for Info Popup
 .step-icons {
     color: white;
     font-size: 5em;
-    margin: 20px;
+    margin: 20px 4px;
 }
 
 
