@@ -2908,6 +2908,30 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     font-size: 100%;
 }
 
+.tuner-info-support-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.tuner-info-support-child {
+    max-width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 /* ----------------SUPPORT PAGE-------------------- */
 
 /* ------------------------------------------------------------ */
@@ -3754,7 +3778,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
     .grid figure figcaption,
     .grid figure figcaption > a {
-        top: 15%;
+        /*        top: 15%;*/
     }
 
     #dealerBannerImgContainer,
@@ -3849,7 +3873,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     }
 
     .manualPageHeadingImageContainer {
-/*        display: none;*/
+        /*        display: none;*/
     }
 
     #mainManualContainer {
@@ -3897,9 +3921,19 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 150px;
         top: 15%;
     }
-    
+
     #locationContentContainer {
         height: 150vw;
+    }
+
+    .tuner-info-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .grid figure figcaption {
+        padding: 2.5em;
     }
 }
 
