@@ -829,6 +829,15 @@ figure.effect-oscar:hover img {
     margin: 24px 0 30px;
 }
 
+
+.truck-trio-banner {
+    display: block;
+}
+
+.truck-trio-banner-mobile {
+    display: none;
+}
+
 .manualPageTroubleContainer {
     background-color: white;
     padding: 22px 45px;
@@ -3401,7 +3410,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         position: absolute;
         top: 100%;
         left: 0;
-        font-size: 0.5em;
+        font-size: 0.7em;
+        color: #f05423db;
     }
 
     #selectYourTruckHeader {
@@ -3587,6 +3597,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .support-package-right {
         width: 280px;
     }
+    
+    .prod-name {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 600px) {
@@ -3719,6 +3733,21 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .support-package-msrp {
         font-size: 0.7em;
     }
+    
+    .truck-trio-banner {
+        display: none;
+    }
+
+    .truck-trio-banner-mobile {
+        display: block;
+    }    
+    
+    .headingOdd,
+    .headingEven {
+        -webkit-transform: none;
+        transform: none;
+    }
+    
 }
 
 @media (max-width: 530px) {
@@ -3808,6 +3837,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: var(--manpagesize);
     }
 
+/*
     .headingEven {
         position: relative;
         -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
@@ -3819,6 +3849,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
         transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
     }
+*/
 
     .fullWidth {
         margin-bottom: var(--fullmargin);
@@ -3872,8 +3903,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 30%;
     }
 
-    .manualPageHeadingImageContainer {
-        /*        display: none;*/
+    #mainManualContainer .manualPageHeadingImageContainer {
+        display: none;
     }
 
     #mainManualContainer {
