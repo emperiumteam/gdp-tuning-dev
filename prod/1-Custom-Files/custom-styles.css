@@ -1902,6 +1902,10 @@ Class Structure for Info Popup
     width: 50%;
 }
 
+.efli-live-vin-tuner-image {
+    width: 55%;
+}
+
 /* INFO CHILD CONTAINER */
 
 .tuner-info-container {
@@ -2035,7 +2039,7 @@ Class Structure for Info Popup
 }
 
 .table-container-full {
-    margin: 30px 20px 0;
+    margin: 30px 80px 0;
 }
 
 .table-container-heading {
@@ -2508,19 +2512,19 @@ Class Structure for Info Popup
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 400px;
-    margin: 10px 50px;
+/*    width: 400px;*/
+/*    margin: 10px 50px;*/
     text-align: center;
 }
 
 .support-package-title {
     font-size: 4em;
-    color: white;
+    color: black;
 }
 
 .support-package-title-secondary {
     font-size: 2em;
-    color: white;
+    color: black;
     margin-top: 0;
     width: 100%;
 }
@@ -2528,7 +2532,7 @@ Class Structure for Info Popup
 .support-package-msrp {
     margin: 14px 0 20px;
     font-size: 2em;
-    color: white;
+    color: black;
     width: 100%;
 }
 
@@ -3223,6 +3227,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         margin-top: 16px;
         font-size: 1.5em;
     }
+    
+                
+    .table-container-full {
+        margin: 30px 20px 0;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -3250,6 +3259,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .support-package-msrp {
         margin-top: 8px;
         font-size: 1em;
+    }
+            
+    .table-container-full {
+        margin: 30px 15px 0;
     }
 }
 
