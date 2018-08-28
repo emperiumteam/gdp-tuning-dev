@@ -113,6 +113,27 @@ like it is supposed to...thanks to the style below: */
     margin-top: -31px;
 }
 
+/*ID TARGETS*/
+#cummins-banner,
+#powerstroke-banner,
+#duramax-banner,
+#support-banner {
+    background-position: center center;
+    background-size: cover;
+}
+
+#cummins-banner {
+    background-image: url(/image/catalog/multiplepages/banners/dodgeBanner.jpg);
+}
+#powerstroke-banner {
+    background-image: url(/image/catalog/multiplepages/banners/fordBanner.jpg);
+}
+#duramax-banner {
+    background-image: url(/image/catalog/multiplepages/banners/chevyBanner.jpg);
+}
+#support-banner {
+    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);    
+}
 /* ----------------------------------------------- */
 
 /* ---------------------GENERAL END--------------- */
@@ -645,6 +666,12 @@ figure.effect-oscar:hover img {
 
 .manualBannerImgContainer {
     height: 430px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.truck-trio-BannerImgContainer {
+    height: 690px;
     width: 100%;
     overflow: hidden;
 }
