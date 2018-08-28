@@ -123,16 +123,17 @@ like it is supposed to...thanks to the style below: */
 }
 
 #cummins-banner {
-    background-image: url(/image/catalog/multiplepages/banners/dodgeBanner.jpg);
+    background-image: url('/image/catalog/multiplepages/banners/dodgeBanner.jpg');
 }
 #powerstroke-banner {
-    background-image: url(/image/catalog/multiplepages/banners/fordBanner.jpg);
+    background-image: url('/image/catalog/multiplepages/banners/fordBanner.jpg');
 }
 #duramax-banner {
-    background-image: url(/image/catalog/multiplepages/banners/chevyBanner.jpg);
+    background-image: url('/image/catalog/multiplepages/banners/chevyBanner.jpg');
 }
 #support-banner {
-    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);    
+/*    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);*/
+    background-image: url('/image/catalog/homepage/Home Page (GDP Gear).png');   
 }
 /* ----------------------------------------------- */
 
