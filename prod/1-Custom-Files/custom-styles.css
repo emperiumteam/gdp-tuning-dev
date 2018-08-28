@@ -471,7 +471,7 @@ figure.effect-oscar img {
 
 figure.effect-oscar h2 {
     color: white !important;
-    font-size: 150%;
+    font-size: 143%;
 }
 
 
@@ -1924,7 +1924,7 @@ Class Structure for Info Popup
 }
 
 .tuner-image {
-    width: 80%;
+    width: 35%;
 }
 
 .tuner-image-mini {
@@ -2579,6 +2579,9 @@ Class Structure for Info Popup
     margin-top: 35px;
     font-size: 2.5em;
 }
+
+
+
 
 .tuner-image-carousel-container {
     /*    width: 800px;*/
