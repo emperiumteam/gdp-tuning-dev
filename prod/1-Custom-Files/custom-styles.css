@@ -3150,6 +3150,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 270px;
     }
+    
+    .truck-trio-BannerImgContainer {
+        height: 350px;
+    }
 
     .manualTruckLogosFigure {
         margin: 0 12px;
@@ -3552,6 +3556,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 215px;
     }
+    
+    .truck-trio-BannerImgContainer {
+        height: 280px;
+    }
 
     :root {
         /*        --manpagesize: 580px;*/
@@ -3679,6 +3687,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     #dealerBannerImgContainer,
     .manualBannerImgContainer {
         height: 180px;
+    }
+    
+    .truck-trio-BannerImgContainer {
+        height: 200px;
     }
 
     .manualTruckLogosFigure {
@@ -3836,6 +3848,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     #dealerBannerImgContainer,
     .manualBannerImgContainer {
         height: 110px;
+    }
+    
+    .truck-trio-BannerImgContainer {
+        height: 150px;
     }
 
     :root {
