@@ -3991,6 +3991,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-info-logo {
         display: none;
     }
+    
+    .ui-selectmenu-menu .ui-menu {
+        height: 53vw;
+    }
 }
 
 @media (max-width: 350px) {
