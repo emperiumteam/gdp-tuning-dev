@@ -2073,7 +2073,7 @@ Class Structure for Info Popup
 
 .table-container-heading {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.3em;
     margin-bottom: 0;
 }
 
@@ -3084,6 +3084,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     }
     .table-container {
         width: 48%;
+    }
+    
+    .ghost-table {
+        display: none;   
     }
 }
 
