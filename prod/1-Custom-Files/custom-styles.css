@@ -114,6 +114,7 @@ like it is supposed to...thanks to the style below: */
 }
 
 /*ID TARGETS*/
+
 #cummins-banner,
 #powerstroke-banner,
 #duramax-banner,
@@ -125,16 +126,20 @@ like it is supposed to...thanks to the style below: */
 #cummins-banner {
     background-image: url('/image/catalog/multiplepages/banners/dodgeBanner.jpg');
 }
+
 #powerstroke-banner {
     background-image: url('/image/catalog/multiplepages/banners/fordBanner.jpg');
 }
+
 #duramax-banner {
     background-image: url('/image/catalog/multiplepages/banners/chevyBanner.jpg');
 }
+
 #support-banner {
-/*    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);*/
-    background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');   
+    /*    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);*/
+    background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
 }
+
 /* ----------------------------------------------- */
 
 /* ---------------------GENERAL END--------------- */
@@ -2044,10 +2049,6 @@ Class Structure for Info Popup
     margin-bottom: 0.3em;
 }
 
-
-
-
-
 .table-info-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2060,7 +2061,8 @@ Class Structure for Info Popup
     -ms-flex-pack: justify;
     justify-content: space-between;
     /*    padding: 25px 12.7% 0;*/
-    margin: auto;
+    /*    margin: auto;*/
+    margin: 0 auto 45px;
 }
 
 .table-container {
@@ -2519,8 +2521,8 @@ Class Structure for Info Popup
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2535,16 +2537,16 @@ Class Structure for Info Popup
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-/*    width: 400px;*/
-/*    margin: 10px 50px;*/
+    /*    width: 400px;*/
+    /*    margin: 10px 50px;*/
     text-align: center;
 }
 
@@ -3087,9 +3089,9 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .table-container {
         width: 48%;
     }
-    
+
     .ghost-table {
-        display: none;   
+        display: none;
     }
 }
 
@@ -3159,7 +3161,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 270px;
     }
-    
+
     .truck-trio-BannerImgContainer {
         height: 350px;
     }
@@ -3249,7 +3251,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .classy-divider-right {
         width: 37%;
     }
-    
+
     .support-package-title {
         font-size: 3.5em;
     }
@@ -3263,8 +3265,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         margin-top: 16px;
         font-size: 1.5em;
     }
-    
-                
+
+
     .table-container-full {
         margin: 30px 20px 0;
     }
@@ -3296,7 +3298,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         margin-top: 8px;
         font-size: 1em;
     }
-            
+
     .table-container-full {
         margin: 30px 15px 0;
     }
@@ -3451,7 +3453,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .grid figure figcaption {
         padding: 3.7em;
     }
-    
+
     .support-package-image {
         height: 200px;
     }
@@ -3565,7 +3567,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 215px;
     }
-    
+
     .truck-trio-BannerImgContainer {
         height: 280px;
     }
@@ -3697,7 +3699,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 180px;
     }
-    
+
     .truck-trio-BannerImgContainer {
         height: 200px;
     }
@@ -3858,7 +3860,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualBannerImgContainer {
         height: 110px;
     }
-    
+
     .truck-trio-BannerImgContainer {
         height: 150px;
     }
@@ -3997,7 +3999,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .tuner-info-logo {
         display: none;
     }
-    
+
     .ui-selectmenu-menu .ui-menu {
         height: 53vw;
     }
