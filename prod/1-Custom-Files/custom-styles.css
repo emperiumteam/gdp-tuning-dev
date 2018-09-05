@@ -247,6 +247,8 @@ like it is supposed to...thanks to the style below: */
 
 #powerstrokeTruck {
     right: -15%;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
 }
 
 #duramaxTruck,

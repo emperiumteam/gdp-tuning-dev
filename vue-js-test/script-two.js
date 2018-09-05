@@ -769,7 +769,7 @@ const app = new Vue({
                 social_url_prod_cat_id: 59,
                 dealer_link: 'http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=58',
                 prod_msrp: 179.99,
-                prod_name: 'GDP DIGITAL SWITCH | 2017 Power Stroke - BLUE',
+                prod_name: 'GDP DIGITAL SWITCH | 17-18 Power Stroke - BLUE',
                 image_domain: 'http://gdptuning.com/image/',
                 prod_image: 'catalog/Products/Switches/DIGITAL SWITCH BLUE.png',
                 prod_desc: "<p></p><p class='MsoNormal'>GDP Tuning's Digital DSP-5 switch allows you to easily\nchange your EFI LIVE or EZ LYNK DSP-5 tune at the push of a button. Large 1″ LED numerical\ndisplay clearly shows what tune you are in, even at a quick glance.</p><p class='MsoNormal'><font color='#ff0000'><b>Visit any of our Dealers or Distributors for purchase</b></font></p><ul><li><p>6 Position Switch</p></li><li><p>Color LED Display</p></li><li><p>High Idle Control Function</p></li><li><p>Easy to Install</p></li><li><p>ACC 12 volt Output</p></li><li><p>SOTF Switch for EFI LIVE &amp; EZ LYNK</p></li><li><p>Illumination with Factory OEM Controls</p></li><li><p>PATENT PENDING</p></li></ul><br><div style='text-align: left;'><b><u>Works With</u></b></div><div style='text-align: left;'><b><u><br></u></b></div><table class='table table-bordered'><tbody><tr><td>01-16 Duramax<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK<br></td></tr><tr><td>11-17 Power Stroke<br></td><td>EZ LYNK<br></td></tr><tr><td>13-17 Cummins (coming soon)<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK</td></tr></tbody></table>"
@@ -783,7 +783,7 @@ const app = new Vue({
                 social_url_prod_cat_id: 59,
                 dealer_link: 'http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=58',
                 prod_msrp: 179.99,
-                prod_name: 'GDP DIGITAL SWITCH | 2017 Power Stroke - GREEN',
+                prod_name: 'GDP DIGITAL SWITCH | 17-18 Power Stroke - GREEN',
                 image_domain: 'http://gdptuning.com/image/',
                 prod_image: 'catalog/Products/Switches/DIGITAL SWITCH GREEN.png',
                 prod_desc: "<p></p><p class='MsoNormal'>GDP Tuning's Digital DSP-5 switch allows you to easily\nchange your EFI LIVE or EZ LYNK DSP-5 tune at the push of a button. Large 1″ LED numerical\ndisplay clearly shows what tune you are in, even at a quick glance.</p><p class='MsoNormal'><font color='#ff0000'><b>Visit any of our Dealers or Distributors for purchase</b></font></p><ul><li><p>6 Position Switch</p></li><li><p>Color LED Display</p></li><li><p>High Idle Control Function</p></li><li><p>Easy to Install</p></li><li><p>ACC 12 volt Output</p></li><li><p>SOTF Switch for EFI LIVE &amp; EZ LYNK</p></li><li><p>Illumination with Factory OEM Controls</p></li><li><p>PATENT PENDING</p></li></ul><br><div style='text-align: left;'><b><u>Works With</u></b></div><div style='text-align: left;'><b><u><br></u></b></div><table class='table table-bordered'><tbody><tr><td>01-16 Duramax<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK<br></td></tr><tr><td>11-17 Power Stroke<br></td><td>EZ LYNK<br></td></tr><tr><td>13-17 Cummins (coming soon)<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK</td></tr></tbody></table>"
@@ -797,7 +797,7 @@ const app = new Vue({
                 social_url_prod_cat_id: 59,
                 dealer_link: 'http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=58',
                 prod_msrp: 179.99,
-                prod_name: 'GDP DIGITAL SWITCH | 2017 Power Stroke - RED',
+                prod_name: 'GDP DIGITAL SWITCH | 17-18 Power Stroke - RED',
                 image_domain: 'http://gdptuning.com/image/',
                 prod_image: 'catalog/Products/Switches/DIGITAL SWITCH RED.png',
                 prod_desc: "<p></p><p class='MsoNormal'>GDP Tuning's Digital DSP-5 switch allows you to easily\nchange your EFI LIVE or EZ LYNK DSP-5 tune at the push of a button. Large 1″ LED numerical\ndisplay clearly shows what tune you are in, even at a quick glance.</p><p class='MsoNormal'><font color='#ff0000'><b>Visit any of our Dealers or Distributors for purchase</b></font></p><ul><li><p>6 Position Switch</p></li><li><p>Color LED Display</p></li><li><p>High Idle Control Function</p></li><li><p>Easy to Install</p></li><li><p>ACC 12 volt Output</p></li><li><p>SOTF Switch for EFI LIVE &amp; EZ LYNK</p></li><li><p>Illumination with Factory OEM Controls</p></li><li><p>PATENT PENDING</p></li></ul><br><div style='text-align: left;'><b><u>Works With</u></b></div><div style='text-align: left;'><b><u><br></u></b></div><table class='table table-bordered'><tbody><tr><td>01-16 Duramax<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK<br></td></tr><tr><td>11-17 Power Stroke<br></td><td>EZ LYNK<br></td></tr><tr><td>13-17 Cummins (coming soon)<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK</td></tr></tbody></table>"
@@ -811,7 +811,7 @@ const app = new Vue({
                 social_url_prod_cat_id: 59,
                 dealer_link: 'http://gdp.emperiumdesign.com/index.php?route=information/information&information_id=58',
                 prod_msrp: 179.99,
-                prod_name: 'GDP DIGITAL SWITCH | 2017 Power Stroke - WHITE',
+                prod_name: 'GDP DIGITAL SWITCH | 17-18 Power Stroke - WHITE',
                 image_domain: 'http://gdptuning.com/image/',
                 prod_image: 'catalog/Products/Switches/DIGITAL SWITCH WHITE.png',
                 prod_desc: "<p></p><p class='MsoNormal'>GDP Tuning's Digital DSP-5 switch allows you to easily\nchange your EFI LIVE or EZ LYNK DSP-5 tune at the push of a button. Large 1″ LED numerical\ndisplay clearly shows what tune you are in, even at a quick glance.</p><p class='MsoNormal'><font color='#ff0000'><b>Visit any of our Dealers or Distributors for purchase</b></font></p><ul><li><p>6 Position Switch</p></li><li><p>Color LED Display</p></li><li><p>High Idle Control Function</p></li><li><p>Easy to Install</p></li><li><p>ACC 12 volt Output</p></li><li><p>SOTF Switch for EFI LIVE &amp; EZ LYNK</p></li><li><p>Illumination with Factory OEM Controls</p></li><li><p>PATENT PENDING</p></li></ul><br><div style='text-align: left;'><b><u>Works With</u></b></div><div style='text-align: left;'><b><u><br></u></b></div><table class='table table-bordered'><tbody><tr><td>01-16 Duramax<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK<br></td></tr><tr><td>11-17 Power Stroke<br></td><td>EZ LYNK<br></td></tr><tr><td>13-17 Cummins (coming soon)<br></td><td>EFI LIVE &nbsp;&amp; &nbsp;EZ LYNK</td></tr></tbody></table>"
