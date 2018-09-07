@@ -4,3 +4,5 @@
 
 3. Go through each page and fix file paths for all links
 
+4. Update jQuery, Boostrap on prod site
+
