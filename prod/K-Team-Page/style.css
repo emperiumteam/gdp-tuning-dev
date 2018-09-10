@@ -24,7 +24,7 @@ section {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100vw;
-    height: 200px;
+    min-height: 200px;
 }
 
 .teamPic {
@@ -38,20 +38,25 @@ section {
     transition: 0.3s;
 }
 
+.teamPic:hover {
+    width: 300px;
+    height: 300px;
+}
+
 .teamPic1 {
-    background-image: url(image/catalog/teampage/1primary.jpg);
+    background-image: url("image/catalog/teampage/1primary.jpg");
 }
 
 .teamPic1:hover {
-    background-image: url(image/catalog/teampage/1secondary.jpg);
+    background-image: url("image/catalog/teampage/1secondary.jpg");
 }
 
 .teamPic2 {
-    background-image: url(image/catalog/teampage/2primary.jpg);
+    background-image: url("image/catalog/teampage/2primary.jpg");
 }
 
 .teamPic2:hover {
-    background-image: url(image/catalog/teampage/2secondary.jpg);
+    background-image: url("image/catalog/teampage/2secondary.jpg");
 }
 
 .teamPic3 {
