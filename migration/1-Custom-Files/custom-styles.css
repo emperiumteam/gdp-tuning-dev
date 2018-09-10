@@ -1245,6 +1245,10 @@ figure.effect-oscar:hover img {
     height: 37vw;
 }
 
+.ui-button .ui-icon {
+    margin-top: 9px;
+}
+
 .ui-selectmenu-menu .ui-menu {
     height: 17vw;
     background-color: white;
@@ -1326,7 +1330,9 @@ Class Structure for Info Popup
 }
 
 .ui-selectmenu-text {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding: 3px;
+    margin-left: 5px;
 }
 
 /* Dropdown Popup */
