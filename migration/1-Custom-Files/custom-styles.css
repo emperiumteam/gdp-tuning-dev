@@ -32,9 +32,9 @@ TABLE OF CONTENTS:
 /* in the drop down for the row, if you select full, it will actually go full width
 like it is supposed to...thanks to the style below: */
 
-#wrapper:not(.container) > .tb_width_fixed,
-#wrapper:not(.container) > .container,
-#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+.tb_width_2500 #wrapper:not(.container) > .tb_width_fixed,
+.tb_width_2500 #wrapper:not(.container) > .container,
+.tb_width_2500 #wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
     margin-left: 0;
     margin-right: 0;
 }
@@ -118,7 +118,8 @@ like it is supposed to...thanks to the style below: */
 #cummins-banner,
 #powerstroke-banner,
 #duramax-banner,
-#support-banner {
+#support-banner,
+#manual-banner {
     background-position: center center;
     background-size: cover;
 }
@@ -138,6 +139,17 @@ like it is supposed to...thanks to the style below: */
 #support-banner {
     /*    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);*/
     background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
+}
+
+#manual-banner {
+    background-image: url('/image/catalog/multiplepages/banners/whiteBlack.jpg');
+}
+
+.tb_article {
+    background-color: white;
+    width: 90%;
+    margin: 4% auto !important;
+    padding: 2%;
 }
 
 /* ----------------------------------------------- */
@@ -1235,6 +1247,7 @@ figure.effect-oscar:hover img {
 
 .ui-selectmenu-menu .ui-menu {
     height: 17vw;
+    background-color: white;
 }
 
 #mapContainer {
