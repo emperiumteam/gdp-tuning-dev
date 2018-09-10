@@ -1,0 +1,4018 @@
+/* CUSTOM STYLES */
+
+/* -----------------------------------------------
+TABLE OF CONTENTS:
+1.  General Styles
+2.  Home Page Hero Orange "GDP TUNING NOTCH"
+3.  Home Page "Select Your Truck Section"
+4.  Home Page "Tuners" section
+5.  Home Page "Products" section
+6.  Home Page "FIND YOUR CLOSEST DEALER OR DISTRIBUTOR" section
+7.  Header right section for canadian link and social icons
+8.  Manual Page - banner image/notch
+9.  manual page coming soon...
+10. Dealer Page - banner image/notch coming soon...
+11. Dealer Page - map, dropdown, etc
+----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------1. GENERAL------------------- */
+
+/* ----------------------------------------------- */
+
+/* take out footer that gives credit to pavilion */
+
+#bottom {
+    display: none;
+}
+
+/* had to do this so to make home page content full width: */
+
+/* in the drop down for the row, if you select full, it will actually go full width
+like it is supposed to...thanks to the style below: */
+
+#wrapper:not(.container) > .tb_width_fixed,
+#wrapper:not(.container) > .container,
+#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (min-width: 2000px) {
+    #wrapper:not(.container) > .tb_width_fixed,
+    #wrapper:not(.container) > .container,
+    #wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#content,
+#content > div > div {
+    padding: 0;
+    margin: 0;
+}
+
+.container,
+.tb_width_fixed,
+#wrapper:not(.container) > .tb_content_fixed > .row-wrap {
+    max-width: 2500px;
+}
+
+/* had to do this so to make the header lose margin, gain padding, color*/
+
+#header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #000000), color-stop(35%, #fff));
+    background: linear-gradient(#000000 70%, #fff 35%);
+    padding: 12px 0 0;
+    color: white;
+}
+
+#Menu_X9U19E5w a:not(:hover) {
+    color: white;
+}
+
+.row_Sv9uv {
+    background: #000000;
+}
+
+/* welcome visitor link in header */
+
+@media screen and (max-width: 1260px) {
+    #HeaderWelcomeSystem_RxxdDvxf {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Foooter Html Block list items */
+
+#Html_Q5K89hjV > div > nav > ul > li {
+    margin-bottom: 5px;
+}
+
+/* sticky header fix */
+
+#sticky_header {
+    visibility: visible;
+    padding: 20px 20px !important;
+}
+
+/*foooter bg*/
+
+#footer {
+    background-color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.no-margin-top-container {
+    margin-top: -31px;
+}
+
+/*ID TARGETS*/
+
+#cummins-banner,
+#powerstroke-banner,
+#duramax-banner,
+#support-banner {
+    background-position: center center;
+    background-size: cover;
+}
+
+#cummins-banner {
+    background-image: url('/image/catalog/multiplepages/banners/dodgeBanner.jpg');
+}
+
+#powerstroke-banner {
+    background-image: url('/image/catalog/multiplepages/banners/fordBanner.jpg');
+}
+
+#duramax-banner {
+    background-image: url('/image/catalog/multiplepages/banners/chevyBanner.jpg');
+}
+
+#support-banner {
+    /*    background-image: url(/image/catalog/multiplepages/banners/supportBanner.jpg);*/
+    background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------------GENERAL END--------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------2. HERO NOTCH---------------- */
+
+/* ----------------------------------------------- */
+
+#gdpHeroBannerImg {
+    width: 46%;
+    margin-top: -4.4%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
+}
+
+/* ----------------------------------------------- */
+
+/* ------------------HERO NOTCH END--------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------3. SELECT YOUR TRUCK--------- */
+
+/* ----------------------------------------------- */
+
+#selectYourTruckContainer {
+    margin-left: -72px;
+    width: 100%;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#selectYourTruckHeader {
+    width: 60%;
+    text-align: center;
+    margin: -25px 0 45px;
+}
+
+#selectYourTruckHeader div {
+    display: inline-block;
+}
+
+#logosGroup {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logosGroupFigure {
+    margin: 0 2vw;
+}
+
+#logosGroup img {
+    height: 95px;
+    margin: 1em;
+}
+
+#logosGroup img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#logosGroup a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#trucksGroup {
+    width: 50%;
+}
+
+#powerstrokeTruck,
+#duramaxTruck,
+#cumminsTruck {
+    position: absolute;
+    top: -6px;
+    height: 100%;
+}
+
+#powerstrokeTruck {
+    right: -15%;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+#duramaxTruck,
+#cumminsTruck {
+    right: -100vw;
+}
+
+.buyKitButton {
+    margin-top: 20px;
+    width: 52%;
+    background: #f05423;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f05423), to(#c5370a));
+    background-image: linear-gradient(to bottom, #f05423, #c5370a);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 13px 8px 13px;
+    text-decoration: none;
+}
+
+.buyKitButton:hover {
+    background: #9c2600;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+
+/* ------------------SELECT YOUR TRUCK END-------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------4. TUNERS------------------- */
+
+/* ----------------------------------------------- */
+
+#homeTunersImageSectionImg {
+    width: 100%;
+}
+
+#tunerLogos {
+    position: relative;
+}
+
+#tunerLogosMobile {
+    display: none;
+    position: relative;
+}
+
+#tunerLogosMobileText {
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    padding: 6px 10%;
+    color: white;
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+#ezLogoTuners,
+#efiliveLogoTuners {
+    position: absolute;
+    top: 51%;
+    height: 20%;
+}
+
+#ezLogoTuners:hover,
+#efiliveLogoTuners:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#ezLogoTuners {
+    left: 27%;
+}
+
+#efiliveLogoTuners {
+    left: 8%;
+}
+
+
+#tunerLogosMobileText {
+    display: none;
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------------TUNERS END--------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------4. PRODUCT CATEGORIES-------- */
+
+/* ----------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+#homeTunersImageSectionImg {
+    margin-bottom: 0;
+}
+
+#homeProdCategories {
+    width: 100%;
+    padding: 5% 0;
+    background-image: url("/image/catalog/homepage/GDP Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    /*    new css for truck trio*/
+    margin-bottom: 30px;
+}
+
+/* Common style */
+
+.grid figure {
+    /*    original for home page*/
+    /*
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: calc(100%/3);
+    min-width: 40%;
+    height: 200px;
+    background: #323232;
+    text-align: center;
+    cursor: pointer;
+*/
+    /*    new css for truck trio*/
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 20%;
+    height: 103px;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure figcaption > h2 > span {
+    font-weight: 800;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+
+/* For some effects it will show as a button */
+
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+
+/*---------------*/
+
+/***** Oscar *****/
+
+/*---------------*/
+
+figure.effect-oscar img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+figure.effect-oscar h2 {
+    color: white !important;
+    font-size: 143%;
+}
+
+
+
+
+figure.effect-oscar:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+    background: rgba(255, 255, 255, 0.13);
+    background: -webkit-gradient( linear,
+    left top, right top,
+    from(rgba(255, 255, 255, 0.13)),
+    color-stop(77%, rgba(255, 255, 255, 0.13)),
+    color-stop(92%, rgba(255, 255, 255, 0.5)),
+    to(rgba(255, 255, 255, 0.0)));
+    background: linear-gradient( to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%);
+}
+
+/* Hover state - trigger effect */
+
+figure.effect-oscar:hover:after {
+    opacity: 1;
+    left: 130%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+/* Active state */
+
+figure.effect-oscar:active:after {
+    opacity: 0;
+}
+
+
+
+
+
+
+/*
+figure.effect-oscar:hover h2 {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+figure.effect-oscar:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+figure.effect-oscar:hover img {
+    opacity: 0.1;
+}
+
+*/
+
+@media screen and (max-width: 1200px) {
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        top: 0;
+    }
+    .grid figure {
+        height: 120px;
+        width: 30%;
+    }
+    .grid figure figcaption {
+        padding: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid figure {
+        min-width: 89%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid figure {
+        height: 115px;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------------PRODUCT CATEGORIES END---- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ----6. FIND YOUR CLOSEST DEALER OR DISTRIBUTOR- */
+
+/* ----------------------------------------------- */
+
+.closestDealerHeader {
+    background-color: #f05423;
+    width: 60%;
+    margin: auto;
+}
+
+.closestDealerHeader:hover {
+    /*-webkit-box-shadow: none;
+	box-shadow: none;*/
+    -webkit-box-shadow: 7px 7px 5px -2px #999999;
+    box-shadow: 7px 7px 5px -2px #999999;
+    /*    -webkit-transform: scale(1.1);*/
+    /*    transform: scale(1.1);*/
+}
+
+.closestDealerHeader a h1 {
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 50px 0;
+}
+
+.closestDealerHeader a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------------------------- */
+
+/* --------------CLOSEST DEALER END--------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ---------------7. header social and CAN LINK--- */
+
+/* ----------------------------------------------- */
+
+#canadaAndSocialLink {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.canadianLink {
+    color: #f05323;
+    font-size: 13px;
+}
+
+.canadianLink:hover {
+    color: white;
+}
+
+.canadaAndSocialLinkItem {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    line-height: 35px;
+}
+
+/* ----------------------------------------------- */
+
+/* ---------------7. header sociaL/CAN END-------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* -------------8. Manual Banner Img/notch-------- */
+
+/* ----------------------------------------------- */
+
+.manualBannerImgContainer {
+    height: 430px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.truck-trio-BannerImgContainer {
+    height: 690px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.manualBannerImg {
+    width: 100%;
+}
+
+.manualBannerImgNotch {
+    width: 46%;
+    margin-top: -4.8%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
+}
+
+/* ----------------------------------------------- */
+
+/* -----------Manual Banner END------------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* -------------9. Manual content----------------- */
+
+/* ----------------------------------------------- */
+
+#mainManualContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#content {
+    background: #cccccc6e;
+}
+
+#selectYourTruckManualsHeader {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 70px;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 7em;
+}
+
+#manualTruckLogosContainer {
+    margin: 20px 3%;
+    width: 100%;
+    height: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.manualTruckLogosFigure {
+    margin: 0;
+    width: 23%;
+    text-align: center;
+    height: 100%;
+}
+
+.manualTruckLogosFigure img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.manualTruckLogosFigure a img {
+    height: 100%;
+}
+
+#cumminsFigure {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.truckManualsSection {
+    width: 100%;
+    text-align: center;
+}
+
+#cumminsManuals,
+#powerstrokeManuals,
+#duramaxManuals {
+    width: 100%;
+}
+
+#duramaxBanner,
+#cumminsBanner {
+    margin-top: 48px;
+}
+
+#cumminsBanner,
+#powerstrokeBanner,
+#duramaxBanner {
+    display: block;
+    height: 130px;
+    width: 100%;
+}
+
+
+/*
+.prodChild {
+  text-align: center;
+  margin: 20px;
+  height: 100px;
+  border: 2px solid black;
+  min-width: 150px;
+}
+
+.prodLink {
+  text-align: center;
+  margin: 20px;
+  min-height: 25px;
+  border: 2px solid black;
+  padding: 0 10px;
+}
+*/
+
+#powerstrokeBanner {}
+
+.manualPageBannerContainer {
+    margin: 114px 0 0 0;
+}
+
+#powerstrokeBannerImg {}
+
+.manualPageBannerImg {
+    width: 100%;
+}
+
+
+#powerstrokeManuals {
+    display: block;
+    margin: auto;
+}
+
+
+
+:root {
+    --manpagesize: 1080px;
+    --fullmargin: 20px;
+    --shiftpercentodd: 50%;
+
+    --oddheadshift: calc(var(--manpagesize) / 2);
+    --evenheadshift: calc(var(--oddheadshift) * -1);
+    --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+    --halfmarginmiddle: calc(var(--fullmargin) / 2);
+}
+
+.manualSubContainers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: var(--manpagesize);
+    margin: auto;
+}
+
+.manualPageHeadingImageContainer {
+    width: 100%;
+}
+
+.manualPageHeadingImage {
+    width: 100vw;
+    margin: 24px 0 30px;
+}
+
+
+.truck-trio-banner {
+    display: block;
+}
+
+.truck-trio-banner-mobile {
+    display: none;
+}
+
+.manualPageTroubleContainer {
+    background-color: white;
+    padding: 22px 45px;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    width: var(--manpagesize);
+}
+
+.manualPageProduct {
+    position: relative;
+}
+
+.headingEven {
+    position: relative;
+    -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.headingOdd {
+    position: relative;
+    -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.fullWidth {
+    margin-bottom: var(--fullmargin);
+}
+
+.halfWidth {
+    margin-bottom: var(--fullmargin);
+}
+
+.fullWidth .manualPageProductImage {
+    width: var(--manpagesize);
+    display: block;
+}
+
+.halfWidth .manualPageProductImage {
+    width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.troubleTable {
+    width: 100%;
+}
+
+.troubleTableRow {
+    width: 100%;
+}
+
+.troubleTableLeftCell {
+    width: 80%;
+}
+
+.troubleTableRightCell {
+    width: 20%;
+    padding: 0 !important;
+}
+
+.troubleLinkText {
+    font-size: 2em;
+}
+
+.manualLink {
+    position: absolute;
+    color: #f05323 !important;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-size: 1.3em;
+}
+
+.manualLink:hover {
+    color: black !important;
+}
+
+.troubleLink {
+    position: absolute;
+    color: #f05323 !important;
+    text-transform: uppercase;
+    line-height: 0;
+    font-family: montserrat;
+    font-size: 1.6em;
+}
+
+.troubleLink:hover {
+    color: black !important;
+}
+
+/*Link Positioning*/
+
+.ezlynk {
+    top: 19%;
+    left: 37%;
+}
+
+.autocal {
+    top: 19%;
+    left: 37%;
+}
+
+.ecmUnlock {
+    top: 46%;
+    left: 63%;
+}
+
+/* POWERSTROKE */
+
+#powerstrokeUpgradeOne {
+    top: 26%;
+    left: 11%;
+}
+
+#powerstrokeUpgradeTwo {
+    top: 81%;
+    left: 45%;
+}
+
+#powerstrokeUpgradeThree {
+    top: 26%;
+    left: 77%;
+}
+
+#powerstrokeUpgradeFour {
+    top: 81%;
+    left: 52%;
+}
+
+#powerstrokeUpgradeFive {
+    top: 80%;
+    left: 20%;
+}
+
+#powerstrokePosFiveOne {
+    top: 64%;
+    left: 45%;
+}
+
+#powerstrokePosFiveTwo {
+    top: 64%;
+    left: 76%;
+}
+
+#powerstrokePosSixOne {
+    top: 65%;
+    left: 11%;
+}
+
+#powerstrokePosSixTwo {
+    top: 65%;
+    left: 41%;
+}
+
+#powerstrokePosSixThree {
+    top: 79%;
+    left: 25%;
+}
+
+#powerstrokePosSixFour {
+    top: 79%;
+    left: 66%;
+}
+
+#powerstrokeDigitalOne {
+    top: 41%;
+    left: 13%;
+}
+
+#powerstrokeDigitalTwo {
+    top: 82%;
+    left: 44%;
+}
+
+#powerstrokeDigitalThree {
+    top: 41%;
+    left: 74%;
+}
+
+/* CUMMINS */
+
+#cumminsUpgradeOne {
+    top: 87%;
+    left: 54%;
+}
+
+#cumminsUpgradeTwo {
+    top: 87%;
+    left: 17%;
+}
+
+#cumminsUpgradeThree {
+    top: 30%;
+    left: 54%;
+}
+
+#cumminsUpgradeFour {
+    top: 41%;
+    left: 13%;
+}
+
+#cumminsPosFiveOne {
+    top: 60%;
+    left: 19%;
+}
+
+#cumminsDigitalOne {
+    top: 60%;
+    left: 64%;
+}
+
+/* DURAMAX */
+
+#duramaxUpgradeOne {
+    top: 86%;
+    left: 56%;
+}
+
+#duramaxUpgradeTwo {
+    top: 86%;
+    left: 16%;
+}
+
+#duramaxUpgradeThree {
+    top: 30%;
+    left: 56%;
+}
+
+#duramaxUpgradeFour {
+    top: 30%;
+    left: 15%;
+}
+
+#duramaxPosFiveOne {
+    top: 38%;
+    left: 66%;
+}
+
+#duramaxPosFiveTwo {
+    top: 69%;
+    left: 66%;
+}
+
+#duramaxPosFiveThree {
+    top: 56%;
+    left: 19%;
+}
+
+#duramaxPosSixOne {
+    top: 38%;
+    left: 70%;
+}
+
+#duramaxPosSixTwo {
+    top: 69%;
+    left: 70%;
+}
+
+#duramaxDigitalOne {
+    top: 28%;
+    left: 13%;
+}
+
+#duramaxDigitalTwo {
+    top: 59%;
+    left: 19%;
+}
+
+#duramaxDigitalThree {
+    top: 87%;
+    left: 45%;
+}
+
+#duramaxDigitalFour {
+    top: 59%;
+    left: 71%;
+}
+
+#duramaxDigitalFive {
+    top: 28%;
+    left: 77%;
+}
+
+/* ----------------------------------------------- */
+
+/* -----------Manual content END------------------ */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------10. Dealer Banner Img/notch-------- */
+
+/* ----------------------------------------------- */
+
+#dealerBannerImgContainer {
+    height: 430px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#dealerBannerImg {
+    width: 100%;
+}
+
+#dealerBannerImgNotch {
+    width: 46%;
+    margin-top: -4.8%;
+    margin-left: -5px;
+    z-index: 99;
+    position: relative;
+}
+
+/* ----------------------------------------------- */
+
+/* -----------Dealer Banner END------------------- */
+
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+
+/* -----11. Dealer Page - Map/Dropdown------------ */
+
+/* ----------------------------------------------- */
+
+#dealerPageHeader {
+    padding: 0 0 15px 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#dealerPageContainer {
+    width: 100%;
+    height: 100%;
+    padding: 2% 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#locationContentContainer {
+    width: 25%;
+    height: 37vw;
+}
+
+.ui-selectmenu-menu .ui-menu {
+    height: 17vw;
+}
+
+#mapContainer {
+    width: 75%;
+    height: 1200px;
+    padding: 0 0 0 130px;
+}
+
+
+/* 
+Class Structure for Info Popup
+.ui-selectmenu-button.ui-button
+.dealerInfoPopup
+    .dealerInfoPopupStateTitle
+    .dealerInfoPopupTitleSeperator
+
+    .dealerContentContainer
+        .authorizedDealerIcon
+        .authorizedDistributorIcon
+        .dealerCompanyTitle
+        .dealerLogoLink
+            .dealerLogo   
+        .dealerTelephone                    
+        .dealerFax                    
+        .dealerEmailLink
+            .dealerEmail
+        .dealerAddress
+        .dealerUrlLink
+            .dealerUrl         
+        .dealerSeperator 
+*/
+
+/* Dropdown */
+
+.ui-selectmenu-button.ui-button {
+    width: 100%;
+    cursor: pointer;
+    -webkit-animation: pulse 2s 3;
+    animation: pulse 2s 3;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+/*
+.ui-selectmenu-button.ui-button:hover {
+    -webkit-animation: none;
+    animation: none;
+}
+*/
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+        box-shadow: 0 0 0 0 rgba(242, 119, 89, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+        box-shadow: 0 0 0 10px rgba(242, 119, 89, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+        box-shadow: 0 0 0 0 rgba(242, 119, 89, 0);
+    }
+}
+
+.ui-selectmenu-text {
+    font-size: 1.2em;
+}
+
+/* Dropdown Popup */
+
+.dealerInfoPopup {
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: scroll;
+    /*   box-shadow: 1px 1px 1px 1px #666; */
+    border-radius: 5px;
+    background: #efefef;
+    padding: 25px;
+    display: none;
+}
+
+.dealerInfoPopupStateTitle {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.dealerInfoPopupTitleSeperator {}
+
+.dealerContentContainer {}
+
+#locationContentContainer div hr {
+    border: 0;
+    height: 2px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+.authorizedDealerIcon {
+    text-align: left;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.authorizedDistributorIcon {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.dealerCompanyTitle {
+    text-align: center;
+    margin-top: 0;
+}
+
+.dealerLogoLink {
+    text-decoration: none;
+}
+
+.dealerLogo {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto 20px;
+}
+
+.dealerTelephone {}
+
+.dealerFax {}
+
+.dealerEmailLink {}
+
+.dealerEmail {}
+
+.dealerAddress {}
+
+.dealerUrlLink {}
+
+.dealerUrl {}
+
+
+
+
+
+/* Map styles */
+
+.state {
+    fill: #ababab;
+}
+
+.active-dealer {
+    fill: #c5370a;
+}
+
+#usaSVG {
+    position: relative;
+    left: 0;
+}
+
+#alaskaSVG {
+    position: relative;
+    top: -8%;
+    left: -4%;
+    width: 42%;
+    height: 37%;
+    overflow: hidden;
+}
+
+#canadaSVG {
+    position: relative;
+    top: -17%;
+    left: 12%;
+    width: 26%;
+}
+
+
+/* Sparkle Animation */
+
+#alaska {
+    -webkit-transform: translate(45%, -24%);
+    transform: translate(45%, -24%);
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#canada {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#alabama {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#arizona {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+#arkansas {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#california {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+#colorado {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+#connecticut {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+}
+
+#delaware {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+}
+
+#florida {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#georgia {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#idaho {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+#illinois {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#indiana {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#iowa {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#kansas {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#kentucky {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#louisiana {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#maine {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3.3s;
+    animation-duration: 3.3s;
+}
+
+#maryland {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#massachusetts {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+#michigan {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#minnesota {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#mississippi {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#missouri {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#montana {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+#nebraska {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#nevada {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+#new-hampshire {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+#new-jersey {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+}
+
+#new-mexico {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+#new-york {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#north-carolina {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#north-dakota {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#ohio {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#oklahoma {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#oregon {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+#pennsylvania {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#rhode-island {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+
+}
+
+#south-carolina {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+
+}
+
+#south-dakota {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#tennessee {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.1s;
+    animation-duration: 2.1s;
+}
+
+#texas {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+
+#utah {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+}
+
+#vermont {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+}
+
+#virginia {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#washington {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+#west-virginia {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+#wisconsin {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+#wyoming {
+    -webkit-animation-name: sparkle;
+    animation-name: sparkle;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+
+@-webkit-keyframes sparkle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* -----------------DEALER PAGE END--------------- */
+
+/* ----------------------------------------------- */
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+
+/*Powerstroke, Cummins, Duramax MAIN NAV pages*/
+
+.truck-nav-trio-container {
+    width: 100%;
+
+}
+
+.tuner-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*    padding: 0 12.7%;*/
+    margin-bottom: 3em;
+}
+
+.image-with-collapsible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.image-collapsible-child {
+    margin: 15px;
+}
+
+.image-collapsible-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 4em;
+}
+
+.image-collapsible-img {
+    display: block;
+    margin: auto;
+    padding: 68px;
+}
+
+.tuner-info table {
+    width: 20%;
+    margin: 20px;
+}
+
+.tuner-table-notice {
+    width: 80%;
+    margin: 7px auto;
+}
+
+.gdp-that-thing {
+    color: #f05323 !important;
+}
+
+
+.tuner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: var(--manpagesize);
+    overflow: hidden;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tuner-container-odd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: var(--manpagesize);
+    overflow: hidden;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tuner-full-width-exception {
+    width: var(--manpagesize);
+}
+
+.tuner-info-container,
+.tuner-image-container {
+    overflow-x: scroll;
+    position: relative;
+}
+
+.tuner-image-container {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.tuner-image {
+    width: 35%;
+}
+
+.tuner-image-mini {
+    width: 50%;
+}
+
+.efli-live-vin-tuner-image {
+    width: 55%;
+}
+
+/* INFO CHILD CONTAINER */
+
+.tuner-info-container {
+    width: 50%;
+}
+
+.tuner-info-padding {
+    padding: 1em 2em;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: 30%;
+}
+
+.tuner-info-title {
+    margin-bottom: 0.1em;
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+.tuner-info-title-secondary {
+    margin-bottom: 0.6em;
+    text-align: center;
+}
+
+.tuner-info-msrp {}
+
+.tuner-info-part-number {}
+
+.tuner-info-desc {}
+
+.tuner-info-logo {
+    height: 55px;
+}
+
+.tuner-video {
+    width: 100%;
+}
+
+.tuner-app-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tuner-app-container div {
+    margin: 0 9px;
+}
+
+.android-store-link,
+.apple-store-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+.android-store-link a img,
+.apple-store-link a img {
+    width: 230px;
+}
+
+
+.classy-divider-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1.5em 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.classy-divider-left,
+.classy-divider-right {
+    width: 30%;
+    text-align: center;
+}
+
+.classy-divider-left {}
+
+.classy-divider-middle {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.classy-divider-right {}
+
+.classy-item {
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+
+.table-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*    width: 100%;*/
+    width: var(--manpagesize);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    /*    padding: 25px 12.7% 0;*/
+    /*    margin: auto;*/
+    margin: 0 auto 45px;
+}
+
+.table-container {
+    width: 31%;
+    /*    height: 300px;*/
+    margin: 0 0 20px 0;
+}
+
+.table-container-full {
+    margin: 30px 80px 0;
+}
+
+.table-container-heading {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+.truck-trio-table {
+    width: 100%;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+}
+
+.truck-trio-row {
+    display: table-row;
+    background: #f6f6f6;
+}
+
+.truck-trio-row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+
+.truck-trio-row.truck-trio-header {
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #f05323;
+}
+
+.truck-trio-cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+
+.truck-trio-tuner-bullets {
+    list-style: none !important;
+    margin: 12px 0;
+
+}
+
+.tuner-bullet-icons {
+    width: 50px;
+}
+
+.tuner-collapsible-container {
+    width: 100%;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0 39px;
+    width: 100%;
+    border: none;
+    /* text-align: left; */
+    outline: none;
+    font-size: 30px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible-content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+/* --------------------------------- */
+
+.product-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: var(--manpagesize);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.product-item-container-two {
+    height: 440px;
+    width: 31%;
+    margin: 0 0 120px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+/* 	Product details  */
+
+.product-details {
+    position: relative;
+    padding: 18px;
+    height: 20%;
+    float: left;
+    width: 100%;
+    background-color: #cecccc;
+    /* 	z-index: 2; */
+}
+
+/* 	Product Name */
+
+.product-item-container-two .product-details h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 34px;
+    color: #344055;
+    margin: 0;
+}
+
+.quickManLink {
+    width: 75%;
+    font-size: 0.9em;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+.prod-name {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+.prod-name:before {
+    display: none;
+}
+
+.prod-code {
+    margin: 0 0 0.3em 0;
+}
+
+.prod-code-title {
+    margin: 0 0 0 2em;
+}
+
+/*
+.piping-kits-diff {
+
+}
+*/
+
+.product-item {
+    width: 31%;
+    height: 157px;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin: 10px;
+}
+
+.product-item .button-group {
+    display: none;
+}
+
+.product-item .tb_label_stock_status {
+    display: none;
+}
+
+/* button container */
+
+.btn-container {
+    position: absolute;
+    bottom: -56%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.man-container {
+    position: absolute;
+    bottom: 31%;
+    /*   left: 50%; */
+    /* 	transform: translate(-50%); */
+}
+
+
+/* the Button */
+
+.btn-container .dealer-button {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    background-color: #F26A22 !important;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.dealer-button:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.dealer-button span {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    display: inline-block;
+    padding: 0 13px;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* dealer truck icon */
+
+.dealer-button .msrp-price,
+.truck-icon {
+    background: #333;
+    border: 0;
+    margin: 0;
+}
+
+.dealer-button .msrp-price {
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+    padding-right: 15px;
+}
+
+/* the Icon */
+
+.dealer-button .truck-icon {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    position: absolute;
+    background: #333;
+    /* 	z-index: 1; */
+    left: 0;
+    top: 0;
+}
+
+/* buy */
+
+.dealer-button .buy {
+    /* 	z-index: 3; */
+    font-weight: bolder;
+}
+
+.dealer-button:hover .msrp-price {
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
+}
+
+.dealer-button:hover .truck-icon {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+/* product image  */
+
+.product-image {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 100%;
+    height: 415px;
+    display: inline-block;
+    padding: 6em 2em;
+    background-color: white;
+}
+
+.product-item-container-two img {
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.info {
+    background: white;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    -webkit-transform: translateY(120%);
+    transform: translateY(120%);
+    position: absolute;
+    line-height: 1.9;
+    color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 2em;
+    overflow-y: scroll;
+}
+
+.info p {
+    width: 80%;
+    font-size: 0.9em;
+    margin: 0;
+    display: inline;
+}
+
+.product-image:hover .info {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-pinterest-p,
+.fa-google-plus {
+    font-size: 1.2em;
+}
+
+.fb {
+    color: #3A5795;
+    font-size: 1em;
+    padding: 6px 10px;
+    background-color: white;
+}
+
+.fb:hover {
+    color: black;
+}
+
+.tw {
+    color: #00B0ED;
+    font-size: 1em;
+    padding: 6px 10px;
+    background-color: white;
+}
+
+.tw:hover {
+    color: black;
+}
+
+.goog {
+    color: #DD4B39;
+    font-size: 1em;
+    padding: 6px 10px;
+    background-color: white;
+}
+
+.goog:hover {
+    color: black;
+}
+
+.manual-box-link {
+    color: #DD4B39;
+    font-size: 1em;
+    padding: 6px 10px;
+    background-color: white;
+}
+
+.manual-box-link:hover {
+    color: black;
+}
+
+
+.social-icons-prod-item {
+    position: absolute;
+    top: 136px;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.social-icons-prod-item a {
+    width: 14%;
+    height: 39%;
+    -webkit-box-shadow: -3px -2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px -2px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 5px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 999;
+    margin-left: -60px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    top: -41px;
+    left: 23%;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+} */
+
+.manual-box-link:hover + span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tuner-info-support-package-container {
+    margin: 15px 0 10px;
+    position: relative;
+    background-color: #0000005c;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.support-package-left,
+.support-package-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*    width: 400px;*/
+    /*    margin: 10px 50px;*/
+    text-align: center;
+}
+
+.support-package-title {
+    font-size: 4em;
+    color: black;
+}
+
+.support-package-title-secondary {
+    font-size: 2em;
+    color: black;
+    margin-top: 0;
+    width: 100%;
+}
+
+.support-package-msrp {
+    margin: 14px 0 20px;
+    font-size: 2em;
+    color: black;
+    width: 100%;
+}
+
+/* --------------------------------- */
+
+/* EFI LIVE and EZLYNK pages*/
+
+#efiliveBannerNotch {
+    margin-top: -4.6%;
+}
+
+.heading-tuner-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 2.5em;
+}
+
+
+
+
+.tuner-image-carousel-container {
+    /*    width: 800px;*/
+    /*    width: calc((var(--manpagesize) / 2) -40px);*/
+    width: 540px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.tuner-image-carousel {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+.tuner-image-carousel ul {
+    width: 10000px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.tuner-image-carousel ul li {
+    position: relative;
+    width: 540px;
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    padding: 45px;
+}
+
+.tuner-image-carousel ul li img {
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+}
+
+
+
+
+
+.tuner-info-steps-container {
+    background-color: #bfbebe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tuner-steps-heading-one {
+    width: 100%;
+    text-align: center;
+    margin: 45px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 0 25px;
+}
+
+.tuner-steps-heading-two {
+    width: 100%;
+    text-align: center;
+    margin: 14px 0 35px;
+}
+
+.tuner-steps-child {
+    text-align: center;
+    width: 292px;
+    margin: 0 30px 40px;
+}
+
+.tuner-steps-number {
+    font-size: 23em;
+    line-height: 0.8em;
+    height: 260px;
+    font-family: 'Oswald', sans-serif;
+    color: #f0532399;
+}
+
+.tuner-steps-desc {
+    color: white;
+    width: 220px;
+}
+
+.step-desc-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.step-icons {
+    color: white;
+    font-size: 5em;
+    margin: 20px 4px;
+}
+
+
+
+
+
+.ezlynk-app-links {
+    width: 63%;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.ezlynk-app-links div {
+    width: 40%;
+}
+
+/* --------adaptive tabs------------ */
+
+.adaptive-tabs-container {
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.adaptive-tabs {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    margin: 0;
+}
+
+.adaptive-tabs > li {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+    padding: 20px 20px 25px 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.adaptive-tabs > li:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 120%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    border-radius: 5px 5px 0 0;
+}
+
+.adaptive-tabs > li:hover:before {
+    -webkit-transform: translateY(70%);
+    transform: translateY(70%);
+}
+
+.adaptive-tabs > li.active-adaptive-tab {
+    color: #50555a;
+}
+
+.adaptive-tabs > li.active-adaptive-tab:before {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: white;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.tab__content {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tab__content > li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    list-style: none;
+}
+
+.tab__content > li .content__wrapper {
+    border-radius: 5px;
+    width: 100%;
+    padding: 45px 40px 40px 40px;
+    background-color: white;
+}
+
+
+.content__wrapper span {
+    margin-right: 10px;
+}
+
+.content__wrapper p {
+    margin-bottom: 0;
+}
+
+.content__wrapper p img {
+    width: 347px;
+    margin-top: 6px;
+}
+
+
+.tuner-video-info-container {
+    padding: 35px 6% 0;
+    text-align: center;
+}
+
+.tuner-video-info-container p {
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+/* --------adaptive tabs------------ */
+
+/* ----------------SUPPORT PAGE-------------------- */
+
+.support-trouble-accordian-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.trouble-acc-cont {
+    width: 100%;
+}
+
+.gdp-accordion {
+    margin: auto;
+    /*    width: 600px;*/
+    width: 100%;
+}
+
+.gdp-accordion input {
+    display: none;
+}
+
+.gdp-accordion-box {
+    position: relative;
+    background: white;
+    height: 64px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.gdp-accordion-box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+header.gdp-accordion-box {
+    /*    background: #00BCD4;*/
+    z-index: 100;
+    cursor: initial;
+    -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+}
+
+header .gdp-accordion-box-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16pt;
+    color: white;
+    cursor: initial;
+}
+
+.gdp-accordion-box-title {
+    width: calc(100% - 40px);
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gdp-accordion-box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 11pt;
+    color: rgba(0, 0, 0, .54);
+    display: none;
+}
+
+.gdp-accordion-box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+input:checked + .gdp-accordion-box {
+    height: auto;
+    margin: 16px 0;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+input:checked + .gdp-accordion-box .gdp-accordion-box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+input:checked + .gdp-accordion-box .gdp-accordion-box-content,
+input:checked + .gdp-accordion-box .gdp-accordion-box-close {
+    display: inline-block;
+}
+
+.gdp-accordion-arrows section .gdp-accordion-box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+}
+
+.gdp-accordion-arrows section .gdp-accordion-box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    -webkit-transition: -webkit-transform .15s ease-in-out;
+    transition: -webkit-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+    color: rgba(0, 0, 0, .54);
+}
+
+input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+.tech-support-child {
+    width: 330px;
+    margin: 20px;
+}
+
+.tech-support-child-img {
+    height: 150px;
+    text-align: center;
+}
+
+.tech-support-child-img img {
+    width: 72%;
+    margin-top: 2%;
+}
+
+.tech-support-child-link {
+    width: 100%;
+}
+
+.tech-support-child-link button {
+    font-size: 100%;
+}
+
+.tuner-info-support-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.tuner-info-support-child {
+    max-width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* ----------------SUPPORT PAGE-------------------- */
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+
+/*---MOBILE/TABLET/LAPTOP/EXLG-TV RESPONSIVENESS--------------- */
+
+/* ------------------------------------------------------------ */
+
+@media screen and (max-width: 2133px) {
+    #powerstrokeTruck {
+        right: -17%;
+    }
+
+    #mapContainer {
+        height: 910px;
+    }
+}
+
+@media screen and (max-width: 1877px) {
+    #powerstrokeTruck {
+        right: -27%;
+    }
+    #selectYourTruckContainer {
+        margin-left: -53px;
+    }
+
+    #mapContainer {
+        height: 800px;
+    }
+
+    .manualTruckLogosFigure {
+        width: 30%;
+    }
+
+    /* MANUAL PAGE FLEX CHILDREN & HEADERS */
+    /*
+    .manualPageProductImage {
+        height: 400px;
+    }
+    
+    .headingEven {
+        position: relative;
+        transform: translateX(-50%) translateX(486px);
+        transform-origin: center left;
+    }
+
+    .headingOdd {
+        position: relative;
+        transform: translateX(50%) translateX(-486px);
+        transform-origin: center left;
+    }
+*/
+    /*    MANUAL PAGE FLEX CHILDREN & HEADERS*/
+}
+
+@media screen and (max-width: 1674px) {
+    #powerstrokeTruck {
+        right: -40%;
+    }
+
+    #selectYourTruckContainer {
+        margin-left: -45px;
+    }
+    #logosGroup,
+    #selectYourTruckHeader {
+        margin-left: 40px;
+    }
+
+    #mapContainer {
+        height: 745px;
+    }
+}
+
+@media screen and (max-width: 1532px) {
+    #powerstrokeTruck {
+        right: -49%;
+    }
+    .table-container {
+        width: 48%;
+    }
+
+    .ghost-table {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .tuner-steps-child {
+        width: 30%;
+        margin: 0 50px 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #powerstrokeTruck {
+        right: -53%;
+    }
+
+    #selectYourTruckContainer {
+        margin-left: -37px;
+    }
+
+    #mapContainer {
+        height: 615px;
+    }
+    .closestDealerHeader a h1 {
+        font-size: 2.2em;
+    }
+    .dealerCompanyTitle {
+        font-size: 1.7em;
+    }
+    .dealerUrlLink {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1373px) {
+    #trucksGroup {
+        display: none;
+    }
+    #logosGroup,
+    #selectYourTruckHeader,
+    #selectYourTruckContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+    #selectYourTruckContainer {
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    .closestDealerHeader a h1 {
+        font-size: 1.6em;
+    }
+
+    #mapContainer {
+        height: 590px;
+    }
+    .manualPageBannerContainer {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #mapContainer {
+        height: 503px;
+    }
+
+    /*    manual page ------------------------------ */
+    #dealerBannerImgContainer,
+    .manualBannerImgContainer {
+        height: 270px;
+    }
+
+    .truck-trio-BannerImgContainer {
+        height: 350px;
+    }
+
+    .manualTruckLogosFigure {
+        margin: 0 12px;
+        height: 87%;
+    }
+
+    .manualTruckLogosFigure a img {
+        height: 100%;
+    }
+    .manualPageBannerContainer {
+        margin-top: 50px;
+    }
+
+    #cumminsBanner,
+    #powerstrokeBanner,
+    #duramaxBanner {
+        height: 54px;
+    }
+
+    :root {
+        --manpagesize: 880px;
+        --fullmargin: 18px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 24px 0 20px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 1.5em;
+        margin-left: -10px;
+    }
+    .troubleLinkText {
+        font-size: 1.8em;
+    }
+    /*    manual page ------------------------------ */
+    .tuner-info-logo {
+        height: 40px;
+        margin: 10px 0;
+    }
+
+    .classy-divider-left,
+    .classy-divider-right {
+        width: 37%;
+    }
+
+    .support-package-title {
+        font-size: 3.5em;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+
+    .support-package-msrp {
+        margin-top: 16px;
+        font-size: 1.5em;
+    }
+
+
+    .table-container-full {
+        margin: 30px 20px 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .product-item-container-two {
+        width: 48%;
+    }
+
+    .product-item-container-two img {
+        margin-top: 40%;
+    }
+
+    .ghost-prod-item {
+        display: none;
+    }
+
+    .support-package-title {
+        font-size: 3em;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1em;
+        margin-top: 7px;
+    }
+
+    .support-package-msrp {
+        margin-top: 8px;
+        font-size: 1em;
+    }
+
+    .table-container-full {
+        margin: 30px 15px 0;
+    }
+}
+
+@media (max-width: 979px) {
+    /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+    #mapContainer {
+        width: 75%;
+        height: 460px;
+        padding: 0 0 0 55px;
+    }
+    #dealerPageContainer {
+        padding: 0 3% 45px 8%;
+    }
+    .closestDealerHeader a h1 {
+        font-size: 1.2em;
+    }
+
+    #selectYourTruckManualsHeader {
+        font-size: 52px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .manualTruckLogosFigure {
+        margin: 0;
+        height: 57%;
+    }
+
+    .manualPageBannerContainer {
+        margin-top: 4px;
+    }
+
+    :root {
+        --manpagesize: 680px;
+        --fullmargin: 16px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 24px 0 20px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 1.2em;
+    }
+    .troubleLinkText {
+        font-size: 1.2em;
+    }
+
+    .table-container {
+        width: 80%;
+    }
+
+    .table-info-container {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .tuner-info-container,
+    .tuner-image-container {
+        width: 100%;
+    }
+
+    .tuner-info-padding {
+        -webkit-transform: none;
+        transform: none;
+        margin: 0;
+    }
+
+    .truck-trio-tuner-bullets {
+        padding: 0 0 25px;
+        margin: 0;
+    }
+
+    .product-item-container-two img {
+        margin-top: 50%;
+    }
+
+    .support-package-title {
+        font-size: 2em;
+        margin-bottom: 3px;
+    }
+
+    .support-package-title-secondary {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .support-package-msrp {
+        margin-top: 0;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    .adaptive-tabs-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .tuner-full-width-exception {
+        width: 95%;
+    }
+
+    .adaptive-tabs > li {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .grid figure figcaption {
+        padding: 3.7em;
+    }
+
+    .support-package-image {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+    .prod-name:before {
+        display: block;
+        content: "Tap Image for Description";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-size: 0.7em;
+        color: #f05423db;
+    }
+
+    #selectYourTruckHeader {
+        font-size: 3em;
+        margin: 0 0 20px 0;
+    }
+
+    #logosGroup img {
+        height: 67px;
+        margin: 1.5em;
+    }
+
+    .buyKitButton {
+        margin-top: 5px;
+        width: 60%;
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+
+    #selectYourTruckContainer {
+        height: 350px;
+    }
+
+    #mapContainer {
+        display: none;
+    }
+    #locationContentContainer {
+        width: 80%;
+        height: 90vw;
+        margin: 2% auto 9%;
+    }
+    .closestDealerHeader {
+        width: 100%;
+    }
+    .closestDealerHeader a h1 {
+        font-size: 1.5em;
+        margin: 4px 0;
+    }
+    .closestDealerHeader:hover {
+        -webkit-box-shadow: none;
+        box-shadow: 7px none;
+        /*        -webkit-transform: none;*/
+        /*        transform: none;*/
+    }
+    /*    DESKTOP VERSION*/
+    #tunerLogos {
+        display: none;
+    }
+    /*    MOBILE/TABLET VERSION*/
+    #tunerLogosMobile {
+        display: block;
+    }
+
+    #homeTunersImageSectionImgMOBILE {
+        width: 100%;
+        margin: 0;
+    }
+
+    #efiliveLogoTunersMOBILE {
+        position: absolute;
+        top: 65%;
+        left: 6%;
+        height: 27%;
+    }
+
+    #ezLogoTunersMOBILE {
+        position: absolute;
+        top: 67%;
+        left: 54%;
+        height: 23%;
+    }
+
+    #tunerLogosMobileText {
+        font-size: 1.6em;
+    }
+
+    #sticky_header {
+        visibility: hidden;
+    }
+
+    #selectYourTruckManualsHeader {
+        font-size: 45px;
+    }
+    #manualTruckLogosContainer {
+        margin: 20px 3%;
+    }
+
+    #header > div.row_6JMb0.row-wrap.tb_content_fixed.tbMobileShow {
+        background: white;
+        padding: 12px 0 10px;
+        color: white;
+    }
+
+    #dealerBannerImgContainer,
+    .manualBannerImgContainer {
+        height: 215px;
+    }
+
+    .truck-trio-BannerImgContainer {
+        height: 280px;
+    }
+
+    :root {
+        /*        --manpagesize: 580px;*/
+        --manpagesize: 80vw;
+        --fullmargin: 14px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 24px 0 10px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+
+    .troubleLink,
+    .manualLink {
+        font-size: 1em;
+    }
+
+    .troubleLinkText {
+        font-size: 1em;
+    }
+
+    .manualLink {
+        margin-top: -5px;
+    }
+
+    .tuner-image-carousel {
+        height: 440px;
+    }
+    .tuner-image-carousel-container {
+        width: 440px;
+    }
+
+    .tuner-image-carousel ul li {
+        width: 440px;
+    }
+
+    .product-item-container-two {
+        height: 342px;
+    }
+
+    .social-icons-prod-item {
+        top: 120px;
+    }
+
+    .prod-name {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px) {
+    #selectYourTruckManualsHeader {
+        font-size: 39px;
+        margin: 0;
+    }
+    #dealerPageHeader {
+        font-size: 1.3em;
+    }
+
+    #cumminsBanner,
+    #powerstrokeBanner,
+    #duramaxBanner {
+        height: auto;
+        width: 130vw;
+    }
+    #powerstrokeBanner {
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    #cumminsBanner {
+        -webkit-transform: translateX(-12%);
+        transform: translateX(-12%);
+    }
+    #duramaxBanner {
+        -webkit-transform: translateX(-19%);
+        transform: translateX(-19%);
+    }
+    .troubleLink,
+    .manualLink {
+        font-size: 0.8em;
+    }
+    .troubleLinkText {
+        font-size: 0.8em;
+    }
+
+    #dealerBannerImgContainer,
+    .manualBannerImgContainer {
+        height: 180px;
+    }
+
+    .truck-trio-BannerImgContainer {
+        height: 200px;
+    }
+
+    .manualTruckLogosFigure {
+        height: 46%;
+    }
+    #manualTruckLogosContainer {
+        margin: 20px 0;
+    }
+
+    .heading-tuner-title {
+        /*        font-size: 40px;*/
+        padding: 20px;
+        font-size: 2em;
+        line-height: 2em;
+        margin-bottom: 0;
+    }
+
+    .tuner-image-carousel {
+        height: 340px;
+    }
+    .tuner-image-carousel-container {
+        width: 340px;
+    }
+    .tuner-image-carousel ul li {
+        width: 340px;
+    }
+    .tuner-steps-heading-one {
+        width: 80%;
+        font-size: 3em;
+        word-wrap: break-word;
+        line-height: 1.5em;
+    }
+    .tuner-steps-child {
+        width: 200px;
+        margin: 0 30px 40px;
+    }
+    .tuner-steps-number {
+        font-size: 8em;
+        height: 95px;
+    }
+    .tuner-steps-desc {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    .step-icons {
+        font-size: 2em;
+    }
+
+    .ezlynk-app-links {
+        width: 100%;
+    }
+
+    /*    support page*/
+    .support-trouble-accordian-container div button label,
+    .gdp-accordion-arrows section .gdp-accordion-box-title {
+        font-size: 0.7em;
+        width: 100% !important;
+    }
+    /*    support page*/
+    .truck-nav-trio-container #selectYourTruckManualsHeader {
+        margin-top: 10px;
+    }
+
+    .product-item-container-two {
+        width: 100%;
+    }
+
+    .product-item-container-two img {
+        width: 55%;
+        display: block;
+        margin: 24% auto;
+    }
+
+    .support-package-title {
+        margin-bottom: 0;
+    }
+
+    .support-package-title-secondary {
+        margin-bottom: 0;
+    }
+
+    .support-package-msrp {
+        font-size: 0.7em;
+    }
+
+    .truck-trio-banner {
+        display: none;
+    }
+
+    .truck-trio-banner-mobile {
+        display: block;
+    }
+
+    .headingOdd,
+    .headingEven {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Selectors and styles affecting screens UP TO 480px (Phone) */
+    #selectYourTruckContainer {
+        height: 150px;
+    }
+    #selectYourTruckHeader {
+        font-size: 2em;
+    }
+
+    #logosGroup img {
+        height: 44px;
+        margin: 0.6em;
+    }
+
+    .buyKitButton {
+        margin-top: 8px;
+        width: 70%;
+        font-size: 11px;
+        padding: 3px 3px;
+    }
+
+    #selectYourTruckHeader {
+        margin: 0;
+    }
+
+    .closestDealerHeader a h1 {
+        font-size: 0.9em;
+    }
+
+    #tunerLogosMobileText {
+        font-size: 1.2em;
+    }
+
+    #selectYourTruckManualsHeader {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+
+    #cumminsFigure {
+        border-left: none;
+        border-right: none;
+    }
+
+    #manualTruckLogosContainer {
+        margin: 0;
+        height: 55px;
+    }
+
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        /*        top: 15%;*/
+    }
+
+    #dealerBannerImgContainer,
+    .manualBannerImgContainer {
+        height: 110px;
+    }
+
+    .truck-trio-BannerImgContainer {
+        height: 150px;
+    }
+
+    :root {
+        --manpagesize: 90vw;
+        --fullmargin: 5px;
+
+        --oddheadshift: calc(var(--manpagesize) / 2);
+        --evenheadshift: calc(var(--oddheadshift) * -1);
+        --shiftpercenteven: calc(var(--shiftpercentodd) * -1);
+        --halfmarginmiddle: calc(var(--fullmargin) / 2);
+    }
+    .manualSubContainers {
+        width: var(--manpagesize);
+    }
+
+    .manualPageHeadingImage {
+        width: 100vw;
+        margin: 20px 0 10px;
+    }
+
+    .manualPageTroubleContainer {
+        width: var(--manpagesize);
+    }
+
+    /*
+    .headingEven {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+        transform: translateX(var(--shiftpercenteven)) translateX(var(--oddheadshift));
+    }
+
+    .headingOdd {
+        position: relative;
+        -webkit-transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+        transform: translateX(var(--shiftpercentodd)) translateX(var(--evenheadshift));
+    }
+*/
+    .fullWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .halfWidth {
+        margin-bottom: var(--fullmargin);
+    }
+
+    .fullWidth .manualPageProductImage {
+        width: var(--manpagesize);
+    }
+
+    .halfWidth .manualPageProductImage {
+        width: calc((var(--manpagesize) / 2) - (var(--halfmarginmiddle)));
+    }
+
+    .manualLink {
+        font-size: 0.6em;
+    }
+
+    .troubleLink {
+        font-size: 0.6em;
+        margin: 0;
+    }
+
+    .troubleLinkText {
+        font-size: 0.6em;
+        line-height: 2;
+    }
+
+    .manualLink {
+        margin-top: -4px;
+        margin-left: -9px;
+    }
+
+    .manualPageTroubleContainer {
+        padding: 0;
+    }
+
+    #cumminsBanner,
+    #duramaxBanner {
+        margin: 20px 0 8px 0;
+    }
+
+    .troubleTableLeftCell {
+        width: 70%;
+    }
+
+    .troubleTableRightCell {
+        width: 30%;
+    }
+
+    #mainManualContainer .manualPageHeadingImageContainer {
+        display: none;
+    }
+
+    #mainManualContainer {
+        margin-bottom: 0;
+    }
+
+    .manualPageBannerImg {
+        margin: 25px 0 15px 0;
+    }
+
+    .tuner-image-carousel {
+        height: 280px;
+    }
+    .tuner-image-carousel-container {
+        width: 280px;
+    }
+    .tuner-image-carousel ul li {
+        width: 280px;
+    }
+    .tuner-steps-heading-one {
+        width: 70%;
+        font-size: 2em;
+        word-wrap: break-word;
+        line-height: 2em;
+    }
+    .tuner-steps-number {
+        font-size: 6em;
+        height: 50px;
+    }
+
+    .text-center {
+        font-size: 2em;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+
+    #locationContentContainer {
+        height: 150vw;
+    }
+
+    .tuner-info-logo {
+        display: none;
+    }
+
+    .ui-selectmenu-menu .ui-menu {
+        height: 53vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .grid figure figcaption {
+        padding: 2.5em;
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+/* -----------------MOBILE/TABLET RESPONSIVENESS END----------- */
+
+/* ------------------------------------------------------------ */
