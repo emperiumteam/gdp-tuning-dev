@@ -10,11 +10,11 @@ html, body {
   height: 70vh;
 }
 
-body {
+.outer-team-container {
   padding: 2% 4%;
 }
 
-section {
+.inner-team-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -32,9 +32,9 @@ TABLE OF CONTENTS:
 /* in the drop down for the row, if you select full, it will actually go full width
 like it is supposed to...thanks to the style below: */
 
-.tb_width_2500 #wrapper:not(.container) > .tb_width_fixed,
-.tb_width_2500 #wrapper:not(.container) > .container,
-.tb_width_2500 #wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
+#wrapper:not(.container) > .tb_width_fixed,
+#wrapper:not(.container) > .container,
+#wrapper:not(.container) > :not(.container):not(.tb_width_fixed):not(.tb_content_fixed) > .tb_width_fixed {
     margin-left: 0;
     margin-right: 0;
 }
@@ -118,8 +118,7 @@ like it is supposed to...thanks to the style below: */
 #cummins-banner,
 #powerstroke-banner,
 #duramax-banner,
-#support-banner,
-#manual-banner {
+#support-banner {
     background-position: center center;
     background-size: cover;
 }
@@ -141,15 +140,8 @@ like it is supposed to...thanks to the style below: */
     background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
 }
 
-#manual-banner {
-    background-image: url('/image/catalog/multiplepages/banners/whiteBlack.jpg');
-}
-
-.tb_article {
-    background-color: white;
-    width: 90%;
-    margin: 4% auto !important;
-    padding: 2%;
+#our-team-banner {
+    background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
 }
 
 /* ----------------------------------------------- */
@@ -1245,13 +1237,8 @@ figure.effect-oscar:hover img {
     height: 37vw;
 }
 
-.ui-button .ui-icon {
-    margin-top: 9px;
-}
-
 .ui-selectmenu-menu .ui-menu {
     height: 17vw;
-    background-color: white;
 }
 
 #mapContainer {
@@ -1330,9 +1317,7 @@ Class Structure for Info Popup
 }
 
 .ui-selectmenu-text {
-    font-size: 1.5em;
-    padding: 3px;
-    margin-left: 5px;
+    font-size: 1.2em;
 }
 
 /* Dropdown Popup */
@@ -3027,6 +3012,147 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 }
 
 /* ----------------SUPPORT PAGE-------------------- */
+
+/*TEAM PAGE*/
+
+.outer-team-container {
+  padding: 2% 4%;
+}
+
+.inner-team-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 200px;
+}
+
+.teamPic {
+    width: 200px;
+    height: 200px;
+    background-color: #acacac;
+    margin: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.teamPic:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.teamPic1 {
+    background-image: url("image/catalog/teampage/1primary.jpg");
+}
+
+.teamPic1:hover {
+    background-image: url("image/catalog/teampage/1secondary.jpg");
+}
+
+.teamPic2 {
+    background-image: url("image/catalog/teampage/2primary.jpg");
+}
+
+.teamPic2:hover {
+    background-image: url("image/catalog/teampage/2secondary.jpg");
+}
+
+.teamPic3 {
+    background-image: url("image/catalog/teampage/3primary.jpg");
+}
+
+.teamPic3:hover {
+    background-image: url("image/catalog/teampage/3secondary.jpg");
+}
+
+.teamPic4 {
+    background-image: url("image/catalog/teampage/4primary.jpg");
+}
+
+.teamPic4:hover {
+    background-image: url("image/catalog/teampage/4secondary.jpg");
+}
+
+.teamPic5 {
+    background-image: url("image/catalog/teampage/5primary.jpg");
+}
+
+.teamPic5:hover {
+    background-image: url("image/catalog/teampage/5secondary.jpg");
+}
+
+.teamPic6 {
+    background-image: url("image/catalog/teampage/6primary.jpg");
+}
+
+.teamPic6:hover {
+    background-image: url("image/catalog/teampage/6secondary.jpg");
+}
+
+.teamPic7 {
+    background-image: url("image/catalog/teampage/7primary.jpg");
+}
+
+.teamPic7:hover {
+    background-image: url("image/catalog/teampage/7secondary.jpg");
+}
+
+.teamPic8 {
+    background-image: url("image/catalog/teampage/8primary.jpg");
+}
+
+.teamPic8:hover {
+    background-image: url("image/catalog/teampage/8secondary.jpg");
+}
+
+.teamPic9 {
+    background-image: url("image/catalog/teampage/9primary.jpg");
+}
+
+.teamPic9:hover {
+    background-image: url("image/catalog/teampage/9secondary.jpg");
+}
+
+.teamPic10 {
+    background-image: url("image/catalog/teampage/10primary.jpg");
+}
+
+.teamPic10:hover {
+    background-image: url("image/catalog/teampage/10secondary.jpg");
+}
+
+.teamPic11 {
+    background-image: url("image/catalog/teampage/11primary.jpg");
+}
+
+.teamPic11:hover {
+    background-image: url("image/catalog/teampage/11secondary.jpg");
+}
+
+.teamPic12 {
+    background-image: url("image/catalog/teampage/12primary.jpg");
+}
+
+.teamPic12:hover {
+    background-image: url("image/catalog/teampage/12secondary.jpg");
+}
+
+.teamPic13 {
+    background-image: url("image/catalog/teampage/13primary.jpg");
+}
+
+.teamPic13:hover {
+    background-image: url("image/catalog/teampage/13secondary.jpg");
+}
+
+/*TEAM PAGE END*/
 
 /* ------------------------------------------------------------ */
 
