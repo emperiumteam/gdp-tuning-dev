@@ -3121,107 +3121,107 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 }
 
 .teamPic1 {
-    background-image: url("image/catalog/teampage/1primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/1primary.jpg");
 }
 
-.teamPic1:hover {
-    background-image: url("image/catalog/teampage/1secondary.jpg");
+.team-member-container:hover .teamPic1 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/1secondary.jpg");
 }
 
 .teamPic2 {
-    background-image: url("image/catalog/teampage/2primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/2primary.jpg");
 }
 
-.teamPic2:hover {
-    background-image: url("image/catalog/teampage/2secondary.jpg");
+.team-member-container:hover .teamPic2 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/2secondary.jpg");
 }
 
 .teamPic3 {
-    background-image: url("image/catalog/teampage/3primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/3primary.jpg");
 }
 
-.teamPic3:hover {
-    background-image: url("image/catalog/teampage/3secondary.jpg");
+.team-member-container:hover .teamPic3 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/3secondary.jpg");
 }
 
 .teamPic4 {
-    background-image: url("image/catalog/teampage/4primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/4primary.jpg");
 }
 
-.teamPic4:hover {
-    background-image: url("image/catalog/teampage/4secondary.jpg");
+.team-member-container:hover .teamPic4 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/4secondary.jpg");
 }
 
 .teamPic5 {
-    background-image: url("image/catalog/teampage/5primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/5primary.jpg");
 }
 
-.teamPic5:hover {
-    background-image: url("image/catalog/teampage/5secondary.jpg");
+.team-member-container:hover .teamPic5 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/5secondary.jpg");
 }
 
 .teamPic6 {
-    background-image: url("image/catalog/teampage/6primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/6primary.jpg");
 }
 
-.teamPic6:hover {
-    background-image: url("image/catalog/teampage/6secondary.jpg");
+.team-member-container:hover .teamPic6 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/6secondary.jpg");
 }
 
 .teamPic7 {
-    background-image: url("image/catalog/teampage/7primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/7primary.jpg");
 }
 
-.teamPic7:hover {
-    background-image: url("image/catalog/teampage/7secondary.jpg");
+.team-member-container:hover .teamPic7 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/7secondary.jpg");
 }
 
 .teamPic8 {
-    background-image: url("image/catalog/teampage/8primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/8primary.jpg");
 }
 
-.teamPic8:hover {
-    background-image: url("image/catalog/teampage/8secondary.jpg");
+.team-member-container:hover .teamPic8 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/8secondary.jpg");
 }
 
 .teamPic9 {
-    background-image: url("image/catalog/teampage/9primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/9primary.jpg");
 }
 
-.teamPic9:hover {
-    background-image: url("image/catalog/teampage/9secondary.jpg");
+.team-member-container:hover .teamPic9 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/9secondary.jpg");
 }
 
 .teamPic10 {
-    background-image: url("image/catalog/teampage/10primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/10primary.jpg");
 }
 
-.teamPic10:hover {
-    background-image: url("image/catalog/teampage/10secondary.jpg");
+.team-member-container:hover .teamPic10 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/10secondary.jpg");
 }
 
 .teamPic11 {
-    background-image: url("image/catalog/teampage/11primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/11primary.jpg");
 }
 
-.teamPic11:hover {
-    background-image: url("image/catalog/teampage/11secondary.jpg");
+.team-member-container:hover .teamPic11 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/11secondary.jpg");
 }
 
 .teamPic12 {
-    background-image: url("image/catalog/teampage/12primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/12primary.jpg");
 }
 
-.teamPic12:hover {
-    background-image: url("image/catalog/teampage/12secondary.jpg");
+.team-member-container:hover .teamPic12 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/12secondary.jpg");
 }
 
 .teamPic13 {
-    background-image: url("image/catalog/teampage/13primary.jpg");
+    background-image: url("http://gdptuning.com/image/catalog/teampage/13primary.jpg");
 }
 
-.teamPic13:hover {
-    background-image: url("image/catalog/teampage/13secondary.jpg");
+.team-member-container:hover .teamPic13 {
+    background-image: url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
 }
 
 /*TEAM PAGE END*/
