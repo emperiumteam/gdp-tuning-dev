@@ -2165,7 +2165,7 @@ Class Structure for Info Popup
     font-size: 30px;
 }
 
-.active,
+.active-collapsible,
 .collapsible:hover {
     background-color: #555;
 }
@@ -3120,6 +3120,19 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     transform: translateY(-18%);
 }
 
+
+
+/*
+.outer-team-container:before{
+ display:none;
+ content: url("http://gdptuning.com/image/catalog/teampage/1primary.jpg") url("http://gdptuning.com/image/catalog/teampage/2primary.jpg") url("http://gdptuning.com/image/catalog/teampage/3primary.jpg") url("http://gdptuning.com/image/catalog/teampage/4primary.jpg") url("http://gdptuning.com/image/catalog/teampage/5primary.jpg") url("http://gdptuning.com/image/catalog/teampage/6primary.jpg") url("http://gdptuning.com/image/catalog/teampage/7primary.jpg") url("http://gdptuning.com/image/catalog/teampage/8primary.jpg") url("http://gdptuning.com/image/catalog/teampage/9primary.jpg") url("http://gdptuning.com/image/catalog/teampage/10primary.jpg") url("http://gdptuning.com/image/catalog/teampage/11primary.jpg") url("http://gdptuning.com/image/catalog/teampage/12primary.jpg") url("http://gdptuning.com/image/catalog/teampage/13primary.jpg");
+}
+*/
+
+
+
+
+
 .teamPic1 {
     background-image: url("http://gdptuning.com/image/catalog/teampage/1primary.jpg");
 }
@@ -3222,6 +3235,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 .team-member-container:hover .teamPic13 {
     background-image: url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
+}
+
+.outer-team-container:after{
+ display:none;
+ content: url("http://gdptuning.com/image/catalog/teampage/1secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/2secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/3secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/4secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/5secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/6secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/7secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/8secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/9secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/10secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/11secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/12secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
 }
 
 /*TEAM PAGE END*/
