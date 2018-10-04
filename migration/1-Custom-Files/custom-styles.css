@@ -154,7 +154,7 @@ like it is supposed to...thanks to the style below: */
 }
 
 #our-team-banner {
-    background-image: url('/image/catalog/manualpage/Guy in Truck Black Overlay.png');
+    background-image: url('http://gdptuning.com/image/catalog/multiplepages/banners/ourTeamBanner.jpg');
 }
 
 .tb_article {
@@ -3038,14 +3038,21 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     justify-content: center;
 }
 
-/* ----------------SUPPORT PAGE-------------------- */
+/* ----------------SUPPORT PAGE END---------------- */
 
-/*TEAM PAGE*/
+/*-------------------TEAM PAGE----------------------*/
 
 .team-header-primary {
-    font-size: 7em;
+    font-size: 5em;
     text-align: center;
-    margin-bottom: 6%;
+    margin-bottom: 2%;
+}
+
+.team-header-secondary {
+    width: 64%;
+    margin: 0 auto 4%;
+    text-align: center;
+    text-transform: none;
 }
 
 .outer-team-container {
@@ -3067,22 +3074,23 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 .team-member-container,
 .teamPic {
-    width: 200px;
+    width: 270px;
 }
 
 .team-member-container {
-    height: 300px;
-    margin: 0 18px;
+    height: 500px;
+    margin: 0 5px;
 }
 
 .teamPic {
-    height: 200px;
+    height: 395px;
     background-color: #acacac;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
     background-size: cover;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin: 0 0 15px 0;
+    background-position: center;
 }
 
 .team-member-name {
@@ -3099,14 +3107,17 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     display: none;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    text-align: center;
+    padding: 0 15px;
+/*    text-align: center;*/
 }
 
 .team-member-container:hover .teamPic {
     -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transform: translateY(-10%) scale(1.1);
-    transform: translateY(-10%) scale(1.1);
+/*    -webkit-transform: translateY(-10%) scale(1.1);*/
+/*    transform: translateY(-10%) scale(1.1);*/
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
 }
 
 .team-member-container:hover .team-member-name,
@@ -3116,8 +3127,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 .team-member-container:hover .team-member-desc {
     display: block;
-    -webkit-transform: translateY(-18%);
-    transform: translateY(-18%);
+    -webkit-transform: translateY(-37%);
+    transform: translateY(-37%);
 }
 
 
@@ -3315,6 +3326,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     #mapContainer {
         height: 745px;
     }
+    
+    .team-header-secondary {
+        width: 72%;
+    }
 }
 
 @media screen and (max-width: 1532px) {
@@ -3327,6 +3342,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
     .ghost-table {
         display: none;
+    }
+    
+    .team-header-secondary {
+        width: 61%;
+        font-size: 1.5em;
     }
 }
 
@@ -3408,7 +3428,12 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     }
 
     .team-header-primary {
-        font-size: 5em;
+        font-size: 4em;
+    }
+    
+    .team-member-desc {
+        font-size: 0.7em;
+        padding: 0;
     }
 }
 
@@ -3713,8 +3738,8 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     }
 
     .team-member-container:hover .team-member-desc {
-        -webkit-transform: translateY(-7%);
-        transform: translateY(-7%);
+        -webkit-transform: translateY(-20%);
+        transform: translateY(-20%);
     }
 
     .team-header-primary {
@@ -3811,6 +3836,15 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 100%;
         font-size: 1.6em;
         line-height: 1.6em;
+    }
+    
+    .ghost-team-item {
+        display: none;
+    }
+    
+    .team-header-secondary {
+        width: 100%;
+        font-size: 1.5em;
     }
 
     .even-team-item,
@@ -4394,6 +4428,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     
     .team-header-primary {
         font-size: 3em;
+    }
+    
+    .team-header-secondary {
+        font-size: 1em;
     }
     
     .team-member-name {
