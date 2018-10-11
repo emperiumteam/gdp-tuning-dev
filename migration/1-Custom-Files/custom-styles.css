@@ -210,6 +210,8 @@ like it is supposed to...thanks to the style below: */
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 #selectYourTruckHeader {
@@ -301,6 +303,16 @@ like it is supposed to...thanks to the style below: */
 .buyKitButton:hover {
     background: #9c2600;
     text-decoration: none;
+}
+
+
+#truckRowHomePageContainer {
+    width: 60%;
+    margin-left: -80px;
+}
+
+#truckRowHomePage {
+    display: block;
 }
 
 /* ----------------------------------------------- */
@@ -3049,7 +3061,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 }
 
 .team-header-secondary {
-    width: 64%;
+    width: 46%;
     margin: 0 auto 4%;
     text-align: center;
     text-transform: none;
@@ -3085,7 +3097,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 .teamPic {
     height: 395px;
     background-color: #acacac;
-/*    border-radius: 50%;*/
+    /*    border-radius: 50%;*/
     background-size: cover;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3095,6 +3107,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 
 .team-member-name {
     text-align: center;
+    font-size: 17px;
 }
 
 .team-member-title {
@@ -3108,14 +3121,14 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     -webkit-transition: 0.6s;
     transition: 0.6s;
     padding: 0 15px;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
 
 .team-member-container:hover .teamPic {
     -webkit-transform-origin: center center;
     transform-origin: center center;
-/*    -webkit-transform: translateY(-10%) scale(1.1);*/
-/*    transform: translateY(-10%) scale(1.1);*/
+    /*    -webkit-transform: translateY(-10%) scale(1.1);*/
+    /*    transform: translateY(-10%) scale(1.1);*/
     -webkit-transform: translateY(-5%);
     transform: translateY(-5%);
 }
@@ -3140,7 +3153,9 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
 }
 */
 
-
+.center-team-pic-fix {
+    background-position: 79%;
+}
 
 
 
@@ -3248,9 +3263,9 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     background-image: url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
 }
 
-.outer-team-container:after{
- display:none;
- content: url("http://gdptuning.com/image/catalog/teampage/1secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/2secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/3secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/4secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/5secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/6secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/7secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/8secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/9secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/10secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/11secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/12secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
+.outer-team-container:after {
+    display: none;
+    content: url("http://gdptuning.com/image/catalog/teampage/1secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/2secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/3secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/4secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/5secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/6secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/7secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/8secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/9secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/10secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/11secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/12secondary.jpg") url("http://gdptuning.com/image/catalog/teampage/13secondary.jpg");
 }
 
 /*TEAM PAGE END*/
@@ -3326,9 +3341,14 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     #mapContainer {
         height: 745px;
     }
-    
+
     .team-header-secondary {
         width: 72%;
+    }
+
+    #truckRowHomePageContainer {
+        width: 49%;
+        margin-left: -43px;
     }
 }
 
@@ -3343,10 +3363,15 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .ghost-table {
         display: none;
     }
-    
+
     .team-header-secondary {
         width: 61%;
         font-size: 1.5em;
+    }
+
+    #truckRowHomePageContainer {
+        width: 47%;
+        margin-left: 20px;
     }
 }
 
@@ -3404,6 +3429,10 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .manualPageBannerContainer {
         margin-top: 80px;
     }
+
+    #truckRowHomePageContainer {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -3430,10 +3459,15 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .team-header-primary {
         font-size: 4em;
     }
-    
+
     .team-member-desc {
         font-size: 0.7em;
         padding: 0;
+    }
+
+    .team-member-name {
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 }
 
@@ -3784,7 +3818,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         width: 100vw;
         margin: 50px 0;
     }
-    
+
     .team-member-bio {
         width: 45%;
         height: 100%;
@@ -3805,7 +3839,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         height: 50vw;
         margin: 0;
     }
-    
+
     .team-member-container:hover .teamPic {
         -webkit-transform: none;
         transform: none;
@@ -3820,12 +3854,12 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .team-header-primary {
         font-size: 4em;
     }
-    
+
     .team-member-name {
         width: 100%;
         font-size: 3em;
     }
-    
+
     .team-member-title {
         width: 100%;
         margin-top: 10px;
@@ -3837,11 +3871,11 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         font-size: 1.6em;
         line-height: 1.6em;
     }
-    
+
     .ghost-team-item {
         display: none;
     }
-    
+
     .team-header-secondary {
         width: 100%;
         font-size: 1.5em;
@@ -4068,12 +4102,12 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .prod-name {
         font-size: 1.2em;
     }
-    
+
     .team-member-name {
         font-size: 2em;
         margin-top: 5px;
     }
-    
+
     .team-member-desc {
         font-size: 1.2em;
     }
@@ -4219,7 +4253,7 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
         -webkit-transform: none;
         transform: none;
     }
-    
+
     .team-member-desc {
         font-size: 1em;
     }
@@ -4425,24 +4459,24 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .ui-selectmenu-menu .ui-menu {
         height: 53vw;
     }
-    
+
     .team-header-primary {
         font-size: 3em;
     }
-    
+
     .team-header-secondary {
         font-size: 1em;
     }
-    
+
     .team-member-name {
-        font-size: 1.3em;        
+        font-size: 1.3em;
     }
-    
+
     .team-member-title {
         font-size: 1.2em;
         margin-top: 2px;
     }
-    
+
     .team-member-desc {
         font-size: 1em;
     }
@@ -4452,16 +4486,16 @@ input:checked + section.gdp-accordion-box .gdp-accordion-box-title:before {
     .grid figure figcaption {
         padding: 2.5em;
     }
-    
+
     .team-member-name {
         font-size: 1em;
         margin-top: 1px;
     }
-    
+
     .team-member-title {
         font-size: 0.9em;
     }
-    
+
     .team-member-desc {
         font-size: 0.8em;
         line-height: 1.5em;
